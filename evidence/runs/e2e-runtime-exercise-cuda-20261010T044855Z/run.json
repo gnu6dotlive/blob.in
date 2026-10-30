@@ -1,0 +1,510 @@
+{
+  "schema": "blobin-showcase-e2e/1",
+  "date_utc": "2026-10-10T04:49:25Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "viewer": "/mnt/sandbox/builds/cargo/release/blobin-showcase",
+  "socket": "/run/user/1000/blobin-showcase/render.sock",
+  "backend": "cuda",
+  "lab": "3",
+  "mode": "exercise",
+  "hyprland": "v0.56.2",
+  "checks": [
+    {
+      "check": "native Wayland window mapped by Hyprland",
+      "pass": true,
+      "detail": "{\"class\": \"live.gnu6.blobin-showcase\", \"xwayland\": false, \"pid\": 1937401}"
+    },
+    {
+      "check": "BLOB-FRAME-v1 session established",
+      "pass": true,
+      "detail": "blobin-cuda05f-render-bridge"
+    },
+    {
+      "check": "exercise 00 Lab(Smooth): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 8 backend=cuda view=lit q=CUDA05F_GATE_PASS geom=1ab652e9965d"
+    },
+    {
+      "check": "capture x00-cuda-lit lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 01 MoveCircle { index: 1, dx: 0.06, dy: 0.02 }: frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 9 backend=cuda view=lit q=CUDA05F_GATE_PASS geom=cf9ff654b8ed"
+    },
+    {
+      "check": "capture x01-cuda-lit lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 02 ScaleRadius { index: 2, factor: 1.25 }: frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 10 backend=cuda view=lit q=CUDA05F_GATE_PASS geom=1fd153463a84"
+    },
+    {
+      "check": "capture x02-cuda-lit lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 03 CycleOp { index: 3 }: frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 11 backend=cuda view=lit q=CUDA05F_GATE_PASS geom=7163e8ae49bf"
+    },
+    {
+      "check": "capture x03-cuda-lit lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 04 View(Distance): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 12 backend=cuda view=distance q=CUDA05F_GATE_PASS geom=7163e8ae49bf"
+    },
+    {
+      "check": "capture x04-cuda-distance lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 05 View(Normals): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 13 backend=cuda view=normals q=CUDA05F_GATE_PASS geom=7163e8ae49bf"
+    },
+    {
+      "check": "capture x05-cuda-normals lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 06 View(Coverage): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 14 backend=cuda view=coverage q=CUDA05F_GATE_PASS geom=7163e8ae49bf"
+    },
+    {
+      "check": "capture x06-cuda-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 07 View(Lit): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 15 backend=cuda view=lit q=CUDA05F_GATE_PASS geom=7163e8ae49bf"
+    },
+    {
+      "check": "capture x07-cuda-lit lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 08 Lab(Csg): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 17 backend=cuda view=coverage q=CUDA05F_GATE_PASS geom=777132465f72"
+    },
+    {
+      "check": "capture x08-cuda-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 09 Zoom(1.6): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 18 backend=cuda view=coverage q=CUDA05F_GATE_PASS geom=e09b6220d20a"
+    },
+    {
+      "check": "capture x09-cuda-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 10 ResetCamera: frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 19 backend=cuda view=coverage q=CUDA05F_GATE_PASS geom=777132465f72"
+    },
+    {
+      "check": "capture x10-cuda-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 11 Backend(Cpu): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 20 backend=cpu view=coverage q=CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED geom=777132465f72"
+    },
+    {
+      "check": "capture x11-cpu-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 12 Backend(Vulkan): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 21 backend=vulkan view=coverage q=CUDA05F_GATE_PASS geom=777132465f72"
+    },
+    {
+      "check": "capture x12-vulkan-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise 13 Backend(Cuda): frame follows (backend, view)",
+      "pass": true,
+      "detail": "rev 22 backend=cuda view=coverage q=CUDA05F_GATE_PASS geom=777132465f72"
+    },
+    {
+      "check": "capture x13-cuda-coverage lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 940] [1000, 820]"
+    },
+    {
+      "check": "exercise sequence completed",
+      "pass": true,
+      "detail": "{\"event\": \"exercise_done\", \"steps\": 14, \"t_ms\": 30126.879883}"
+    },
+    {
+      "check": "viewer quits by itself after the sequence: exit 0",
+      "pass": true,
+      "detail": "exit 0"
+    },
+    {
+      "check": "exercise 01 MoveCircle { index: 1, dx: 0.06, dy: 0.02 }: geometry digest changes",
+      "pass": true,
+      "detail": "1ab652e9965d -> cf9ff654b8ed"
+    },
+    {
+      "check": "exercise 02 ScaleRadius { index: 2, factor: 1.25 }: geometry digest changes",
+      "pass": true,
+      "detail": "cf9ff654b8ed -> 1fd153463a84"
+    },
+    {
+      "check": "exercise 03 CycleOp { index: 3 }: geometry digest changes",
+      "pass": true,
+      "detail": "1fd153463a84 -> 7163e8ae49bf"
+    },
+    {
+      "check": "exercise 08 Lab(Csg): geometry digest changes",
+      "pass": true,
+      "detail": "7163e8ae49bf -> 777132465f72"
+    },
+    {
+      "check": "exercise 09 Zoom(1.6): geometry digest changes",
+      "pass": true,
+      "detail": "777132465f72 -> e09b6220d20a"
+    },
+    {
+      "check": "exercise 10 ResetCamera: geometry digest changes",
+      "pass": true,
+      "detail": "e09b6220d20a -> 777132465f72"
+    },
+    {
+      "check": "clean shutdown recorded",
+      "pass": true,
+      "detail": "{\"clean\": true, \"client_threads_joined\": true, \"errors\": 0, \"event\": \"shutdown\", \"failed\": 0, \"frame_texture_released\": true, \"issued\": 16, \"presented\": 16, \"rejected\": 0, \"stale\": 0, \"t_ms\": 30128.174956}"
+    },
+    {
+      "check": "never more than one request in flight",
+      "pass": true,
+      "detail": "max 1"
+    },
+    {
+      "check": "presented revisions strictly increase",
+      "pass": true,
+      "detail": "16 frames"
+    },
+    {
+      "check": "no rejected/failed frames",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "file": "x00-cuda-lit.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "e88e8990e389b8f09964badf798eab03bac181d2b4f6849db0de612534e0e0c5",
+      "frame": {
+        "request_id": 3,
+        "revision": 8,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "1ab652e9965d9c34ca64216c8c55bbfcb941e720dee3788883b1d1db1666e3e5"
+      }
+    },
+    {
+      "file": "x01-cuda-lit.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "5a8f05643a3d9eca281ebacf409fdc3aaa58c4a1f4113a9288d494a958908987",
+      "frame": {
+        "request_id": 4,
+        "revision": 9,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "cf9ff654b8ed00a03fab44d55382978d21910f212ffebd4ba41e94c4c95fceee"
+      }
+    },
+    {
+      "file": "x02-cuda-lit.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "7362f4b2b8983045304d61b57b94d1fa6b4ad252ba068ae37a0d106394beec8e",
+      "frame": {
+        "request_id": 5,
+        "revision": 10,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "1fd153463a84c8288d1424f922fdb6867c4e385fd33ff41a9cfb498b2e6d5879"
+      }
+    },
+    {
+      "file": "x03-cuda-lit.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "5b0e1001be057feeff06f69fb6c101f68d2617882b76800da7b10a8b49126876",
+      "frame": {
+        "request_id": 6,
+        "revision": 11,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "7163e8ae49bfd2c7144a652cf0108b548d79c5db2386c8292426f26376d24fc2"
+      }
+    },
+    {
+      "file": "x04-cuda-distance.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "8d6c1b57a1e9f56fc64fac1feb07b36971b9c8582841eeaf6c3c64d461d57fc1",
+      "frame": {
+        "request_id": 7,
+        "revision": 12,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "distance",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "7163e8ae49bfd2c7144a652cf0108b548d79c5db2386c8292426f26376d24fc2"
+      }
+    },
+    {
+      "file": "x05-cuda-normals.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "605569b6addccfbf7082afa9268452986aa49b54055fe89830ffcbbe27edac89",
+      "frame": {
+        "request_id": 8,
+        "revision": 13,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "normals",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "7163e8ae49bfd2c7144a652cf0108b548d79c5db2386c8292426f26376d24fc2"
+      }
+    },
+    {
+      "file": "x06-cuda-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "2889512496601ad8c8800ef1f0f2a71c370e52e488b321f76aafba12cc12db4b",
+      "frame": {
+        "request_id": 9,
+        "revision": 14,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "7163e8ae49bfd2c7144a652cf0108b548d79c5db2386c8292426f26376d24fc2"
+      }
+    },
+    {
+      "file": "x07-cuda-lit.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "5b0e1001be057feeff06f69fb6c101f68d2617882b76800da7b10a8b49126876",
+      "frame": {
+        "request_id": 10,
+        "revision": 15,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "7163e8ae49bfd2c7144a652cf0108b548d79c5db2386c8292426f26376d24fc2"
+      }
+    },
+    {
+      "file": "x08-cuda-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "444a61f1e702a2f3c5d9523842d1525543673956e6621077295de3a0f3914f75",
+      "frame": {
+        "request_id": 11,
+        "revision": 17,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "777132465f727d6b4424a6dc29d44b1fd984e5e5396681014e5d1eaa5679d924"
+      }
+    },
+    {
+      "file": "x09-cuda-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "9a92d4c5e10ab5cc946cad2991b10365545593c8b57bdf4a53d6bb989656d82a",
+      "frame": {
+        "request_id": 12,
+        "revision": 18,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "e09b6220d20a031ff80be881ca508b2b29e22a9aef3530380ef20dd89b84a6f5"
+      }
+    },
+    {
+      "file": "x10-cuda-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "444a61f1e702a2f3c5d9523842d1525543673956e6621077295de3a0f3914f75",
+      "frame": {
+        "request_id": 13,
+        "revision": 19,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "777132465f727d6b4424a6dc29d44b1fd984e5e5396681014e5d1eaa5679d924"
+      }
+    },
+    {
+      "file": "x11-cpu-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "a118ffda98d05337d388a4d36b69f6a7f294c93c401743a934417b655d65f59f",
+      "frame": {
+        "request_id": 14,
+        "revision": 20,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "coverage",
+        "qualification": "CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED",
+        "geometry_sha256": "777132465f727d6b4424a6dc29d44b1fd984e5e5396681014e5d1eaa5679d924"
+      }
+    },
+    {
+      "file": "x12-vulkan-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "3d755b8673096314a51ff0c53f6d216d8ec4313e39adbd2e1e969a16cabbf68c",
+      "frame": {
+        "request_id": 15,
+        "revision": 21,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "vulkan",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "777132465f727d6b4424a6dc29d44b1fd984e5e5396681014e5d1eaa5679d924"
+      }
+    },
+    {
+      "file": "x13-cuda-coverage.png",
+      "window": [
+        1000,
+        820
+      ],
+      "sha256": "444a61f1e702a2f3c5d9523842d1525543673956e6621077295de3a0f3914f75",
+      "frame": {
+        "request_id": 16,
+        "revision": 22,
+        "size": [
+          652,
+          820
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "coverage",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "777132465f727d6b4424a6dc29d44b1fd984e5e5396681014e5d1eaa5679d924"
+      }
+    }
+  ],
+  "artifacts": {
+    "trace.jsonl": "59819748a158afbce32bda259193fd96a55ffdc07fc23fe4711fc4314ec79df6",
+    "viewer.log": "de45f9104903b5a6a361d656f866221c9018c690f79058bebd2f780879067c1a"
+  },
+  "pass": true
+}

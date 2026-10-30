@@ -1,0 +1,104 @@
+{
+  "blobin_native_toggle_drawing_owner": true,
+  "capture_method": "actual first-party native wgpu compositor-target swapchain COPY_SRC before queue.present",
+  "compositor_button_releases": 1,
+  "compositor_presentation_feedback": false,
+  "control_bounds": [
+    946,
+    623,
+    52,
+    26
+  ],
+  "control_changed_channel_bytes": 2964,
+  "egui_input_owner": true,
+  "egui_text_owner": true,
+  "g02_ui_revisions": [
+    1,
+    2
+  ],
+  "g03_layout_epoch": 2,
+  "gtk_qt_electron_qml_imported": false,
+  "on_off_original_rgba_sha256": {
+    "off": "b640b625a6d81d76cff17c680a8d9334b038a5defcaa9403d41dd85eb9e33cc6",
+    "on": "29e81b6c79cee2478f1c5f39bc8a709b83eeccaead17ad11bcb0262ebbde234c"
+  },
+  "physical_hid": false,
+  "pixel_samples": {
+    "(205, 400)": [
+      [
+        255,
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255,
+        255
+      ]
+    ],
+    "(500, 60)": [
+      [
+        0,
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0,
+        255
+      ]
+    ],
+    "(946, 623)": [
+      [
+        23,
+        32,
+        41,
+        255
+      ],
+      [
+        23,
+        32,
+        41,
+        255
+      ]
+    ],
+    "(958, 636)": [
+      [
+        49,
+        95,
+        121,
+        255
+      ],
+      [
+        255,
+        255,
+        255,
+        255
+      ]
+    ],
+    "(986, 636)": [
+      [
+        255,
+        255,
+        255,
+        255
+      ],
+      [
+        22,
+        39,
+        51,
+        255
+      ]
+    ]
+  },
+  "scope": "production blobin-showcase + private Weston input + G02/G03 display list + same-swapchain wgpu",
+  "sdf_backend": "real blobin_renderd CPU",
+  "sdf_frame_count": 1,
+  "sdf_request_count": 1,
+  "sdf_scene_revision": 3,
+  "verdict": "SCOPED_PASS_REAL_EDITOR_NATIVE_TOGGLE_CLIENT_GPU_PIXELS"
+}

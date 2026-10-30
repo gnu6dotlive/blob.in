@@ -1,0 +1,4 @@
+{"backend":"Vulkan","kind":"window_ready","native_window":true,"physical":[900,600],"scale":1.0,"source":"winit_wayland"}
+{"epoch":1,"height":600.0,"kind":"layout","left":"Rect { x: 24.0, y: 24.0, width: 170.0, height: 120.0 }","right":"Rect { x: 210.0, y: 24.0, width: 170.0, height: 120.0 }","scale":1.0,"width":900.0}
+{"epoch":2,"height":600.0,"kind":"layout","left":"Rect { x: 24.0, y: 24.0, width: 170.0, height: 120.0 }","right":"Rect { x: 210.0, y: 24.0, width: 170.0, height: 120.0 }","scale":1.0,"width":900.0}
+{"activation_count":0,"frame_submissions":1,"g04b_visual_frame_presented_verified":false,"ingress_count":0,"kind":"summary","receipt_count":0,"source":"winit_window_event"}

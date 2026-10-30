@@ -1,0 +1,10 @@
+[package]
+name = "cpja3-vulkan-probe"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+ash = "=0.38.0"
+
+[workspace]

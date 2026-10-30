@@ -1,0 +1,190 @@
+{
+  "schema": "blobin-showcase-e2e/1",
+  "date_utc": "2026-10-10T04:48:15Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "viewer": "/mnt/sandbox/builds/cargo/release/blobin-showcase",
+  "socket": "test-server",
+  "backend": "cpu",
+  "lab": "3",
+  "mode": "resize",
+  "hyprland": "v0.56.2",
+  "checks": [
+    {
+      "check": "native Wayland window mapped by Hyprland",
+      "pass": true,
+      "detail": "{\"class\": \"live.gnu6.blobin-showcase\", \"xwayland\": false, \"pid\": 1935483}"
+    },
+    {
+      "check": "BLOB-FRAME-v1 session established",
+      "pass": true,
+      "detail": "blob-frame-testserver TEST-FIXTURE (no geometry evaluated)"
+    },
+    {
+      "check": "window 1000x800: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 800] -> frame [652, 800] backend=cpu qualification=TEST_FIXTURE_NOT_RENDERED rtt=43ms"
+    },
+    {
+      "check": "capture 01-cpu-1000x800 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 950] [1000, 800]"
+    },
+    {
+      "check": "window 960x720: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [612, 720] -> frame [612, 720] backend=cpu qualification=TEST_FIXTURE_NOT_RENDERED rtt=42ms"
+    },
+    {
+      "check": "capture 02-cpu-960x720 lies within one monitor",
+      "pass": true,
+      "detail": "[1990, 990] [960, 720]"
+    },
+    {
+      "check": "window 1000x900: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 900] -> frame [652, 900] backend=cpu qualification=TEST_FIXTURE_NOT_RENDERED rtt=42ms"
+    },
+    {
+      "check": "capture 03-cpu-1000x900 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 900] [1000, 900]"
+    },
+    {
+      "check": "window 760x520: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [412, 520] -> frame [412, 520] backend=cpu qualification=TEST_FIXTURE_NOT_RENDERED rtt=41ms"
+    },
+    {
+      "check": "capture 04-cpu-760x520 lies within one monitor",
+      "pass": true,
+      "detail": "[2090, 1090] [760, 520]"
+    },
+    {
+      "check": "resize storm settles on a frame matching the final viewport",
+      "pass": true,
+      "detail": "final viewport [652, 660] frame [652, 660]"
+    },
+    {
+      "check": "resize storm coalesced",
+      "pass": true,
+      "detail": "40 viewport changes -> 19 requests"
+    },
+    {
+      "check": "close via compositor: process exits 0",
+      "pass": true,
+      "detail": "exit 0"
+    },
+    {
+      "check": "clean shutdown recorded",
+      "pass": true,
+      "detail": "{\"clean\": true, \"client_threads_joined\": true, \"errors\": 0, \"event\": \"shutdown\", \"failed\": 0, \"frame_texture_released\": true, \"issued\": 25, \"presented\": 25, \"rejected\": 0, \"stale\": 0, \"t_ms\": 8235.490562}"
+    },
+    {
+      "check": "never more than one request in flight",
+      "pass": true,
+      "detail": "max 1"
+    },
+    {
+      "check": "presented revisions strictly increase",
+      "pass": true,
+      "detail": "25 frames"
+    },
+    {
+      "check": "every presented frame reports the requested backend",
+      "pass": true,
+      "detail": "['cpu']"
+    },
+    {
+      "check": "no rejected/failed frames",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-cpu-1000x800.png",
+      "window": [
+        1000,
+        800
+      ],
+      "sha256": "89da356a146c5c3fcfa0bbfa8666a27b16b2ece07dab1401ef10c40030b8a7a5",
+      "frame": {
+        "request_id": 3,
+        "revision": 6,
+        "size": [
+          652,
+          800
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "lit",
+        "qualification": "TEST_FIXTURE_NOT_RENDERED",
+        "geometry_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "file": "02-cpu-960x720.png",
+      "window": [
+        960,
+        720
+      ],
+      "sha256": "b0633b060cd7e390b71bee7c758da851c97a307177fe7265c52a8f261eebc985",
+      "frame": {
+        "request_id": 4,
+        "revision": 7,
+        "size": [
+          612,
+          720
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "lit",
+        "qualification": "TEST_FIXTURE_NOT_RENDERED",
+        "geometry_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "file": "03-cpu-1000x900.png",
+      "window": [
+        1000,
+        900
+      ],
+      "sha256": "fabb97c7fc6fdfb72ef070a43334433fbf39ba6e4235f9ac8765fe50660482ce",
+      "frame": {
+        "request_id": 5,
+        "revision": 8,
+        "size": [
+          652,
+          900
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "lit",
+        "qualification": "TEST_FIXTURE_NOT_RENDERED",
+        "geometry_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "file": "04-cpu-760x520.png",
+      "window": [
+        760,
+        520
+      ],
+      "sha256": "250f02d859d92a445e2468415e5e732981b0b390214fc6ee19022a837406564e",
+      "frame": {
+        "request_id": 6,
+        "revision": 9,
+        "size": [
+          412,
+          520
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "lit",
+        "qualification": "TEST_FIXTURE_NOT_RENDERED",
+        "geometry_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "artifacts": {
+    "trace.jsonl": "f6ceeab2ccdfcfc2e5c5edcb6d90d74ea9cbdcbb3dc92c9fe7997ffb3918844d",
+    "viewer.log": "a3aa0ec6bc034c24cd1ce6d0d559fe47f879b9a5f602ab8d2e9546e473caa903"
+  },
+  "pass": true
+}

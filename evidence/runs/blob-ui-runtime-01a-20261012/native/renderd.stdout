@@ -1,0 +1,2 @@
+BLOB_FRAME_LISTENING protocol=BLOB-FRAME-v1 socket=/tmp/blob-ui01a-live-5k0qaiam/private-weston-run/render.sock qualification=PREVIEW_ONLY
+BLOB_FRAME_EXIT clean=PASS frames=1

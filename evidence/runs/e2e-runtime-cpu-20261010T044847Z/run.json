@@ -1,0 +1,190 @@
+{
+  "schema": "blobin-showcase-e2e/1",
+  "date_utc": "2026-10-10T04:48:55Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "viewer": "/mnt/sandbox/builds/cargo/release/blobin-showcase",
+  "socket": "/run/user/1000/blobin-showcase/render.sock",
+  "backend": "cpu",
+  "lab": "2",
+  "mode": "resize",
+  "hyprland": "v0.56.2",
+  "checks": [
+    {
+      "check": "native Wayland window mapped by Hyprland",
+      "pass": true,
+      "detail": "{\"class\": \"live.gnu6.blobin-showcase\", \"xwayland\": false, \"pid\": 1937038}"
+    },
+    {
+      "check": "BLOB-FRAME-v1 session established",
+      "pass": true,
+      "detail": "blobin-cuda05f-render-bridge"
+    },
+    {
+      "check": "window 1000x800: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 800] -> frame [652, 800] backend=cpu qualification=CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED rtt=35ms"
+    },
+    {
+      "check": "capture 01-cpu-1000x800 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 950] [1000, 800]"
+    },
+    {
+      "check": "window 960x720: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [612, 720] -> frame [612, 720] backend=cpu qualification=CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED rtt=34ms"
+    },
+    {
+      "check": "capture 02-cpu-960x720 lies within one monitor",
+      "pass": true,
+      "detail": "[1990, 990] [960, 720]"
+    },
+    {
+      "check": "window 1000x900: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 900] -> frame [652, 900] backend=cpu qualification=CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED rtt=35ms"
+    },
+    {
+      "check": "capture 03-cpu-1000x900 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 900] [1000, 900]"
+    },
+    {
+      "check": "window 760x520: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [412, 520] -> frame [412, 520] backend=cpu qualification=CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED rtt=14ms"
+    },
+    {
+      "check": "capture 04-cpu-760x520 lies within one monitor",
+      "pass": true,
+      "detail": "[2090, 1090] [760, 520]"
+    },
+    {
+      "check": "resize storm settles on a frame matching the final viewport",
+      "pass": true,
+      "detail": "final viewport [652, 660] frame [652, 660]"
+    },
+    {
+      "check": "resize storm coalesced",
+      "pass": true,
+      "detail": "40 viewport changes -> 31 requests"
+    },
+    {
+      "check": "close via compositor: process exits 0",
+      "pass": true,
+      "detail": "exit 0"
+    },
+    {
+      "check": "clean shutdown recorded",
+      "pass": true,
+      "detail": "{\"clean\": true, \"client_threads_joined\": true, \"errors\": 0, \"event\": \"shutdown\", \"failed\": 0, \"frame_texture_released\": true, \"issued\": 38, \"presented\": 38, \"rejected\": 0, \"stale\": 0, \"t_ms\": 8091.907601999999}"
+    },
+    {
+      "check": "never more than one request in flight",
+      "pass": true,
+      "detail": "max 1"
+    },
+    {
+      "check": "presented revisions strictly increase",
+      "pass": true,
+      "detail": "38 frames"
+    },
+    {
+      "check": "every presented frame reports the requested backend",
+      "pass": true,
+      "detail": "['cpu']"
+    },
+    {
+      "check": "no rejected/failed frames",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-cpu-1000x800.png",
+      "window": [
+        1000,
+        800
+      ],
+      "sha256": "34c6787ae07d71272ae2671a64ca544211231e40fc9b6178514e445a70788686",
+      "frame": {
+        "request_id": 4,
+        "revision": 6,
+        "size": [
+          652,
+          800
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "coverage",
+        "qualification": "CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED",
+        "geometry_sha256": "2c389d60b7d319b0482f5699235cb7d8fae77083a1b2f15f3bd9c8b6381db79d"
+      }
+    },
+    {
+      "file": "02-cpu-960x720.png",
+      "window": [
+        960,
+        720
+      ],
+      "sha256": "1e9cc90c44e6a88c6fc2ca99f8b2d2c47b217f888abd80d81182232793ccb06e",
+      "frame": {
+        "request_id": 5,
+        "revision": 7,
+        "size": [
+          612,
+          720
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "coverage",
+        "qualification": "CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED",
+        "geometry_sha256": "092145fce54c42a831a4b7ce8057071f45474b17b75ee95183b79357d5154043"
+      }
+    },
+    {
+      "file": "03-cpu-1000x900.png",
+      "window": [
+        1000,
+        900
+      ],
+      "sha256": "a404e21f838b29317dc6954e48cc2d1c4b0d25fa9cfba348f7df948da430108b",
+      "frame": {
+        "request_id": 6,
+        "revision": 8,
+        "size": [
+          652,
+          900
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "coverage",
+        "qualification": "CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED",
+        "geometry_sha256": "0651edf4ceeb273ba886febe7f8f60ca9d28dedbcd65496628608c3639a143e5"
+      }
+    },
+    {
+      "file": "04-cpu-760x520.png",
+      "window": [
+        760,
+        520
+      ],
+      "sha256": "731d2b04391639885fadce2a4f7f77756498266b239b2b380aab06f920d36470",
+      "frame": {
+        "request_id": 7,
+        "revision": 9,
+        "size": [
+          412,
+          520
+        ],
+        "backend_actual": "cpu",
+        "view_mode": "coverage",
+        "qualification": "CPU_LOCAL_PREVIEW_NOT_GPU_QUALIFIED",
+        "geometry_sha256": "b36ce11bf3a16a0cb5ce4731cc4c1200dd8322907c48702edbf176058d1ec2af"
+      }
+    }
+  ],
+  "artifacts": {
+    "trace.jsonl": "e0d5292c0c7fbb17ac94098c49c85f63642e2cc850c5e9860a79d1d948a899c4",
+    "viewer.log": "e36863486ed474855cdb8dc37a38c0aeb12b63b2ede17ba4155e8012b13d6039"
+  },
+  "pass": true
+}

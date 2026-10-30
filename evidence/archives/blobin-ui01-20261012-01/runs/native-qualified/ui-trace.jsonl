@@ -1,0 +1,12 @@
+{"data":{"action":"SelectSurface(1)"},"frame":25,"kind":"scripted_action","revision":1}
+{"data":{"cpu_frame_ms":1.943312,"height":720,"inspector":1.0,"motion":true,"phase":0.1356571912765503,"scene":1,"width":1280},"frame":30,"kind":"gpu_frame_submitted","revision":1}
+{"data":{"action":"ToggleInspector"},"frame":50,"kind":"scripted_action","revision":2}
+{"data":{"cpu_frame_ms":1.458095,"height":720,"inspector":0.02844608947634697,"motion":true,"phase":0.24401885271072388,"scene":1,"width":1280},"frame":60,"kind":"gpu_frame_submitted","revision":2}
+{"data":{"action":"SelectSurface(2)"},"frame":75,"kind":"scripted_action","revision":3}
+{"data":{"cpu_frame_ms":1.6881680000000001,"height":720,"inspector":0.0,"motion":true,"phase":0.35054606199264526,"scene":2,"width":1280},"frame":90,"kind":"gpu_frame_submitted","revision":3}
+{"data":{"action":"ToggleReducedMotion"},"frame":100,"kind":"scripted_action","revision":4}
+{"data":{"cpu_frame_ms":1.496193,"height":720,"inspector":0.0,"motion":true,"phase":0.38630735874176025,"scene":2,"width":1280},"frame":120,"kind":"gpu_frame_submitted","revision":4}
+{"data":{"action":"ToggleReducedMotion"},"frame":125,"kind":"scripted_action","revision":5}
+{"data":{"cpu_frame_ms":1.9799470000000001,"height":720,"inspector":0.0,"motion":true,"phase":0.47470635175704956,"scene":2,"width":1280},"frame":150,"kind":"gpu_frame_submitted","revision":5}
+{"data":{"action":"ToggleInspector"},"frame":150,"kind":"scripted_action","revision":6}
+{"data":{"cpu_frame_ms":1.9544240000000002,"height":720,"inspector":1.0,"motion":true,"phase":0.5824774503707886,"scene":2,"width":1280},"frame":180,"kind":"gpu_frame_submitted","revision":6}

@@ -1,0 +1,6 @@
+
+running 1 test
+test app::ac04_production_input_tests::ui01c_reset_real_camera_one_commit_then_idempotent_and_others_survive ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 44 filtered out; finished in 0.08s
+

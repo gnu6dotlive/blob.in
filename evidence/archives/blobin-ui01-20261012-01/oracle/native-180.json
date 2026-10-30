@@ -1,0 +1,22 @@
+{
+  "schema": "blob.in.ui01.independent_oracle.v1",
+  "verdict": "UI01_NATIVE_2D_MOTION_AND_LAYOUT_SCOPED_PASS",
+  "source": "physical NVIDIA RTX 3070 / Vulkan / private Weston headless",
+  "native_submitted_frames": 180,
+  "scripted_typed_actions": 6,
+  "pixel_change_mean_rgb_between_samples": [
+    8.772,
+    5.458,
+    27.132
+  ],
+  "sample_shas": [
+    "166394a7854d90ad6e358d89ad9bfb4c883579aaefb666debc04722a1e32fe87",
+    "180587a7e837af9c7d9986fc7565eecaca719c52e7b758211e1bdcd9a685f9f4",
+    "5ff4cd00eadd1daffc638ff00730a246c8e22b988bd963b469d74e06ff815dad",
+    "b465ef3b3c622f228431f9f6480890e85528db41e45d6b6a277ac76573a23120"
+  ],
+  "human_pointer_click_verified": false,
+  "wp_presentation_feedback_verified": false,
+  "steady_60fps": false,
+  "3d_implemented": false
+}

@@ -1,0 +1,91 @@
+{
+  "program": "BLOB-AC-03",
+  "scope": "isolated Weston compositor + real winit delivery + GPU swapchain COPY_SRC, not compositor-presented frame",
+  "namespace": "unshare -Urn; private loopback and unique Wayland socket",
+  "physical_HID": false,
+  "compositor_presentation_feedback": false,
+  "client_binary_sha256": "f393ab381d66beccc8f5aa0099adc16d45979e9aa3d162cff0711a0e261cca30",
+  "weston_module_sha256": "81653e339fbc73a434e248808bcd334d1de269d80020a2c4a141eafba98e9199",
+  "verdict": "COMPOSITOR_DELIVERED_GESTURE_PLUS_GPU_CLIENT_PIXEL_PASS",
+  "ingress_count": 6,
+  "router_receipts": 6,
+  "begins": 1,
+  "previews": 2,
+  "commits": 1,
+  "initial_ui_revision": 1,
+  "final_ui_revision": 2,
+  "frame_submissions": 7,
+  "pixel_provenance": "wgpu swapchain texture COPY_SRC before queue.present; client rendered GPU pixels only",
+  "pixels": {
+    "before": {
+      "left": [
+        89,
+        192,
+        235,
+        255
+      ],
+      "right": [
+        241,
+        166,
+        105,
+        255
+      ],
+      "top_background": [
+        66,
+        77,
+        91,
+        255
+      ],
+      "image_sha256_raw": "9193d6faded0904d98d7eb6ed1d17691bec42a6c86db158c3f9f1b366f5004ce"
+    },
+    "preview": {
+      "left": [
+        139,
+        216,
+        254,
+        255
+      ],
+      "right": [
+        241,
+        166,
+        105,
+        255
+      ],
+      "top_background": [
+        66,
+        77,
+        91,
+        255
+      ],
+      "image_sha256_raw": "5adae5024ed3d748fd08c15795b56c6a3aaa2b3007c08ed2fffa7be79369f6da"
+    },
+    "after": {
+      "left": [
+        241,
+        166,
+        105,
+        255
+      ],
+      "right": [
+        115,
+        203,
+        243,
+        255
+      ],
+      "top_background": [
+        66,
+        77,
+        91,
+        255
+      ],
+      "image_sha256_raw": "a887b744add258b8845a8a82119bb4d8c9b70327fc2e2739d87ab08ae9f31de4"
+    }
+  },
+  "images": {
+    "before": "6a8facb7c16c4c4741c4e7b1b60e51e011d5b3dcd6bccd76624e26adf475515d",
+    "preview": "4543496a9f29e54f5bd9eb130dc3db2f625ad353fb51c73e520f12f171a1b44a",
+    "after": "c00fc5f55855b0569e44fd0a303d72e1c1cd58246920579262fe7c5db20fb75f"
+  },
+  "winit_trace_sha256": "7fe4c0146cd36a7a2d84baf9d8bac6b75d59b84ae749190f884aae07e3915948",
+  "weston_stdout_sha256": "1a1b3dfcec5f4e2019f773ab3b4f3b54315b63f357dad068cb7915f920f683f6"
+}

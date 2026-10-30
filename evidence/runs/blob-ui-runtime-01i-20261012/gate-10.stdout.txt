@@ -1,0 +1,23 @@
+{
+  "verdict": "SCOPED_PASS_TWO_RECTANGULAR_HOLES_EVEN_ODD_EDGE_AA",
+  "fill_rule": "explicit bounded EvenOdd, one rectangular outer contour and 2 disjoint inner rectangles",
+  "hole_count": 2,
+  "triangles": 42,
+  "native_commands": 51,
+  "gpu_composition_layers": 4,
+  "full_color_and_transparent_pixels": 18,
+  "antialias_fractional_edge_pixels": 5,
+  "internal_seam_pixels": 8,
+  "gpu_client_rgba_sha256": "84e83d5620d930295069dc3c51751b629e003095c0e095cc1cf685a9d97fed16",
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "original_frames": 2,
+  "gpu_sdf_qualified": false,
+  "compositor_present_feedback": false,
+  "svg_arbitrary_winding_qualified": false,
+  "nonrectangular_holes_qualified": false,
+  "physical_input_qualified": false,
+  "cp03_hybrid60": "NOT_PASS"
+}

@@ -1,0 +1,6 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.07s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blob_frame-1476436fb643ffe1)
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blob_frame_testserver-d5cd4632f339304f)
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_showcase-90b427bc08676f0f)
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_core-d0f84a219c0aebd6)
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_scene-1dcc53c57ce8cc60)

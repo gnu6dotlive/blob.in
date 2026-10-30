@@ -1,0 +1,36 @@
+{
+  "antialias_triangle_edges_qualified": false,
+  "arbitrary_holes_qualified": false,
+  "arbitrary_winding_qualified": false,
+  "archive_sha256": {
+    "concave-hole.png": "e2325656db67bb39ece06886cf96e2b8d7bdc62904ed192e921f4c0ac4e44068",
+    "concave-hole.rgba.gz": "fc6c616297cdd6e5f9ecc75af90b6d7cb6f097e2f7a0999f695a30048a972795",
+    "production-events.jsonl": "ca3188d6ae1b451744771d887185fb831fef9eb403a01cd288f922420fb0b366",
+    "renderd.stderr": "51a41396951321bc90d8199b403185e2312696c16c20f6df717a88f2b433ec6e",
+    "renderd.stdout": "d99e96cf02b654606bdeb0200892da0288287e44659eabf7734e9ff6398a7327",
+    "showcase.stderr": "37528ebe077395c2bce7300a5cf20a8f1f8db45d8d5c5f6ec054812bb15847a1",
+    "weston.log": "cafd472fc543e94346e21d6baeae2bb5179c943554de8f92957e98f3d9493e1f",
+    "weston.stderr": "4bf66fa72aec6a955bf46fda23bb1f9e20bb03b4dd75d1fb5c2911fb3233842d"
+  },
+  "composition_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_client_readback_before_present": true,
+  "gpu_sdf_qualified": false,
+  "independent_geometry_pixel_witnesses": 18,
+  "original_gpu_rgba_sha256": "45cdf5ca5274aa5cad774542ba2f958d9f34209b36c81a722eb929ce832e1b0a",
+  "prior_01f_curve_sample_pixels": 66,
+  "prior_rectangle_centers": 5,
+  "qualified_shapes": "simple L-shape concavity + rectangular frame with one inset rectangular hole",
+  "rectangles": 14,
+  "renderer": "real blobin_renderd CPU + showcase wgpu",
+  "sdf_cpu_revisions": [
+    3,
+    4
+  ],
+  "sdf_frames": 2,
+  "strokes": 28,
+  "total_native_gpu_commands": 54,
+  "triangles": 12,
+  "verdict": "SCOPED_PASS_NATIVE_CONCAVE_AND_RECTANGULAR_HOLE"
+}

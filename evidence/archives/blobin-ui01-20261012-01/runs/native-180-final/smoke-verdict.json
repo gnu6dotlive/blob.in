@@ -1,0 +1,34 @@
+{
+  "schema": "blob.in.ui01.native_wayland_smoke.v1",
+  "verdict": "UI01_NATIVE_VULKAN_INTERACTIVE_SCENE_SCOPED_PASS",
+  "frames_submitted": 180,
+  "scripted_action_count": 6,
+  "compositor_screenshots": [
+    {
+      "file": "sample-01.png",
+      "sha256": "166394a7854d90ad6e358d89ad9bfb4c883579aaefb666debc04722a1e32fe87",
+      "distinctive_thumbnail_colors": 432
+    },
+    {
+      "file": "sample-02.png",
+      "sha256": "180587a7e837af9c7d9986fc7565eecaca719c52e7b758211e1bdcd9a685f9f4",
+      "distinctive_thumbnail_colors": 412
+    },
+    {
+      "file": "sample-03.png",
+      "sha256": "5ff4cd00eadd1daffc638ff00730a246c8e22b988bd963b469d74e06ff815dad",
+      "distinctive_thumbnail_colors": 402
+    },
+    {
+      "file": "sample-04.png",
+      "sha256": "b465ef3b3c622f228431f9f6480890e85528db41e45d6b6a277ac76573a23120",
+      "distinctive_thumbnail_colors": 483
+    }
+  ],
+  "gpu_binary_sha256": "11a990848460e2605d5068f7862927f8ef831db91ca120380b19f0702b60b187",
+  "elapsed_seconds": 3.7602103000099305,
+  "real_pointer_mouse_interactions_automated": false,
+  "weston_presented_feedback_verified": false,
+  "steady_60fps_qualified": false,
+  "3d_implemented": false
+}

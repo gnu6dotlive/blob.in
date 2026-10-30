@@ -1,0 +1,43 @@
+{
+  "schema": "blob.in.ui_g01_inventory.v1",
+  "date": "2026-10-12",
+  "gate": "UI-G01",
+  "verdict": "SCOPED_PASS_INVENTORY_AND_CONTRACT_ONLY",
+  "baseline_commit": "94ecd030ef8cde064d7518f681761c2706ce5b00",
+  "baseline_branch": "feat/blobin-native-ui-motion-20261012",
+  "branch": "feat/blobin-ui-g01-inventory-20261012",
+  "archive_donor_path": "/mnt/workbench/build/appstack-b3-baseline-4603aed/engine/blob.in",
+  "archive_is_git_checkout": false,
+  "historical_donor_license": "GPL-3.0-or-later",
+  "active_showcase_license": "LicenseRef-Proprietary",
+  "direct_donor_copy_authorized": false,
+  "verified_current_session": {
+    "command_ui": "cargo test --offline -p blobin-showcase --lib",
+    "result_ui": "20 passed; 0 failed",
+    "log_ui": "evidence/runs/blob-ui-g01-20261012/rust-ui-tests.log",
+    "command_oracle": "python3 scripts/test_blobin_ui01_oracle.py",
+    "result_oracle": "7 of 7 adversarial mutations rejected",
+    "log_oracle": "evidence/runs/blob-ui-g01-20261012/adversarial-oracle.log"
+  },
+  "preexisting_qualified_native_evidence": {
+    "location": "/mnt/workbench/evidence/runs/blobin-ui01-20261012-01/qualification-20261012.json",
+    "scope": "180 Vulkan submissions, four real compositor screenshots, six scripted typed UI-state actions",
+    "native_capture_rerun_during_g01": false
+  },
+  "status": {
+    "ui_g01_primitive_ledger": true,
+    "ui_g01_extraction_map": true,
+    "ui_g01_runtime_design_contract": true,
+    "ui_g02_headless_tree": false,
+    "ui_g03_layout": false,
+    "ui_g04_real_user_input_e2e": false,
+    "ui_g05_motion_library": false,
+    "ui_g06_independent_gpu_displaylist": false,
+    "ui_g07_external_consumer": false,
+    "ui_g08_performance_and_accessibility": false,
+    "sixty_fps_qualified": false,
+    "cp03_hybrid60_pass": false,
+    "merge_push_deploy": false
+  },
+  "reviewer_independent_from_implementation": false
+}

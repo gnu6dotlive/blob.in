@@ -1,0 +1,65 @@
+{
+  "schema": "blob.in.ui_g02b_incremental_reconciliation.v1",
+  "date": "2026-10-12",
+  "gate": "UI-G02/B",
+  "verdict": "SCOPED_PASS",
+  "baseline_remote_commit": "489cb9f3db1052e3868ea412bcebffd67d414120",
+  "canonical_integration_branch": "main",
+  "scope": "headless keyed reconciliation, bounded-page COW and typed damage",
+  "checks": {
+    "rustfmt": {
+      "exit": 0,
+      "passed": 0,
+      "log_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "core-all-targets": {
+      "exit": 0,
+      "passed": 32,
+      "log_sha256": "c1787832deb33131ea44ed61f4b3651ae4e71f1e888f68e5e58b677d221d0527"
+    },
+    "clippy-strict": {
+      "exit": 0,
+      "passed": 0,
+      "log_sha256": "23ece6e8b6143673048de356927a80cf86648bd5a0db875102cecda04bdb23bc"
+    },
+    "no-external-dependencies": {
+      "exit": 0,
+      "passed": 0,
+      "log_sha256": "6126d140759c5336a3ca4e54f54913a4eeb7f0f748fdb5a88b8d9155cb07df5e"
+    },
+    "headless-example": {
+      "exit": 0,
+      "passed": 0,
+      "log_sha256": "af6545886b35eac5f7a3b96a864903553c1f8a210013138d92e2975b8d09dae4"
+    },
+    "workspace-lib-regression": {
+      "exit": 0,
+      "passed": 51,
+      "log_sha256": "7ad5c00b26bcf5e6b8be0e01dd058eb80dd4f0de010be380958e4416602d923c"
+    }
+  },
+  "source_sha256": {
+    "Cargo.toml": "e293d5ac5f8ffb6e0efd7f5d4a4194dc2132a5812216dabadc2c4479281ec2d3",
+    "Cargo.lock": "51130ade6f4d80042efa545cc0f0e395481569baa7f12731af3ba30b66ab8390",
+    "crates/blobin-ui-core/Cargo.toml": "5c21a3e849abdf2423660df0fad3e17b1f659d9b640a9da3c85f01e8f89c3b91",
+    "crates/blobin-ui-core/src/lib.rs": "43d1ac8268a4440efd4e335a98fb8eec4d1c665c525856821be7d4b30eba2538",
+    "crates/blobin-ui-core/tests/component_tree.rs": "a7d10ac1756b7d943a8aff10b3bf9cee1a6c662b147e7bffc963abcaf8bcc534",
+    "crates/blobin-ui-core/tests/transaction_adversarial.rs": "afe05d07d410e0c406159d3a64dd49c982cea0113cf314d9d3863ea09bc24a53",
+    "crates/blobin-ui-core/tests/incremental_reconciliation.rs": "0a5a7d611c95012eb7c1780790963d497a1c6362cddf453f5548adf7eb810c33",
+    "crates/blobin-ui-core/examples/tree_transaction.rs": "5a4d74c29a087f288ad42e0c5e6d3362392527d2b8e33721b03b0921614d224e",
+    "crates/blobin-ui-core/README.md": "4a68e7a1b1624e07b796e8527ee149f6be2cde6a25235644b3d3e91f7765690e",
+    "docs/BLOB-UI-G02B-INCREMENTAL-RECONCILIATION-20261012.md": "66490719386c4965004796481d5cec1b7252cc2fceef2af8e4e7e08d8fbf6a10",
+    "scripts/blobin_ui_g02b_verify.py": "ee686a761bb9ac1aac402ba2da57e7ba02f7a3d1ec89a428a910fa69f1cff1da"
+  },
+  "direct_tests_required": 32,
+  "independent_reconciliation_oracle_steps": 400,
+  "preexisting_adversarial_transaction_steps": 600,
+  "cow_page_size": 64,
+  "crate_non_std_dependencies": 0,
+  "archived_donor_source_imported": false,
+  "production_renderer_verified": false,
+  "real_pointer_or_keyboard_e2e": false,
+  "steady_60fps": false,
+  "cp03_hybrid60_pass": false,
+  "ui_g03_qualified": false
+}

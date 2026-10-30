@@ -1,0 +1,38 @@
+{
+  "archive_sha256": {
+    "production-events.jsonl": "a932196d68fd10efe690188f7a9859269da527aa25a19e3b19d7f8579c53ed5a",
+    "renderd.stderr": "75721747000f2e72f3d89e9f50795da9ffe5ac8c2545a04dc4ad28678a6f5066",
+    "renderd.stdout": "e0a07f6fa771974084fa119089cbf12a53930a80958e58565cff8c64e1c91f72",
+    "showcase.stderr": "0e569ccdf0053e149e9533511b3729df81ce6b8e0823561271f3aac193edb383",
+    "vector-strokes.png": "9ac154e768b53759537263edbfa7318cd13a1b51605ba9f8ead47aa975aae6b3",
+    "vector-strokes.rgba.gz": "cddcb378cda6d3c836320d758009d477b13a8702cbab71aaaa0dcacd09e556f5",
+    "weston.log": "4082c8f1cab34ca0cd559234011405241fe259ab5a3620fb5e3b4693adae3475",
+    "weston.stderr": "8e5dfcc7934ddaa3c4f2d87d80ddf40c842ccfce3e30c93c3de6a579807a886e"
+  },
+  "composed_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_draw_commands": 64,
+  "gpu_sdf_qualified": false,
+  "gpu_source_extent": [
+    1280,
+    800
+  ],
+  "gpu_uniform_buffer_and_bind_group_resident": 2,
+  "input_layers": 4,
+  "original_gpu_rgba_sha256": "cdba9b1c76e3c4d340076a429dd82eb25909bb039f7183585855916c13d57bea",
+  "physical_hid": false,
+  "real_renderer": "blobin_renderd CPU",
+  "scene": "3 live controls + 51 private rectangles + 4 real vector stroke segments",
+  "sdf_frame_count": 2,
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "stress_fixture_confined_to_private_wayland": true,
+  "stress_not_an_fps_benchmark": true,
+  "vector_segments": 4,
+  "verdict": "SCOPED_PASS_REAL_WGPU_64_COMMAND_VECTOR_SCENE",
+  "verified_stress_shape_pixels": 51,
+  "verified_stroke_center_pixels": 4
+}

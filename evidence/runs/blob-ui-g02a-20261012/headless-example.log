@@ -1,0 +1,3 @@
+BLOBIN_UI_CORE_HEADLESS_OK surface=42 revision=1 nodes=3
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running `/mnt/sandbox/builds/cargo/debug/examples/tree_transaction`

@@ -1,0 +1,2 @@
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/showcase)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.81s

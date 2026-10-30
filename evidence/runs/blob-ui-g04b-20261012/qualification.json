@@ -1,0 +1,92 @@
+{
+  "gate": "UI-G04/B",
+  "date": "2026-10-12",
+  "verdict": "NATIVE_WAYLAND_SCOPED_PASS_INPUT_E2E_HOLD",
+  "native_launch_qualified": true,
+  "compositor_delivered_input_qualified": false,
+  "ui_g04_full_pass": false,
+  "no_desktop_injection_performed": true,
+  "compositor_presentation_feedback_verified": false,
+  "cp03_hybrid60_pass": false,
+  "rdp_attempts": [
+    {
+      "name": "rdp-e2e-weston-gl",
+      "verdict": "E2E_HOLD",
+      "rdp_connected": false,
+      "compositor_winit_ingress": 0,
+      "activation_count": 0,
+      "gpu_frame_submissions": 1
+    },
+    {
+      "name": "rdp-e2e-tls-only",
+      "verdict": "E2E_HOLD",
+      "rdp_connected": false,
+      "compositor_winit_ingress": 0,
+      "activation_count": 0,
+      "gpu_frame_submissions": 1
+    },
+    {
+      "name": "rdp-e2e-rdp4",
+      "verdict": "E2E_HOLD",
+      "rdp_connected": false,
+      "compositor_winit_ingress": 0,
+      "activation_count": 0,
+      "gpu_frame_submissions": 1
+    },
+    {
+      "name": "rdp-e2e-legacy-only",
+      "verdict": "E2E_HOLD",
+      "rdp_connected": false,
+      "compositor_winit_ingress": 0,
+      "activation_count": 0,
+      "gpu_frame_submissions": 1
+    }
+  ],
+  "checks": {
+    "rustfmt": {
+      "pass": true,
+      "exit": 0,
+      "passed": 0,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "clippy": {
+      "pass": true,
+      "exit": 0,
+      "passed": 0,
+      "sha256": "ace02b042e619276f8647131acb5983ca1098924cf2d5dbd9d024a82359635ce"
+    },
+    "native-build": {
+      "pass": true,
+      "exit": 0,
+      "passed": 0,
+      "sha256": "ace02b042e619276f8647131acb5983ca1098924cf2d5dbd9d024a82359635ce"
+    },
+    "core-regression": {
+      "pass": true,
+      "exit": 0,
+      "passed": 65,
+      "sha256": "f42dcdef539b9659fc14283c135540ef266fbf399b9c38f5cb6d2786f616d77f"
+    },
+    "workspace-lib": {
+      "pass": true,
+      "exit": 0,
+      "passed": 51,
+      "sha256": "5c59a1d18e359f2fd8177fd92c1be993105b9afbe858ec5e91f7fe036044791b"
+    },
+    "native-smoke": {
+      "pass": true,
+      "exit": 0,
+      "sha256": "6cff7f6b182b790220e27d836dab0512ddee13de50c21e2ed105caf42b63cc0e"
+    }
+  },
+  "sha256": {
+    "crates/showcase/Cargo.toml": "4b287127d3bd26d65ec75c536cc237a7bfdd256a9303f075e3fb0aa03a70ba29",
+    "Cargo.lock": "1266191c3cd42af343fab378e7c04c741e3d9cfb57ca52492c08204905f6cabc",
+    "crates/showcase/src/bin/blobin_ui_g04b_wayland.rs": "34a372d7c3d2a6dfe52865326333677fd3d675ab12fee8a01e327a5dc16942c9",
+    "scripts/blobin_ui_g04b_native_smoke.py": "6ccb6c667ae242e2d9e13867cb135efbcc3feaff05325123fe610c5b284afc34",
+    "scripts/blobin_ui_g04b_rdp_e2e.py": "ef35adb0a918480f012b262b08326a5a660ad10abb9321a32a1c3eaf0e3ee203",
+    "scripts/blobin_ui_g04b_rdp_inject.c": "7f6de219a69ff63f1b5dfde319ae573ec3c7ae686ae1cabb4d08d86029b56edc",
+    "scripts/blobin_ui_g04b_verify.py": "87103962be959d2ee466c505a8c8daf85d42803419d64eee373145bada7aa102",
+    "docs/BLOB-UI-G04B-NATIVE-WAYLAND-INTEGRATION-20261012.md": "c482ff79d072a4555b36450644a3ab026aab4d19e8c2b6d4ef6935f681da77c0"
+  }
+}

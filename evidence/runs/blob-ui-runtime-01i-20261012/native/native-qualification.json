@@ -1,0 +1,33 @@
+{
+  "antialias_fractional_edge_pixels": 5,
+  "archive_sha256": {
+    "production-events.jsonl": "85b2dc03d0aaa36e6506c62f1394428d209e2b3123a12a4f0d67918e1e2648f3",
+    "renderd.stderr": "5aacaa789747086cd45f1d150d33ee659c621f4f6f85adc3fdd538fa1f53a5b3",
+    "renderd.stdout": "ef2083f392389e36d26992d1ab951f3406e80b605737339c7898a4355369bd69",
+    "showcase.stderr": "dabdedade4cb158d7f46467224d5a9c2ec557239978db556db32c44abe6ee9fa",
+    "two-holes-aa.png": "511ba28837896d224b4b8d289b68f36d7840db3e6b22a00158bf7ec1cd7ca74a",
+    "two-holes-aa.rgba.gz": "b6edb821701f5d3c62fb05ed93d39f1b595ff9306bf09ce07fd7ac49dabf4991",
+    "weston.log": "79eba64aeab97f802bc471bfb87492f0daaeb679eaa7789435675460edc91754",
+    "weston.stderr": "1fa4e82d3cf3c1ef8b860e1637f21881dcb2c59c8c5e25e5c98dbbf79da49aea"
+  },
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "fill_rule": "explicit bounded EvenOdd, one rectangular outer contour and 2 disjoint inner rectangles",
+  "full_color_and_transparent_pixels": 18,
+  "gpu_client_rgba_sha256": "84e83d5620d930295069dc3c51751b629e003095c0e095cc1cf685a9d97fed16",
+  "gpu_composition_layers": 4,
+  "gpu_sdf_qualified": false,
+  "hole_count": 2,
+  "internal_seam_pixels": 8,
+  "native_commands": 51,
+  "nonrectangular_holes_qualified": false,
+  "original_frames": 2,
+  "physical_input_qualified": false,
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "svg_arbitrary_winding_qualified": false,
+  "triangles": 42,
+  "verdict": "SCOPED_PASS_TWO_RECTANGULAR_HOLES_EVEN_ODD_EDGE_AA"
+}

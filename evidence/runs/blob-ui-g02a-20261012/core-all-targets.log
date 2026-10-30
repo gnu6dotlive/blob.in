@@ -1,0 +1,45 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 16 tests
+test changing_one_leaf_marks_only_leaf_and_ancestors ... ok
+test insert_child_at_middle_preserves_existing_ids ... ok
+test closed_surface_ids_are_not_aliases_for_old_nodes ... ok
+test creates_ordered_tree_with_unique_handles ... ok
+test custom_aborted_transaction_does_not_escape ... ok
+test invalid_reorder_is_atomic ... ok
+test invalid_child_index_rolls_back_insert_and_revision ... ok
+test invalid_stale_handle_cannot_modify_current_component ... ok
+test reorder_changes_sibling_order_without_changing_node_identity ... ok
+test descendant_removal_invalidates_all_and_reuses_only_new_generation ... ok
+test root_order_can_be_changed_without_a_parent ... ok
+test separate_surfaces_have_independent_revision_and_lifetimes ... ok
+test snapshots_are_send_and_sync ... ok
+test snapshot_is_immutable_after_successive_transactions ... ok
+test surface_cannot_be_duplicated_or_targeted_before_opening ... ok
+test unmodified_properties_and_no_op_reorder_do_not_bump_revision ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test empty_transaction_is_a_pure_no_op ... ok
+test created_and_removed_in_the_same_transaction_is_not_dirty ... ok
+test aborted_handle_can_never_become_a_valid_handle ... ok
+test failed_transaction_cannot_invalidate_a_different_surface ... ok
+test deterministic_seeded_mutation_replay_with_600_steps ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_core-d0f84a219c0aebd6)
+     Running tests/component_tree.rs (/mnt/sandbox/builds/cargo/debug/deps/component_tree-fe73327344c72a5a)
+     Running tests/transaction_adversarial.rs (/mnt/sandbox/builds/cargo/debug/deps/transaction_adversarial-9a5b7a03898bc9bc)
+     Running unittests examples/tree_transaction.rs (/mnt/sandbox/builds/cargo/debug/examples/tree_transaction-e4effa3dbf1a3228)

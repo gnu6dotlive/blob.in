@@ -1,0 +1,8 @@
+
+running 4 tests
+test app::ac04_production_input_tests::egui_geometry_epoch_change_cancels_active_drag ... ok
+test app::ac04_production_input_tests::real_egui_canvas_escape_during_drag_keeps_scene_and_scheduler ... ok
+test app::ac04_production_input_tests::real_egui_pan_is_preview_only_until_release ... ok
+test app::ac04_production_input_tests::real_egui_canvas_drag_previews_then_one_commit_then_undo ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 32 filtered out; finished in 0.09s

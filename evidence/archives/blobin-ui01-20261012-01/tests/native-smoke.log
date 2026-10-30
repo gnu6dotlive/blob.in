@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py", line 115, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py", line 112, in main
+    report=run(a.root,a.binary,a.frames)
+  File "/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py", line 50, in run
+    require(viewer.poll() is None,"UI_EXITED_BEFORE_CAPTURE")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py", line 8, in require
+    if not ok:raise RuntimeError(code)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: UI_EXITED_BEFORE_CAPTURE

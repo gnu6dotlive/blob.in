@@ -1,0 +1,86 @@
+
+running 31 tests
+test memfd::tests::sealed_buffer_cannot_be_modified ... ok
+test memfd::tests::rejects_unsealed_truncated_and_foreign ... ok
+test proto::tests::backend_offer_requires_cuda_configured ... ok
+test memfd::tests::sealed_roundtrip ... ok
+test proto::tests::accepts_renderd_frame_sequence_and_handshake_shapes ... ok
+test proto::tests::frame_checks ... ok
+test proto::tests::request_validation ... ok
+test proto::tests::rejects_wrong_version_unknown_fields_and_types ... ok
+test proto::tests::matches_the_contract_example_byte_for_byte_semantics ... ok
+test proto::tests::maximal_request_fits_control_limit ... ok
+test qchain_gpu::tests::cpu_protocol_cannot_impersonate_gpu_provenance ... ok
+test transport::tests::datagram_boundaries_and_fds ... ok
+test transport::tests::oversize_and_too_many_fds_are_rejected ... ok
+test transport::tests::private_dir_checks ... ok
+test qchain_gpu::hardening_tests::orphaned_receiver_fails_without_hanging ... ok
+test qchain_gpu::hardening_tests::forged_response_claims_are_rejected ... ok
+test qchain_gpu::hardening_tests::one_missing_or_two_extra_response_descriptors_are_rejected ... ok
+test qchain_gpu::hardening_tests::overflow_and_noncanonical_request_id_fail_closed ... ok
+test qchain_gpu::hardening_tests::unsealed_response_memfd_is_rejected ... ok
+test qchain_gpu::hardening_tests::semantic_identity_cannot_be_replaced_by_equal_pixels ... ok
+test qchain_gpu::tests::negative_scene_and_provenance_mutations ... ok
+test transport::tests::close_and_shutdown_end_recv ... ok
+test qchain_gpu::hardening_tests::orphaned_source_request_fails_without_hanging ... ok
+test qchain_gpu::hardening_tests::truncated_and_oversized_sealed_memfds_are_rejected ... ok
+test transport::tests::read_timeout ... ok
+test qchain::tests::negative_wrong_scene_epoch_and_hash_rejected ... ok
+test qchain_gpu::hardening_tests::malformed_request_and_fd_injection_are_rejected ... ok
+test qchain_gpu::hardening_tests::pixel_alpha_and_mismatched_source_hash_are_rejected ... ok
+test qchain_gpu::tests::exact_sealed_memfd_gpu_roundtrip ... ok
+test qchain::tests::sealed_socket_roundtrip_and_exact_pixel_digest ... ok
+test qchain_gpu::hardening_tests::repeated_new_connections_remain_valid ... ok
+
+test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 36 tests
+test ac04_scene_gestures::tests::external_edit_prevents_clobbering_undo ... ok
+test ac02_scene::tests::escape_clears_preview_without_reorder ... ok
+test ac02_scene::tests::cancelled_drag_and_resize_preserve_revision ... ok
+test ac02_scene::tests::simple_click_still_activates_once_without_drag_commit ... ok
+test ac02_scene::tests::subthreshold_drag_does_not_mutate_tree ... ok
+test ac02_scene::tests::second_card_can_be_reordered_left_with_exactly_one_revision ... ok
+test ac02_scene::tests::preview_does_not_commit_reorder_updates_real_layout_and_hit ... ok
+test ac04_scene_gestures::tests::pan_absolute_preview_does_not_change_canonical_camera ... ok
+test ac04_scene_gestures::tests::focus_loss_and_escape_cancel_without_mutation ... ok
+test ac04_scene_gestures::tests::stale_target_and_external_mutation_fail_closed ... ok
+test ac04_scene_gestures::tests::previews_are_absolute_and_only_one_canonical_commit ... ok
+test ac04_scene_gestures::tests::invalid_deltas_cancel_not_commit ... ok
+test scene::tests::camera_transform_and_bounds ... ok
+test scene::tests::editing_keeps_the_first_circle_a_union ... ok
+test scene::tests::hit_prefers_topmost ... ok
+test scheduler::tests::failure_frees_the_slot_without_retry_loop ... ok
+test scene::tests::labs_are_valid_scenes ... ok
+test scheduler::tests::coalesces_bursts_into_one_request ... ok
+test ui_motion::tests::reduced_motion_is_immediate ... ok
+test scheduler::tests::fit_respects_limits_and_aspect ... ok
+test ui_motion::tests::responsive_layout_never_overflows ... ok
+test ui_motion::tests::selected_surface_identity_and_revision ... ok
+test ui_motion::tests::spring_converges_at_60hz ... ok
+test scheduler::tests::session_reset_rerenders ... ok
+test view::tests::current_frame_fills_the_viewport_exactly ... ok
+test ui_widgets::tests::contour_is_finite_and_animated ... ok
+test view::tests::round_trip ... ok
+test view::tests::stale_frame_keeps_world_geometry_after_resize ... ok
+test view::tests::zoom_about_keeps_anchor ... ok
+test scheduler::tests::stale_and_unknown_frames_are_not_presented ... ok
+test ui_motion::tests::frame_hitch_bounded ... ok
+test ui_motion::tests::pause_and_reduced_motion_do_not_accumulate_time ... ok
+test app::ac04_production_input_tests::real_egui_canvas_escape_during_drag_keeps_scene_and_scheduler ... ok
+test app::ac04_production_input_tests::egui_geometry_epoch_change_cancels_active_drag ... ok
+test app::ac04_production_input_tests::real_egui_pan_is_preview_only_until_release ... ok
+test app::ac04_production_input_tests::real_egui_canvas_drag_previews_then_one_commit_then_undo ... ok
+
+test result: ok. 36 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,31 @@
+{
+  "verdict": "SCOPED_PASS_01C_NATIVE_CAMERA_RESET_AND_GPU_UI_PIXELS",
+  "source": "actual blobin-renderd CPU / real showcase / Weston private input",
+  "ui_third_component": true,
+  "g02_surface": 268,
+  "g03_bounds": [
+    1143.90625,
+    631.0,
+    94.0,
+    26.0
+  ],
+  "batched_nodes": 3,
+  "batched_draw_commands": 9,
+  "semantic_reset_count": 1,
+  "pointer_release_count": 2,
+  "sdf_requests": 2,
+  "sdf_frames": 2,
+  "revisions": [
+    3,
+    4
+  ],
+  "same_geometry_digest": false,
+  "shader_gpu_sdf_qualified": false,
+  "client_gpu_readback": true,
+  "compositor_present_feedback": false,
+  "original_frame_sha256": {
+    "reset-before": "485488cca65e53454a5c5c26ec9fb2a6ca0b98d1d804fef773fc4d447b4c81c7",
+    "reset-after": "b331bc5b1570bfb7e4e2cb423a76c913de451fa73f98c796eceb0d57d555d25e"
+  },
+  "reset_button_changed_channel_bytes": 6818
+}

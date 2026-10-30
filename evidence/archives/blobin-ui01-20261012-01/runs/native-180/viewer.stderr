@@ -1,0 +1,39 @@
+
+thread 'main' (3421385) panicked at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/epaint-0.36.2/src/textures.rs:337:9:
+Dropped TexturesDelta with 1 unapplied deltas. Deltas need to be handled. If you want to drop this intentionally call `clear` before dropping.
+stack backtrace:
+   0: __rustc::rust_begin_unwind
+             at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/std/src/panicking.rs:689:5
+   1: core::panicking::panic_fmt
+             at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:80:14
+   2: <epaint::textures::TexturesDelta as core::ops::drop::Drop>::drop
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/epaint-0.36.2/src/textures.rs:337:9
+   3: core::ptr::drop_glue::<epaint::textures::TexturesDelta>
+             at /home/tension_atoi/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:825:1
+   4: <blobin_ui_lab::Lab>::render
+             at /home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase/src/bin/blobin_ui_lab.rs:199:5
+   5: <blobin_ui_lab::Lab as winit::application::ApplicationHandler>::window_event
+             at /home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase/src/bin/blobin_ui_lab.rs:220:18
+   6: winit::event_loop::dispatch_event_for_app::<(), blobin_ui_lab::Lab>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/event_loop.rs:642:56
+   7: <winit::event_loop::EventLoop<()>>::run_app::<blobin_ui_lab::Lab>::{closure#0}
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/event_loop.rs:265:49
+   8: <&mut <winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0} as core::ops::function::FnMut<(winit::event::Event<()>, &winit::event_loop::ActiveEventLoop)>>::call_mut
+             at /home/tension_atoi/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:298:21
+   9: <winit::platform_impl::linux::wayland::event_loop::EventLoop<()>>::single_iteration::<&mut <winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0}>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/wayland/event_loop/mod.rs:502:17
+  10: <winit::platform_impl::linux::wayland::event_loop::EventLoop<()>>::pump_events::<&mut <winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0}>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/wayland/event_loop/mod.rs:220:18
+  11: <winit::platform_impl::linux::wayland::event_loop::EventLoop<()>>::run_on_demand::<<winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0}>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/wayland/event_loop/mod.rs:190:24
+  12: <winit::platform_impl::linux::EventLoop<()>>::run_on_demand::<<winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0}>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/mod.rs:820:61
+  13: <winit::platform_impl::linux::EventLoop<()>>::run::<<winit::event_loop::EventLoop<()>>::run_app<blobin_ui_lab::Lab>::{closure#0}>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/mod.rs:813:14
+  14: <winit::event_loop::EventLoop<()>>::run_app::<blobin_ui_lab::Lab>
+             at /home/tension_atoi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/event_loop.rs:265:25
+  15: blobin_ui_lab::main
+             at /home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase/src/bin/blobin_ui_lab.rs:306:11
+  16: <fn() -> core::result::Result<(), alloc::string::String> as core::ops::function::FnOnce<()>>::call_once
+             at /home/tension_atoi/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:250:5
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

@@ -1,0 +1,31 @@
+{
+  "closed_round_stroke_segments": 7,
+  "composition_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "filled_triangles": 3,
+  "gpu_sdf_qualified": false,
+  "gpu_witness_height": 800,
+  "gpu_witness_width": 1280,
+  "independent_closed_outline_pixels": 9,
+  "independent_polygon_interior_pixels": 7,
+  "independent_shared_diagonal_no_seam_pixels": 6,
+  "internal_triangle_aa_qualified": false,
+  "joins": "opaque overlapping round-caps, no bevel/miter",
+  "original_gpu_rgba_sha256": "6203e5e2a7006070b48b34c4e22b05e6913f9a0745f1ac96d7b84c3f93b93b57",
+  "polygon_types_qualified": "strict convex only; no holes, no concavity",
+  "prior_01f_curve_sample_pixels": 66,
+  "prior_rectangle_centers": 17,
+  "quadratic_cubic_stroke_segments": 28,
+  "rectangles": 26,
+  "renderer": "real blobin_renderd CPU + real showcase wgpu",
+  "sdf_cpu_revisions": [
+    3,
+    4
+  ],
+  "sdf_frames": 2,
+  "shapes": "two strictly convex simple polygons (square + triangle)",
+  "strokes": 35,
+  "total_native_gpu_commands": 64,
+  "verdict": "SCOPED_PASS_NATIVE_CONVEX_CLOSED_PATH_FILLED_TRIANGLES"
+}

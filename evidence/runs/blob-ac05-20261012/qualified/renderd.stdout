@@ -1,0 +1,2 @@
+BLOB_FRAME_LISTENING protocol=BLOB-FRAME-v1 socket=/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ac05-20261012/preflight/render.sock qualification=PREVIEW_ONLY
+BLOB_FRAME_EXIT clean=PASS frames=2

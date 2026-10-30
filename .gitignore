@@ -1,0 +1,6 @@
+/target/
+/renders/
+*.png
+__pycache__/
+# Evidence captures are kept (window-only grim captures, ~250 KB each).
+!/evidence/runs/**/*.png

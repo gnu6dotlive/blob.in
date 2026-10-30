@@ -1,0 +1,190 @@
+{
+  "schema": "blobin-showcase-e2e/1",
+  "date_utc": "2026-10-10T04:48:47Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "viewer": "/mnt/sandbox/builds/cargo/release/blobin-showcase",
+  "socket": "/run/user/1000/blobin-showcase/render.sock",
+  "backend": "vulkan",
+  "lab": "5",
+  "mode": "resize",
+  "hyprland": "v0.56.2",
+  "checks": [
+    {
+      "check": "native Wayland window mapped by Hyprland",
+      "pass": true,
+      "detail": "{\"class\": \"live.gnu6.blobin-showcase\", \"xwayland\": false, \"pid\": 1936592}"
+    },
+    {
+      "check": "BLOB-FRAME-v1 session established",
+      "pass": true,
+      "detail": "blobin-cuda05f-render-bridge"
+    },
+    {
+      "check": "window 1000x800: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 800] -> frame [652, 800] backend=vulkan qualification=CUDA05F_GATE_PASS rtt=299ms"
+    },
+    {
+      "check": "capture 01-vulkan-1000x800 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 950] [1000, 800]"
+    },
+    {
+      "check": "window 960x720: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [612, 720] -> frame [612, 720] backend=vulkan qualification=CUDA05F_GATE_PASS rtt=289ms"
+    },
+    {
+      "check": "capture 02-vulkan-960x720 lies within one monitor",
+      "pass": true,
+      "detail": "[1990, 990] [960, 720]"
+    },
+    {
+      "check": "window 1000x900: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 900] -> frame [652, 900] backend=vulkan qualification=CUDA05F_GATE_PASS rtt=379ms"
+    },
+    {
+      "check": "capture 03-vulkan-1000x900 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 900] [1000, 900]"
+    },
+    {
+      "check": "window 760x520: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [412, 520] -> frame [412, 520] backend=vulkan qualification=CUDA05F_GATE_PASS rtt=379ms"
+    },
+    {
+      "check": "capture 04-vulkan-760x520 lies within one monitor",
+      "pass": true,
+      "detail": "[2090, 1090] [760, 520]"
+    },
+    {
+      "check": "resize storm settles on a frame matching the final viewport",
+      "pass": true,
+      "detail": "final viewport [652, 660] frame [652, 660]"
+    },
+    {
+      "check": "resize storm coalesced",
+      "pass": true,
+      "detail": "40 viewport changes -> 4 requests"
+    },
+    {
+      "check": "close via compositor: process exits 0",
+      "pass": true,
+      "detail": "exit 0"
+    },
+    {
+      "check": "clean shutdown recorded",
+      "pass": true,
+      "detail": "{\"clean\": true, \"client_threads_joined\": true, \"errors\": 0, \"event\": \"shutdown\", \"failed\": 0, \"frame_texture_released\": true, \"issued\": 9, \"presented\": 9, \"rejected\": 0, \"stale\": 0, \"t_ms\": 8920.977705000001}"
+    },
+    {
+      "check": "never more than one request in flight",
+      "pass": true,
+      "detail": "max 1"
+    },
+    {
+      "check": "presented revisions strictly increase",
+      "pass": true,
+      "detail": "9 frames"
+    },
+    {
+      "check": "every presented frame reports the requested backend",
+      "pass": true,
+      "detail": "['vulkan']"
+    },
+    {
+      "check": "no rejected/failed frames",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-vulkan-1000x800.png",
+      "window": [
+        1000,
+        800
+      ],
+      "sha256": "6cf4181874aba9a878ad982d95f204aa310b6a5044287e9db8e688240f008307",
+      "frame": {
+        "request_id": 2,
+        "revision": 6,
+        "size": [
+          652,
+          800
+        ],
+        "backend_actual": "vulkan",
+        "view_mode": "normals",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "f2f081086f2bb7b3c37315c8c0eed169836cfbbd03a7c7c40d9f72cabd13b947"
+      }
+    },
+    {
+      "file": "02-vulkan-960x720.png",
+      "window": [
+        960,
+        720
+      ],
+      "sha256": "f41760fe387973812ee639e9a78fb4740b27cf7152832c2a1311e196beff6441",
+      "frame": {
+        "request_id": 3,
+        "revision": 7,
+        "size": [
+          612,
+          720
+        ],
+        "backend_actual": "vulkan",
+        "view_mode": "normals",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "ed5bb907ba1a5ef328016d7ac305d0dca60bbac1b5c399ce6e8028b48309ef8b"
+      }
+    },
+    {
+      "file": "03-vulkan-1000x900.png",
+      "window": [
+        1000,
+        900
+      ],
+      "sha256": "b02c4b7b349a4c338dde5bb4afec09748159ba199002dbef80d375ef771fe316",
+      "frame": {
+        "request_id": 4,
+        "revision": 8,
+        "size": [
+          652,
+          900
+        ],
+        "backend_actual": "vulkan",
+        "view_mode": "normals",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "f6c551c941cd8d617803dc338442815a4708d93911ea9517f5d4d21fc0420a77"
+      }
+    },
+    {
+      "file": "04-vulkan-760x520.png",
+      "window": [
+        760,
+        520
+      ],
+      "sha256": "d52525db6121f5a3b422dd1c92f9bc1df89205557d7a716eb5397a517597d167",
+      "frame": {
+        "request_id": 5,
+        "revision": 9,
+        "size": [
+          412,
+          520
+        ],
+        "backend_actual": "vulkan",
+        "view_mode": "normals",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "d65fbbcfc0bb892fe752fb4980d47765ec70e6459ba63601edba1a4ba1686f94"
+      }
+    }
+  ],
+  "artifacts": {
+    "trace.jsonl": "4367c3aea3bada8d5d41f8ecaf3b8c556174adb046f2055df3643d9efa6c9f66",
+    "viewer.log": "fc1c7f7c9f9a007556ae67becbe1118bedcb70a61934f208fc8fdea9a1063f5e"
+  },
+  "pass": true
+}

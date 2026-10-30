@@ -1,0 +1,2 @@
+BLOBIN_AC02_NATIVE_READY backend=Vulkan scale=1
+BLOBIN_AC02_NATIVE_FINISHED ingress=6 receipts=6 commits=1 submissions=7

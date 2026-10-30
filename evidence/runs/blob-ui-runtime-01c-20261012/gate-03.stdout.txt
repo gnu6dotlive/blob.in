@@ -1,0 +1,13 @@
+
+running 8 tests
+test tests::action_visual_state_is_semantic_and_deterministic ... ok
+test tests::state_changes_only_thumb_and_track ... ok
+test tests::transforms_reject_nonfinite_and_inverted_scales ... ok
+test tests::clipping_and_semantic_target ... ok
+test tests::transform_and_nested_clips_preserve_semantics ... ok
+test tests::rejects_stale_geometry_epoch ... ok
+test tests::no_brand_dependency_or_external_renderer ... ok
+test tests::action_rejects_stale_layout_and_empty_clip ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

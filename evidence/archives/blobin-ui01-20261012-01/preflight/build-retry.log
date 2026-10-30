@@ -1,0 +1,33 @@
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase)
+error[E0499]: cannot borrow `*self` as mutable more than once at a time
+   --> crates/showcase/src/bin/blobin_ui_lab.rs:179:17
+    |
+128 |           let Some(g)=self.gpu.as_mut() else {return};
+    |                       -------- first mutable borrow occurs here
+...
+179 |                   self.record("gpu_frame_submitted",json!({
+    |  _________________^^^^______________________________-
+    | |                 |
+    | |                 second mutable borrow occurs here
+180 | |                     "width":g.config.width,"height":g.config.height,
+181 | |                     "phase":self.runtime.phase,
+182 | |                     "scene":self.runtime.selected,
+...   |
+185 | |                     "cpu_frame_ms":start.elapsed().as_secs_f64()*1000.0
+186 | |                 }));
+    | |__________________- first borrow later used here
+
+error[E0499]: cannot borrow `*self` as mutable more than once at a time
+   --> crates/showcase/src/bin/blobin_ui_lab.rs:245:21
+    |
+214 |         if let Some(g)=&mut self.gpu {
+    |                        ------------- first mutable borrow occurs here
+...
+245 |                     self.render();
+    |                     ^^^^ second mutable borrow occurs here
+...
+256 |                 g.window.request_redraw();
+    |                 -------- first borrow later used here
+
+For more information about this error, try `rustc --explain E0499`.
+error: could not compile `blobin-showcase` (bin "blobin_ui_lab") due to 2 previous errors

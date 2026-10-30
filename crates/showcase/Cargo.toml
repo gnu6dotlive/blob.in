@@ -1,0 +1,48 @@
+[package]
+name = "blobin-showcase"
+description = "Native Wayland surface presenting BLOB-FRAME-v1 frames"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "blobin-showcase"
+path = "src/main.rs"
+
+[features]
+cpja5-present-wait = ["wgpu-hal/gnu6-cpja5-present-wait"]
+cpja6-zero-timeout-test = ["wgpu-hal/gnu6-cpja6-zero-timeout-test"]
+cpja7c-device-lost-test = ["cpja5-present-wait", "wgpu-hal/gnu6-cpja7c-device-lost-test"]
+cpja7d-multi-inflight = ["cpja5-present-wait", "wgpu-hal/gnu6-cpja7d-multi-inflight"]
+cpja7db-async-retire = ["cpja7d-multi-inflight", "wgpu-hal/gnu6-cpja7db-async-retire"]
+cpja7e-adaptive-scheduler = ["cpja7db-async-retire", "wgpu-hal/gnu6-cpja7e-adaptive-scheduler"]
+cpja7f-resident = ["cpja7e-adaptive-scheduler"]
+cpja7g-active-gpu = ["cpja7f-resident"]
+cpja7h-timing = ["cpja7g-active-gpu"]
+cpja7i-gpu-timestamps = ["cpja7h-timing"]
+cpja7j-mmap-consumer = ["cpja7i-gpu-timestamps"]
+cpja7eb-benchmark = ["cpja7e-adaptive-scheduler", "wgpu-hal/gnu6-cpja7eb-benchmark"]
+
+[dependencies]
+blobin-ui-core = { path = "../blobin-ui-core" }
+blobin-ui-scene = { path = "../blobin-ui-scene" }
+wgpu-hal = { version = "30.0.1" }
+blob-frame.workspace = true
+rustix = { workspace = true, features = ["time"] }
+log.workspace = true
+env_logger.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+winit.workspace = true
+wgpu.workspace = true
+egui.workspace = true
+egui-wgpu.workspace = true
+egui-winit.workspace = true
+pollster.workspace = true
+ash = "0.38"
+raw-window-handle = "0.6"
+
+[dev-dependencies]
+blob-frame-testserver.workspace = true

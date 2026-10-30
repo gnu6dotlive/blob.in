@@ -1,0 +1,3 @@
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/showcase)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.80s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_showcase-90b427bc08676f0f)

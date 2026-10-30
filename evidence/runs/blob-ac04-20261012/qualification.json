@@ -1,0 +1,151 @@
+{
+  "contract": "BLOB-AC-04",
+  "date_utc": "2026-10-12T15:12:02.627030+00:00",
+  "repo": "tension-atoi/blob.in-showcase",
+  "branch": "main",
+  "baseline": "ef4ca6d1ae7c1b06695c5ebff9a9d49077dc0883",
+  "origin": "https://github.com/tension-atoi/blob.in-showcase.git",
+  "source_sha256": {
+    "contracts/BLOB-AC-04-PRODUCTION-UI-ADOPTION-20261012.md": "26acc68ef5a4c32cd33804093f98d06896bbf80027b83c14f0ef5ce548e20ed7",
+    "docs/BLOB-AC-04-PRODUCTION-UI-QUALIFICATION-20261012.md": "bf36956920c1610fcf90c9d618c3dbffae28166eac142accc4deab2b70ee2c78",
+    "docs/PROGRAM-INTEGRATION-SPINE-20261012.md": "af621114e8e39d01713ab5355b287b14965ce3168bd0452103e4e1a8655a53ee",
+    "crates/showcase/src/ac04_scene_gestures.rs": "41038af1c729710a3f61a1da411be61caa59b54c80860d5d2b689f2b5aa16b56",
+    "crates/showcase/src/app.rs": "9da6c7372620e46d3236eae22fff8ac8cfd399ad74d06f570fc661e03a84ed65",
+    "crates/showcase/src/lib.rs": "f328436cec11c6e6762de6823482623423f5494e2a82ce2c4ba40a0bd56da756",
+    "scripts/blob_ac04_verify.py": "7ec3a2da54d8b12fc886975d6b778b53e18790ee107dcd1042f609101545d7ea"
+  },
+  "method": "headless actual-egui Context.run_ui input events, model tests, production offline build, no compositor/oracle claim",
+  "source_license": "First-party local Rust only; no ArtCraft imported",
+  "renderer_owner": "BLOB-FRAME-v1 remote runtime (unchanged)",
+  "physical_input": "NOT_TESTED",
+  "production_compositor_e2e": "NOT_TESTED",
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "commands": [
+    {
+      "argv": [
+        "rustfmt",
+        "--edition",
+        "2021",
+        "--check",
+        "crates/showcase/src/ac04_scene_gestures.rs"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-01.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac04_scene_gestures"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-02.stdout.txt",
+      "stdout_sha256": "4c9ef662fb9aec3b8cf11d12168a4eb0bde60dced33969b817570454b8052ff1",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-02.stderr.txt",
+      "stderr_sha256": "c1d19d81ec10ea3279d1f1e508b85a4aa1f79efd64e5ccf01f21b00cbbab23fe"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac04_production_input_tests"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-03.stdout.txt",
+      "stdout_sha256": "5f553cae9528e4858da6322ff8f5add6c6b9541c15d6b422f063d721a6f7fb66",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-03.stderr.txt",
+      "stderr_sha256": "648ca07e5c3055a31e1411840cf3a21a4415fcbad67b3b5610031dfd70d5385c"
+    },
+    {
+      "argv": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "--bin",
+        "blobin-showcase",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-04.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-04.stderr.txt",
+      "stderr_sha256": "a5f4c585ee974ca44916ac30a98bbc189e067a7e0a6bc6d2e8d6bc525be724af"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-05.stdout.txt",
+      "stdout_sha256": "2b3f43387edf82ee89897961911c863f25d97d0c9c9c379ba3c983cc92121276",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-05.stderr.txt",
+      "stderr_sha256": "92782b366348fa898055e62cc261622019f7da6ddc8d12ae0874d3a1b986185f"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "--workspace",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-06.stdout.txt",
+      "stdout_sha256": "35b26480bf66fcf53e49c8c756f615821689bc36725d1dd02da9f8f848032ba0",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-06.stderr.txt",
+      "stderr_sha256": "4cab9f084a967964dec3656b488cd81b52ae9774351be9b6dc30550a41301fde"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--bin",
+        "blobin-showcase"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-07.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-07.stderr.txt",
+      "stderr_sha256": "a66991ce891cef48f6bb2dd19870a812b741f6ab6f35bdba5e4e4ad58cbad27d"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac04-20261012/gate-08.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac04-20261012/gate-08.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "egui_oracle": "4/4 PASS (production ui_root + actual egui events)",
+  "result": "SCOPED_PASS_PRODUCTION_EGUI_NO_COMPOSITOR_E2E"
+}

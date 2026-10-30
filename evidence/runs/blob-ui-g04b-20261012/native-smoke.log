@@ -1,0 +1,1 @@
+{"gate": "UI-G04/B", "verdict": "NATIVE_WAYLAND_LAUNCH_SCOPED_PASS_INPUT_E2E_HOLD", "private_compositor": true, "gpu_backend": "Vulkan", "native_window": true, "frames_submitted": 1, "winit_ingress": 0, "compositor_pointer_keyboard_e2e": false, "compositor_presented_feedback": false, "binary_sha256": "889edc996ed4c633b228a9a686ae1b05919002b77973a5d41fdab456bb7bb363"}

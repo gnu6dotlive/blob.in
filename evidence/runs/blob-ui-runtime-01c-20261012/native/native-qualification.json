@@ -1,0 +1,43 @@
+{
+  "archive_sha256": {
+    "production-events.jsonl": "8765e56ca94d651e495d79c91c61954d4e859e3de71366987497172842641295",
+    "renderd.stderr": "9fc5f739051c6f4744a7be965b14a123eac17ca3ef0e6bb1ef93b55208b53ecb",
+    "renderd.stdout": "e53b93171f486aa7937bb7db50c34b97abf3ce6339aeb6c8da3536ad0ff4f89c",
+    "reset-after.png": "708e973479bb15bad2d9d36ba4ef8e5f90b7862aaab2d467a6d1838b66f476ad",
+    "reset-after.rgba.gz": "c2fdacdfc1d03309c4f8c55125945c5f783abc6d316f1e2ec1077f263b339830",
+    "reset-before.png": "a659169e634d5736423bb3f4c6c58791afa7945432752f354d2bbdb93e8046e8",
+    "reset-before.rgba.gz": "6a9d19f969b3f1d30ef93ed34cb7df4cd43132d2d4983194d35a0d2ed223c464",
+    "showcase.stderr": "0a437da42cd7ebf56bc268a68848acacab3512fbdcbe483c3ced89b21c08ed7d",
+    "weston.log": "355ff9a05d46508619f836aca7628f206ac7fa1f7b358f5be0919759390ec548",
+    "weston.stderr": "9dffde7b50ce7db0368a368da5701957a5111d98f7f7e65a868605828eb9f0ae"
+  },
+  "batched_draw_commands": 9,
+  "batched_nodes": 3,
+  "client_gpu_readback": true,
+  "compositor_present_feedback": false,
+  "g02_surface": 268,
+  "g03_bounds": [
+    1143.90625,
+    631.0,
+    94.0,
+    26.0
+  ],
+  "original_frame_sha256": {
+    "reset-after": "143e7c4e811170a6c1b349e00703a571efb8fc9ac8f730f1c50c27daaf46a272",
+    "reset-before": "598dd525f8089838fae6583f75554bda1155a42e3041831e2b4bcf6dbfe99d13"
+  },
+  "pointer_release_count": 2,
+  "reset_button_changed_channel_bytes": 6818,
+  "revisions": [
+    3,
+    4
+  ],
+  "same_geometry_digest": false,
+  "sdf_frames": 2,
+  "sdf_requests": 2,
+  "semantic_reset_count": 1,
+  "shader_gpu_sdf_qualified": false,
+  "source": "actual blobin-renderd CPU / real showcase / Weston private input",
+  "ui_third_component": true,
+  "verdict": "SCOPED_PASS_01C_NATIVE_CAMERA_RESET_AND_GPU_UI_PIXELS"
+}

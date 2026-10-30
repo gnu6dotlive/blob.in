@@ -1,0 +1,13 @@
+/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py:66: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  values=rgb.resize((64,48)).getdata()
+BLOBIN_UI_WESTON_CAPTURE_PASS 35 sample-01.png
+/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py:66: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  values=rgb.resize((64,48)).getdata()
+BLOBIN_UI_WESTON_CAPTURE_PASS 80 sample-02.png
+/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py:66: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  values=rgb.resize((64,48)).getdata()
+BLOBIN_UI_WESTON_CAPTURE_PASS 125 sample-03.png
+/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/scripts/blobin_ui01_run.py:66: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  values=rgb.resize((64,48)).getdata()
+BLOBIN_UI_WESTON_CAPTURE_PASS 160 sample-04.png
+UI01_NATIVE_VULKAN_INTERACTIVE_SCENE_SCOPED_PASS 180 screenshots 4

@@ -1,0 +1,28 @@
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.55s
+     Running unittests src/lib.rs (/mnt/workbench/build/qchain-cpja7cb-20261011/debug/deps/blobin_showcase-68acace8bd6983af)
+
+running 20 tests
+test scene::tests::camera_transform_and_bounds ... ok
+test scene::tests::editing_keeps_the_first_circle_a_union ... ok
+test scene::tests::hit_prefers_topmost ... ok
+test scene::tests::labs_are_valid_scenes ... ok
+test scheduler::tests::coalesces_bursts_into_one_request ... ok
+test scheduler::tests::failure_frees_the_slot_without_retry_loop ... ok
+test scheduler::tests::session_reset_rerenders ... ok
+test scheduler::tests::stale_and_unknown_frames_are_not_presented ... ok
+test scheduler::tests::fit_respects_limits_and_aspect ... ok
+test ui_motion::tests::frame_hitch_bounded ... ok
+test ui_motion::tests::pause_and_reduced_motion_do_not_accumulate_time ... ok
+test ui_motion::tests::reduced_motion_is_immediate ... ok
+test ui_motion::tests::responsive_layout_never_overflows ... ok
+test ui_motion::tests::selected_surface_identity_and_revision ... ok
+test ui_motion::tests::spring_converges_at_60hz ... ok
+test view::tests::current_frame_fills_the_viewport_exactly ... ok
+test view::tests::round_trip ... ok
+test ui_widgets::tests::contour_is_finite_and_animated ... ok
+test view::tests::stale_frame_keeps_world_geometry_after_resize ... ok
+test view::tests::zoom_about_keeps_anchor ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

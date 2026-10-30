@@ -1,0 +1,113 @@
+{
+  "compositor_presentation_feedback": false,
+  "control_bounds": [
+    946.0,
+    331.0,
+    76.0,
+    26.0
+  ],
+  "controlled_channel_byte_changes": 5292,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_uniform_uploads_during_run": 5,
+  "graphics": "2 G02/G03 control lists -> one persistent wgpu buffer/group/pass in real Wayland swapchain",
+  "input": "private Weston 15 artificial pointer -> production egui action",
+  "input_releases": 2,
+  "legacy_toggle_state_unchanged_until_its_own_click": true,
+  "native_batches_containing_both_widgets": 35,
+  "old_toggle_changed_without_new_sdf_request": true,
+  "old_toggle_ui_revisions": [
+    1,
+    2
+  ],
+  "original_rgba_sha256": {
+    "idle": "2f4542c04260dc29dd085198c98084a9828acda0681b7a1698d89501a683cb7c",
+    "selected": "a0c54554f4409ceedada0cde0c5eef56921bee2a6c4b85ac63b6bd82983124d0",
+    "toggle-off": "294f7cf38d21ae2e5b959658d3d75ad5700171d8691217ee81920df6b952f361"
+  },
+  "persistent_gpu_buffer_and_binding_group_count": 2,
+  "physical_hid": false,
+  "pixel_samples": {
+    "(205, 400)": [
+      [
+        255,
+        255,
+        255,
+        255
+      ],
+      [
+        87,
+        60,
+        63,
+        255
+      ]
+    ],
+    "(500, 70)": [
+      [
+        0,
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        4,
+        255,
+        255
+      ]
+    ],
+    "(952, 344)": [
+      [
+        22,
+        39,
+        51,
+        255
+      ],
+      [
+        49,
+        95,
+        121,
+        255
+      ]
+    ],
+    "(975, 670)": [
+      [
+        49,
+        95,
+        121,
+        255
+      ],
+      [
+        49,
+        95,
+        121,
+        255
+      ]
+    ],
+    "(985, 344)": [
+      [
+        22,
+        39,
+        51,
+        255
+      ],
+      [
+        49,
+        95,
+        121,
+        255
+      ]
+    ]
+  },
+  "sdf_frames": 2,
+  "sdf_requests": 2,
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "source": "actual BLOB-FRAME-v1 renderd CPU, NOT testcard server",
+  "ui_revision_before_after": [
+    1,
+    2
+  ],
+  "verdict": "SCOPED_PASS_01B_REAL_UI_ACTION_AND_RENDERER_CPU_GPU_CLIENT_PIXELS"
+}

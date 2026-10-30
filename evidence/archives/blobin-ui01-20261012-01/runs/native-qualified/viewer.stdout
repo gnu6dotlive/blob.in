@@ -1,0 +1,8 @@
+BLOBIN_UI_GPU_READY adapter=NVIDIA GeForce RTX 3070 backend=Vulkan format=Rgba8Unorm
+BLOBIN_UI_SUBMITTED frame=30 revision=1 selected=1
+BLOBIN_UI_SUBMITTED frame=60 revision=2 selected=1
+BLOBIN_UI_SUBMITTED frame=90 revision=3 selected=2
+BLOBIN_UI_SUBMITTED frame=120 revision=4 selected=2
+BLOBIN_UI_SUBMITTED frame=150 revision=5 selected=2
+BLOBIN_UI_SUBMITTED frame=180 revision=6 selected=2
+BLOBIN_UI_PROBE_COMPLETE frames=180 revisions=6

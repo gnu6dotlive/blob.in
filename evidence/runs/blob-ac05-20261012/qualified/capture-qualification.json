@@ -1,0 +1,86 @@
+{
+  "after_revision": 4,
+  "before_revision": 3,
+  "compositor_present_feedback": false,
+  "copied_logs_sha256": {
+    "production-events.jsonl": "09141f2151c289c97ab1805a09b5a3cac045166254dedad319f2fc626c2a8961",
+    "renderd.stderr": "db8105bd5f868b22f3fa9f0287bf274b80b0f2c80c10f50f2008a356161acc11",
+    "renderd.stdout": "34cd7354568939053d177529c9c5046ca1dfdfe8a0966acb1a511fdb1dc01228",
+    "showcase.stderr": "e72f573b86a95778f8d25e23902ac8e1d6315ea856541e327c3bca36fc2a8648",
+    "weston.log": "cef6a8e5d8dfbe0a134db561e52e8c9d75ce89bd65d9432ff67d439d62912ddd",
+    "weston.stderr": "0ef2bdac7e24fe0e2ab1b301735525c922a12da49f218e2ebab26fa5ecccf592"
+  },
+  "cp03_hybrid60": "NOT_PASS",
+  "gate": "BLOB-AC-05 captured-run independent oracle",
+  "input_steps": 5,
+  "live_replay": "NOT_EXECUTED_IN_THIS_ORACLE",
+  "native_pointer_events": 6,
+  "original_pixel_buffers": {
+    "3": {
+      "format": "RGBA8",
+      "gzip_sha256": "482a970bc178ab62cc93db13b1224261c1e214508fc7b4933fa17c67a6c18964",
+      "png_sha256": "1d99ec170116da687d58f4cf4cef19a8ff7b1c49900bb70a1493aca016aa18d4",
+      "raw_bytes": 2982400,
+      "raw_sha256": "1a52f7a9e2f806169b82689ef0b077c12ff48bc245402837c7c5b4e32e20e507"
+    },
+    "4": {
+      "format": "RGBA8",
+      "gzip_sha256": "be5259e09a9a71dad95d06faa0499196539898ebf1a79d3a1db58093f62bedc0",
+      "png_sha256": "ab336a783639fb422dda1b2c497f40559eb80258e6fa8e0c46b6108fb8b5f9d6",
+      "raw_bytes": 2982400,
+      "raw_sha256": "a0e33bfb3658597e1660bd475a8ef79684140e0890aeb7adb796a6fa7007e6c2"
+    }
+  },
+  "physical_hid": false,
+  "render_requests": 2,
+  "renderd_geometry_sha256": [
+    "656d48da86d4a8a9e99282d4c18c556bc8515690369294339be33005348bc202",
+    "46f1489c79ef371d2767a797c27fce4e69b0be7b42f9801ff65748bff9cc7103"
+  ],
+  "sample_pixels": {
+    "3": {
+      "(20, 20)": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "(205, 400)": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "(345, 400)": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    "4": {
+      "(20, 20)": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "(205, 400)": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "(345, 400)": [
+        255,
+        255,
+        255,
+        255
+      ]
+    }
+  },
+  "scope": "real blobin_renderd CPU previews, actual BLOB-FRAME source pixels, private Weston test seat",
+  "semantic_commits": 1,
+  "source_frames": 2,
+  "verdict": "SCOPED_PASS_EXISTING_PRIVATE_WESTON_REAL_CPU_SDF_PIXELS"
+}

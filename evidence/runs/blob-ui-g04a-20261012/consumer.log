@@ -1,0 +1,4 @@
+BLOBIN_UI_G04_HEADLESS_OK surface=5 pointer_click=true keyboard_activate=true
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running `/mnt/sandbox/builds/cargo/debug/examples/input_workbench`

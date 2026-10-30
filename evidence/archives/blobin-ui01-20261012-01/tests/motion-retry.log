@@ -1,0 +1,14 @@
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.92s
+     Running unittests src/lib.rs (/mnt/workbench/build/qchain-cpja7cb-20261011/debug/deps/blobin_showcase-68acace8bd6983af)
+
+running 6 tests
+test ui_motion::tests::frame_hitch_bounded ... ok
+test ui_motion::tests::pause_and_reduced_motion_do_not_accumulate_time ... ok
+test ui_motion::tests::reduced_motion_is_immediate ... ok
+test ui_motion::tests::selected_surface_identity_and_revision ... ok
+test ui_motion::tests::responsive_layout_never_overflows ... ok
+test ui_motion::tests::spring_converges_at_60hz ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 14 filtered out; finished in 0.00s
+

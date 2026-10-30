@@ -1,0 +1,3 @@
+[2026-10-10T04:48:06Z WARN  blob_frame_testserver] TEST SERVER — frames are reference test cards, not blob.in output
+[2026-10-10T04:48:06Z INFO  blob_frame_testserver] listening on /run/user/1000/blobin-showcase-test/render.sock fault=None/1 delay=40ms
+[2026-10-10T04:48:14Z INFO  blob_frame_testserver] connection ended: Summary { requests: 25, frames: 25, errors: 0, faults: 0 }

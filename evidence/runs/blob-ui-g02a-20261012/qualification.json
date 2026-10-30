@@ -1,0 +1,61 @@
+{
+  "schema": "blob.in.ui_g02a_headless_core.v1",
+  "date": "2026-10-12",
+  "gate": "UI-G02/A",
+  "verdict": "SCOPED_PASS",
+  "baseline_commit": "e425232bca939cce58662b1c95e99af71e68b5ef",
+  "branch": "feat/blobin-ui-g02a-core-20261012",
+  "scope": "headless component identity, state transactions and invalidation; no renderer",
+  "checks": {
+    "rustfmt": {
+      "exit": 0,
+      "passing_tests": 0,
+      "log_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "core-all-targets": {
+      "exit": 0,
+      "passing_tests": 21,
+      "log_sha256": "21d2742b6d576c5480ae5a7ca6905e07b3983c62ca7987aaa71c7ebb15f7268b"
+    },
+    "clippy-strict": {
+      "exit": 0,
+      "passing_tests": 0,
+      "log_sha256": "23ece6e8b6143673048de356927a80cf86648bd5a0db875102cecda04bdb23bc"
+    },
+    "no-external-dependencies": {
+      "exit": 0,
+      "passing_tests": 0,
+      "log_sha256": "13a21432632c5913c677d6bcc4f5f748f54417008942f3edf212067cad88556c"
+    },
+    "headless-example": {
+      "exit": 0,
+      "passing_tests": 0,
+      "log_sha256": "926dcaed63a60b9cfd39d21a9fa4707bda417c126c24a102f10e2bc2ef266c79"
+    },
+    "workspace-lib-regression": {
+      "exit": 0,
+      "passing_tests": 51,
+      "log_sha256": "11529fdbfa3d89e29a4235379aab3554002ddd1bc8ebc5f741018d7aae20d6f7"
+    }
+  },
+  "sources_sha256": {
+    "Cargo.toml": "e293d5ac5f8ffb6e0efd7f5d4a4194dc2132a5812216dabadc2c4479281ec2d3",
+    "Cargo.lock": "51130ade6f4d80042efa545cc0f0e395481569baa7f12731af3ba30b66ab8390",
+    "crates/blobin-ui-core/Cargo.toml": "5c21a3e849abdf2423660df0fad3e17b1f659d9b640a9da3c85f01e8f89c3b91",
+    "crates/blobin-ui-core/src/lib.rs": "061257e1888d6c1293d07a6e4fca0b9d72e31da576c689be77c9cd7f113a81b6",
+    "crates/blobin-ui-core/tests/component_tree.rs": "a7d10ac1756b7d943a8aff10b3bf9cee1a6c662b147e7bffc963abcaf8bcc534",
+    "crates/blobin-ui-core/tests/transaction_adversarial.rs": "afe05d07d410e0c406159d3a64dd49c982cea0113cf314d9d3863ea09bc24a53",
+    "crates/blobin-ui-core/examples/tree_transaction.rs": "5a4d74c29a087f288ad42e0c5e6d3362392527d2b8e33721b03b0921614d224e",
+    "crates/blobin-ui-core/README.md": "1efb50e55fb7dca1a7893c0df9ab8ba91c845d7de53f0f16cbcc55495e165994",
+    "docs/BLOB-UI-G02A-PORTABLE-COMPONENT-SUBSTRATE-20261012.md": "90d1382c5bcd07ad2c5ee57552801be88015617d0f20eb3804c2edadbba58b9d",
+    "scripts/blobin_ui_g02a_verify.py": "ba9a3670a9efcd79b68a64d0cad1d782be4766cb1ed6d09a7efb3ca6e64671da"
+  },
+  "runtime_crate_non_std_dependencies": 0,
+  "historical_donor_code_imported": false,
+  "external_native_consumer_qualified": false,
+  "real_pointer_or_keyboard_input_qualified": false,
+  "sustained_60fps_qualified": false,
+  "ui_g02b_qualified": false,
+  "cp03_hybrid60_pass": false,
+  "merge_push_deploy": false
+}

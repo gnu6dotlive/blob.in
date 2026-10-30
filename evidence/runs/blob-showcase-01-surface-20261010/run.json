@@ -1,0 +1,134 @@
+{
+  "schema": "blobin-showcase-run/1",
+  "lot": "BLOB-SHOWCASE-01 — Surface Native",
+  "date_utc": "2026-10-10T04:49:46Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "environment": {
+    "compositor": "Hyprland 0.56.2",
+    "gpu": "NVIDIA GeForce RTX 3070 (Vulkan, driver 615.71.09)",
+    "rustc": "rustc 1.97.0 (2d8144b78 2026-07-07)",
+    "monitors": "HDMI-A-1 2560x1440, DP-2 1920x1080 rotated (portrait)"
+  },
+  "runtime_under_test": {
+    "server": "blobin-cuda05f-render-bridge",
+    "commit": "823fdbd",
+    "contract": "CUDA-05/contracts/BLOB-FRAME-v1.md (01A-runtime-implementation)",
+    "socket": "$XDG_RUNTIME_DIR/blobin-showcase/render.sock",
+    "modified_by_surface": false
+  },
+  "automated_tests": {
+    "passed": 45,
+    "failed": 0,
+    "log": "logs/cargo-test-20261010.log",
+    "clippy_warnings": 0
+  },
+  "real_bridge_probe": {
+    "frames": 12,
+    "accepted": 12,
+    "all_opaque": true,
+    "max_channel_diff_vs_cpu": 1,
+    "max_differing_px_vs_cpu": 26,
+    "px_per_frame": 71680,
+    "round_trip_ms": {
+      "cpu": [
+        14,
+        14,
+        14,
+        14
+      ],
+      "cuda": [
+        800,
+        530,
+        490,
+        470
+      ],
+      "vulkan": [
+        299,
+        288,
+        288,
+        289
+      ]
+    },
+    "log": "logs/real-bridge-probe-20261010.jsonl"
+  },
+  "e2e_real_window": [
+    {
+      "dir": "runs/e2e-runtime-cpu-20261010T044847Z",
+      "mode": "resize",
+      "socket": "/run/user/1000/blobin-showcase/render.sock",
+      "backend": "cpu",
+      "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+      "pass": true,
+      "checks": 18,
+      "failed_checks": [],
+      "captures": 4,
+      "run_json_sha256": "b2c71a558c33d4431b128c81f492b8382f51e5582a95266b1e9005423d1062cb"
+    },
+    {
+      "dir": "runs/e2e-runtime-cuda-20261010T044827Z",
+      "mode": "resize",
+      "socket": "/run/user/1000/blobin-showcase/render.sock",
+      "backend": "cuda",
+      "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+      "pass": true,
+      "checks": 18,
+      "failed_checks": [],
+      "captures": 4,
+      "run_json_sha256": "4a66991655d4f11a4fc8fc40d68facca26718cbd8bbfe7ab3b5c83c357d99630"
+    },
+    {
+      "dir": "runs/e2e-runtime-exercise-cuda-20261010T044855Z",
+      "mode": "exercise",
+      "socket": "/run/user/1000/blobin-showcase/render.sock",
+      "backend": "cuda",
+      "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+      "pass": true,
+      "checks": 42,
+      "failed_checks": [],
+      "captures": 14,
+      "run_json_sha256": "129270c34c35db0ba3091a9ed563532854059a6bc6299fd0d7ee62d27d54e7c2"
+    },
+    {
+      "dir": "runs/e2e-runtime-vulkan-20261010T044838Z",
+      "mode": "resize",
+      "socket": "/run/user/1000/blobin-showcase/render.sock",
+      "backend": "vulkan",
+      "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+      "pass": true,
+      "checks": 18,
+      "failed_checks": [],
+      "captures": 4,
+      "run_json_sha256": "95b390e8b90a338c0f4dd0611bee6f79e3ff01031e0334793cc3c25bd6a62517"
+    },
+    {
+      "dir": "runs/e2e-test-server-20261010T044806Z",
+      "mode": "resize",
+      "socket": "test-server",
+      "backend": "cpu",
+      "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+      "pass": true,
+      "checks": 18,
+      "failed_checks": [],
+      "captures": 4,
+      "run_json_sha256": "764415704ee468c9dc8008dcb4063ab05dade95724df1b6eb68f117a5153780d"
+    }
+  ],
+  "verdict": {
+    "surface_lot_closure": true,
+    "integration_with_real_render_bridge": "E2E PASS on real Hyprland window with frames computed by the supervised runtime (cpu, cuda, vulkan); joint qualification by the runtime owner still pending"
+  },
+  "known_gaps": [
+    "BLOB-FRAME-v1 has no camera: pan/zoom are applied by the surface to primitives; views outside [-2,2] are not sent",
+    "Runtime limit 1024 px per side / 1 MPix: larger viewports are rendered downscaled then upscaled (scale shown)",
+    "GPU latency 0.3-0.9 s per frame (gate + disposable worker per request): ~1-3 fps under interaction",
+    "Mouse/keyboard paths are egui-standard and unit-tested at model level; E2E uses a scripted edit sequence instead of injecting input into the live session",
+    "Contract text vs renderd 823fdbd discrepancies listed in docs/BLOB-FRAME-v1-viewer-notes.md (frame_sequence, generation semantics, request_id 0, reason codes, colour encoding, limits not in CAPABILITIES)",
+    "Runtime serves one client at a time; same-UID prototype, no cross-principal isolation (runtime owner's stated limit)"
+  ],
+  "artifacts": {
+    "logs/cargo-clippy-20261010.log": "c92508a29848820f033cd2ea015c85dde0953c88b07cc967ce34b7c08f610549",
+    "logs/cargo-test-20261010.log": "46ee48b1e28bc8f59d5868d89ccaecad33d4f3e86ef79c3ac51baacaa5b7c272",
+    "logs/real-bridge-probe-20261010.jsonl": "df274ffd502337bd1ec5936a168ad6ac3179472cd5b9955032ab87d38a6648e3",
+    "logs/testserver-20261010T044806Z.log": "7ac82093c6c1c3bc5bc03f2886eb837fec1ed334f2682f6f9a4437fa1505bd1d"
+  }
+}

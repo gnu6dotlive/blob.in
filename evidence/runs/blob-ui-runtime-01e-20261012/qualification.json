@@ -1,0 +1,558 @@
+{
+  "contract": "BLOB-UI-RUNTIME-01E",
+  "utc": "2026-10-12T17:53:49.271971+00:00",
+  "baseline_head": "848a2acc6f90cad1062e4153aed14b94d5b77348",
+  "branch": "main",
+  "origin": "https://github.com/tension-atoi/blob.in-showcase.git",
+  "source_sha256": {
+    "contracts/BLOB-UI-RUNTIME-01E-CONTRAT-20261012.md": "8885036a4e2c40550b40238e03e8d1c8fd85ce6efd164108c61a79f968d9dde4",
+    "docs/BLOB-UI-RUNTIME-01E-QUALIFICATION-20261012.md": "27cde83e074b8175916648307af61eee35d01325e7f2f70bd965f77b122a32c3",
+    "docs/PROGRAM-INTEGRATION-SPINE-20261012.md": "654e5f55f36751432919bea0bf753445546cbe9c7b69bede23106960cd5ab3a3",
+    "crates/blobin-ui-scene/src/lib.rs": "9901e0f9b507dece529dfc40bec04f489f01336dfaf749b5141f3e7bbaa8558f",
+    "crates/blobin-ui-scene/src/composition.rs": "d9e0d5090bab1b725dcc116d62264395a1fc266d02858c15188c839e1ab08e21",
+    "crates/blobin-ui-scene/src/strokes.rs": "e59bca109667e9553946ed5197452f29f35941e816f9f74d56995759c091cfa0",
+    "crates/showcase/src/ac01e_stroke_stress.rs": "fd041a3ba7b35e978915711d433d4060e36ceacc5c9f64b295b6eac5d8506f44",
+    "crates/showcase/src/ac01a_native_gpu.rs": "668fd5db73bef5b3de0c2e91a081b1200801666cdc19c374ee25c769cd39e87e",
+    "crates/showcase/src/app.rs": "234a7ffc1c502a3099f8450bf3a5a7c2dc393c2e9ce3614a862540ae9025d764",
+    "crates/showcase/src/lib.rs": "5cbe2fb8ef3a3cc3a9d91528a6a9ae27f023f714bd0d19b4d756274e4e1c2141",
+    "scripts/blob_ui01e_native_smoke.py": "b16b47dfb67cb64a38e2b60c2ccce6382aa9252b3b781d1a4c68c23280054172",
+    "scripts/blob_ui01e_test_input.c": "226dc708979fb7ba2e73a79bce53d83af72f2ffb6f85e32245fe2a71691797fa",
+    "scripts/blob_ui01e_oracle.py": "db6ad181adb306c4765c6117ba5c16639387f150c658c239c90deaa22265e2c4",
+    "scripts/blob_ui01e_verify.py": "b1ffb84f6292204f01327cb7b37d5c69eaf69baf9738758c8d59dec047cdc103"
+  },
+  "native_gpu_scene": "3 real product G02 controls + 55 private-test-only rects",
+  "native_compositor": "private Weston under user/network namespace",
+  "sdf_engine": "real blobin_renderd CPU",
+  "presentation_feedback_qualified": false,
+  "real_60_fps_qualified": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "full_native_runtime": "OPEN",
+  "g04b_h_snapshot_before": {
+    "crates/showcase/src/bin/blobin_ui_g04b_wayland.rs": "516879d0c477e12811172e1c71d12268aafc92e00dbc6b687825739826bc880c",
+    "docs/BLOB-UI-G04B-HYPRLAND-COMPOSITOR-INPUT-E2E-20261012.md": "2d212f1f38cd379f96cc74cafeffd696464f7f425ffa0b57782cf5c676614217",
+    "scripts/blobin_ui_g04b_hyprland_oracle.py": "d652c7e84778152208e947e724914ea9a9aa6e918fcd6b6acf9d00bc350cccc9",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/winit-input.jsonl": "d22e882a850d6d371154c4c29e61e043b4ce7d3bd2747fa3dbd892cad14e6afa",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/window-live.png": "7f202faa2b4dfb9a0805ac689884f8b5278b41f515bf6436d1751dfc1f580786",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/qualification.json": "22f5cef1155d4ca73effb9cdbf2be521d149c0beb4f15d98e1333db055b296d7",
+    "git_tracked_g04b_diff": "eb2eb03f7a496f63dbcb4a4719fe78e3fe72c2e4adf66e5822a9db4a62eb2c96"
+  },
+  "commands": [
+    {
+      "command": [
+        "rustfmt",
+        "--edition",
+        "2021",
+        "--check",
+        "crates/blobin-ui-scene/src/lib.rs",
+        "crates/blobin-ui-scene/src/composition.rs",
+        "crates/blobin-ui-scene/src/strokes.rs",
+        "crates/showcase/src/ac01e_stroke_stress.rs"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-01.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cargo",
+        "tree",
+        "--offline",
+        "-p",
+        "blobin-ui-scene"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-02.stdout.txt",
+      "stdout_sha256": "01b8ba4a50fd8e4fb38dcad52041b2aeaa67cf2241c7b15894ef7c164ada7316",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-02.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-ui-scene",
+        "--all-targets"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-03.stdout.txt",
+      "stdout_sha256": "84d6d387b1ef3e26f5ed6a52be49644864e466eba4fd62cbe5d0c9cb64cfcbd1",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-03.stderr.txt",
+      "stderr_sha256": "9fef7c3d4899bef70c45b8678fd89495b65f9b2206ca4a476bb3dd5991a8b207"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac01e_stroke_stress"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-04.stdout.txt",
+      "stdout_sha256": "b4e3686042f05964b924015c2d22c2b922d5682eee5cd6995757e222819e116f",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-04.stderr.txt",
+      "stderr_sha256": "8b65a35ec67c21fd50165f4fb4646969deb9e1a46461557cdf01b4f690bf3b1b"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac04_production_input_tests"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-05.stdout.txt",
+      "stdout_sha256": "ac30e95618b0d900fdd169281097ad5a7d27f61cb561fdf429c77d962294272b",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-05.stderr.txt",
+      "stderr_sha256": "a627bf984e212e56137b5520ee04f75e480ad8fe964bd581d89afe0378967d3b"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--offline",
+        "--workspace",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-06.stdout.txt",
+      "stdout_sha256": "670f23141151aeac43ac7d2a7bed2f0673be3c980f194ea108e9b540c5149900",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-06.stderr.txt",
+      "stderr_sha256": "d9aeef68eff509a0a364a7f6640c480b98d5fcbb63d6031114e6fc1b32b04864"
+    },
+    {
+      "command": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-ui-scene",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-07.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-07.stderr.txt",
+      "stderr_sha256": "99f71393b9903dca098310bb446022a4bdee195ea9996f351a787195555210a6"
+    },
+    {
+      "command": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "--bin",
+        "blobin-showcase",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-08.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-08.stderr.txt",
+      "stderr_sha256": "c2c57dcc0cd7fdaafc0231a76b27f0c57f8ece8ad9ce275b19b8d32316012f21"
+    },
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--bin",
+        "blobin-showcase"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-09.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-09.stderr.txt",
+      "stderr_sha256": "a5f4c585ee974ca44916ac30a98bbc189e067a7e0a6bc6d2e8d6bc525be724af"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01e_oracle.py",
+        "--source",
+        "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ui-runtime-01e-20261012/native"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-10.stdout.txt",
+      "stdout_sha256": "e137ca63de39b231b606bd5ed217b48db66415faa77891df1ca0a66cc08be05c",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-10.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01e_oracle.py",
+        "--source",
+        "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ui-runtime-01e-20261012/native",
+        "--negative",
+        "trace"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-11.stdout.txt",
+      "stdout_sha256": "35094962007e46d4a1ed3dc5d90b0599cb557fd98bfd3d484daa0380db26a95f",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-11.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01e_oracle.py",
+        "--source",
+        "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ui-runtime-01e-20261012/native",
+        "--negative",
+        "png"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-12.stdout.txt",
+      "stdout_sha256": "51e853c2e6e3b30e86cfbc504c1828164375b1c0ba45a28bfce21a3e7bc18fbc",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-12.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01c_oracle.py",
+        "--source",
+        "evidence/runs/blob-ui-runtime-01c-20261012/native"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-13.stdout.txt",
+      "stdout_sha256": "968661e4e9e8d4d587aabb1e0196ce0bb814e971317b4ef2a12a0a5f1a0a61b2",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-13.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01b_oracle.py",
+        "--source",
+        "evidence/runs/blob-ui-runtime-01b-20261012/native"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-14.stdout.txt",
+      "stdout_sha256": "0c317493e61c151811a8f43862ed61b5977e6b1facbcdedd6d0fa49de4d9731c",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-14.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01a_oracle.py",
+        "--source",
+        "evidence/runs/blob-ui-runtime-01a-20261012/native"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-15.stdout.txt",
+      "stdout_sha256": "e529871d2688cedae2f8fdb14890839ed7579fd6d08c0f9e1751efb921eb7e59",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-15.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-16.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-16.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ui01e_test_input.c",
+        "-o",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01e.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-17.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-17.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01e_native_smoke.py",
+        "--module",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01e.so",
+        "--out",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01e"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-18.stdout.txt",
+      "stdout_sha256": "69a39beb0eb5f658c7c849ba9a4cb80be818cce0f48205821c67cde020907fc6",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-18.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01e_oracle.py",
+        "--source",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01e"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-19.stdout.txt",
+      "stdout_sha256": "e2daafc6bf48de284165fbde035cc16b6ac523cccda6075bf75db30a43e6839f",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-19.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ui01d_test_input.c",
+        "-o",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01d.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-20.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-20.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01d_native_smoke.py",
+        "--module",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01d.so",
+        "--out",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01d"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-21.stdout.txt",
+      "stdout_sha256": "74181bbdbce03a01090959bd8e4547cd3e536ab540344b24c7e6756222b68ab9",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-21.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01d_oracle.py",
+        "--source",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01d"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-22.stdout.txt",
+      "stdout_sha256": "a1819a2557ba14fa28210b902d810f92937f1291d0aa37c6ecd1f44d8a357ba6",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-22.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ui01c_test_input.c",
+        "-o",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01c.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-23.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-23.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01c_native_smoke.py",
+        "--module",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01c.so",
+        "--out",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01c"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-24.stdout.txt",
+      "stdout_sha256": "de1d2ac76005f64ce453940a161246bda36ab1f07d464fda6a012def0f55975d",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-24.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01c_oracle.py",
+        "--source",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01c"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-25.stdout.txt",
+      "stdout_sha256": "d38d21eb8acc90f09625c64090d154f47ffc6d6fd5c2d071d919710216a1695c",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-25.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ui01b_test_input.c",
+        "-o",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01b.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-26.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-26.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01b_native_smoke.py",
+        "--module",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01b.so",
+        "--out",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01b"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-27.stdout.txt",
+      "stdout_sha256": "fade7899f0cb161871e8518899a07e18f32376b210760997e84b343308276ae1",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-27.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01b_oracle.py",
+        "--source",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01b"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-28.stdout.txt",
+      "stdout_sha256": "1e4ba3edb290a306a100d92c665dc19eae60d14a81822ed3ceae14809ccf712e",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-28.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ui01a_test_input.c",
+        "-o",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01a.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-29.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-29.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01a_native_smoke.py",
+        "--module",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01a.so",
+        "--out",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01a"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-30.stdout.txt",
+      "stdout_sha256": "74d12eef230efa2acd3889b03c52f8a74c9ab4a75a69b24daf9e4c4fe33b352c",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-30.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/blob_ui01a_oracle.py",
+        "--source",
+        "/tmp/ui01e-fresh-weston-qf5gz8ax/01a"
+      ],
+      "exit_code": 0,
+      "stdout_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-31.stdout.txt",
+      "stdout_sha256": "0199468050495465f065d7017274ccb59184145919d25fbd640e9a7e2f2d83a1",
+      "stderr_file": "evidence/runs/blob-ui-runtime-01e-20261012/gate-31.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "dependency_barrier": "PASS: core-only scene",
+  "01e_fresh_native_replay": "PASS",
+  "01d_fresh_native_replay": "PASS",
+  "01c_fresh_native_replay": "PASS",
+  "01b_fresh_native_replay": "PASS",
+  "01a_fresh_native_replay": "PASS",
+  "g04b_h_snapshot_after": {
+    "crates/showcase/src/bin/blobin_ui_g04b_wayland.rs": "516879d0c477e12811172e1c71d12268aafc92e00dbc6b687825739826bc880c",
+    "docs/BLOB-UI-G04B-HYPRLAND-COMPOSITOR-INPUT-E2E-20261012.md": "2d212f1f38cd379f96cc74cafeffd696464f7f425ffa0b57782cf5c676614217",
+    "scripts/blobin_ui_g04b_hyprland_oracle.py": "d652c7e84778152208e947e724914ea9a9aa6e918fcd6b6acf9d00bc350cccc9",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/winit-input.jsonl": "d22e882a850d6d371154c4c29e61e043b4ce7d3bd2747fa3dbd892cad14e6afa",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/window-live.png": "7f202faa2b4dfb9a0805ac689884f8b5278b41f515bf6436d1751dfc1f580786",
+    "evidence/runs/blob-ui-g04b-hyprland-20261012/qualification.json": "22f5cef1155d4ca73effb9cdbf2be521d149c0beb4f15d98e1333db055b296d7",
+    "git_tracked_g04b_diff": "eb2eb03f7a496f63dbcb4a4719fe78e3fe72c2e4adf66e5822a9db4a62eb2c96"
+  },
+  "g04b_h_preserved": true,
+  "native_stress_witness_sha256": "188eecb8c0513e686acca543c37417d43e53a54d09ba0352caf17c076de894b6",
+  "native_observed_commands": 64,
+  "native_observed_layers": 4,
+  "native_gpu_pixel_sha256": "cdba9b1c76e3c4d340076a429dd82eb25909bb039f7183585855916c13d57bea",
+  "first_party_01a_01b_01c_01d_fresh_replayed": true,
+  "verdict": "SCOPED_PASS_NATIVE_VECTOR_STROKES_64_COMMANDS"
+}

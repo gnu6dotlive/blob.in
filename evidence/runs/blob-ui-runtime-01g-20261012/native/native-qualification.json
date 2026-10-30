@@ -1,0 +1,41 @@
+{
+  "archive_sha256": {
+    "convex-closed-paths.png": "6731fa41889ecc4ed96998b864eae122c331160a624e74c393d3532399ec17f4",
+    "convex-closed-paths.rgba.gz": "4c7f6a69cfede164debeaa9873273811c0e5b3927ac4dab610e629a930786c11",
+    "production-events.jsonl": "67ec02f518f88f20387783b92d382ff88c748a04363c7ec5585ead0ff567a3c1",
+    "renderd.stderr": "fd79265d07b165a5e86eabb9f724dfa846448d2f2e1f2b4930374bb272b5baad",
+    "renderd.stdout": "e0db1e627455be9fdee3dc3e1b79127cd879d25ea37f0813474d615fba301315",
+    "showcase.stderr": "acf7568010b7355182be754e72140954fb5f0351e216be923adad586a45af7f6",
+    "weston.log": "25e7ed557cbe1f3626009bbf4b989120ff708237fd77d57c9645ec5a42d884af",
+    "weston.stderr": "8cadbe050440cb8be1e0716840b1baa0ca594963eeeadfa9d1477893c5f7d086"
+  },
+  "closed_round_stroke_segments": 7,
+  "composition_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "filled_triangles": 3,
+  "gpu_sdf_qualified": false,
+  "gpu_witness_height": 800,
+  "gpu_witness_width": 1280,
+  "independent_closed_outline_pixels": 9,
+  "independent_polygon_interior_pixels": 7,
+  "independent_shared_diagonal_no_seam_pixels": 6,
+  "internal_triangle_aa_qualified": false,
+  "joins": "opaque overlapping round-caps, no bevel/miter",
+  "original_gpu_rgba_sha256": "55c61447019adfb9834cca9095f64baa86b0c0079be4c818ae952a2cd26a3acc",
+  "polygon_types_qualified": "strict convex only; no holes, no concavity",
+  "prior_01f_curve_sample_pixels": 66,
+  "prior_rectangle_centers": 17,
+  "quadratic_cubic_stroke_segments": 28,
+  "rectangles": 26,
+  "renderer": "real blobin_renderd CPU + real showcase wgpu",
+  "sdf_cpu_revisions": [
+    3,
+    4
+  ],
+  "sdf_frames": 2,
+  "shapes": "two strictly convex simple polygons (square + triangle)",
+  "strokes": 35,
+  "total_native_gpu_commands": 64,
+  "verdict": "SCOPED_PASS_NATIVE_CONVEX_CLOSED_PATH_FILLED_TRIANGLES"
+}

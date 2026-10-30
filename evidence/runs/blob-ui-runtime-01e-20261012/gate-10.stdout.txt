@@ -1,0 +1,28 @@
+{
+  "composed_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_draw_commands": 64,
+  "gpu_sdf_qualified": false,
+  "gpu_source_extent": [
+    1280,
+    800
+  ],
+  "gpu_uniform_buffer_and_bind_group_resident": 2,
+  "input_layers": 4,
+  "original_gpu_rgba_sha256": "cdba9b1c76e3c4d340076a429dd82eb25909bb039f7183585855916c13d57bea",
+  "physical_hid": false,
+  "real_renderer": "blobin_renderd CPU",
+  "scene": "3 live controls + 51 private rectangles + 4 real vector stroke segments",
+  "sdf_frame_count": 2,
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "stress_fixture_confined_to_private_wayland": true,
+  "stress_not_an_fps_benchmark": true,
+  "vector_segments": 4,
+  "verdict": "SCOPED_PASS_REAL_WGPU_64_COMMAND_VECTOR_SCENE",
+  "verified_stress_shape_pixels": 51,
+  "verified_stroke_center_pixels": 4
+}

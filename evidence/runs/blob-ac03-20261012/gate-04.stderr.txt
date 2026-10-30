@@ -1,0 +1,12 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_core-d0f84a219c0aebd6)
+     Running tests/component_tree.rs (/mnt/sandbox/builds/cargo/debug/deps/component_tree-fe73327344c72a5a)
+     Running tests/gestures.rs (/mnt/sandbox/builds/cargo/debug/deps/gestures-b3f40131a69a680a)
+     Running tests/incremental_reconciliation.rs (/mnt/sandbox/builds/cargo/debug/deps/incremental_reconciliation-29f0fce43ad5f5e8)
+     Running tests/input_routing.rs (/mnt/sandbox/builds/cargo/debug/deps/input_routing-66888e9f7b898a55)
+     Running tests/layout_matrix.rs (/mnt/sandbox/builds/cargo/debug/deps/layout_matrix-06458c8f9fb876f0)
+     Running tests/transaction_adversarial.rs (/mnt/sandbox/builds/cargo/debug/deps/transaction_adversarial-9a5b7a03898bc9bc)
+     Running unittests examples/gesture_workbench.rs (/mnt/sandbox/builds/cargo/debug/examples/gesture_workbench-7d2377037c464613)
+     Running unittests examples/input_workbench.rs (/mnt/sandbox/builds/cargo/debug/examples/input_workbench-e7baa71ed0fb1fe6)
+     Running unittests examples/layout_workbench.rs (/mnt/sandbox/builds/cargo/debug/examples/layout_workbench-683b78dda92205b6)
+     Running unittests examples/tree_transaction.rs (/mnt/sandbox/builds/cargo/debug/examples/tree_transaction-e4effa3dbf1a3228)

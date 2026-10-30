@@ -1,0 +1,299 @@
+{
+  "client_swapchain_pixels_before_present": true,
+  "composition_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "cubic_count": 1,
+  "curve_bernstein_samples_verified": 66,
+  "curve_count": 2,
+  "curve_tolerance_logical_px": 0.75,
+  "decorative_rectangle_centers_verified": 27,
+  "flattened_stroke_segments": 28,
+  "full_bezier_fill_joins_text_runtime_qualified": false,
+  "gpu_fill_commands": 36,
+  "gpu_sdf_qualified": false,
+  "gpu_stroke_commands": 28,
+  "host_window": "real blobin-showcase Wayland",
+  "independent_curve_sample_positions": {
+    "cubic": [
+      [
+        575,
+        145
+      ],
+      [
+        577,
+        152
+      ],
+      [
+        578,
+        159
+      ],
+      [
+        580,
+        165
+      ],
+      [
+        582,
+        171
+      ],
+      [
+        584,
+        177
+      ],
+      [
+        587,
+        182
+      ],
+      [
+        589,
+        186
+      ],
+      [
+        592,
+        190
+      ],
+      [
+        594,
+        194
+      ],
+      [
+        597,
+        197
+      ],
+      [
+        600,
+        199
+      ],
+      [
+        603,
+        201
+      ],
+      [
+        606,
+        203
+      ],
+      [
+        609,
+        204
+      ],
+      [
+        612,
+        205
+      ],
+      [
+        615,
+        205
+      ],
+      [
+        618,
+        205
+      ],
+      [
+        621,
+        204
+      ],
+      [
+        624,
+        203
+      ],
+      [
+        627,
+        201
+      ],
+      [
+        630,
+        199
+      ],
+      [
+        633,
+        197
+      ],
+      [
+        636,
+        194
+      ],
+      [
+        638,
+        190
+      ],
+      [
+        641,
+        186
+      ],
+      [
+        643,
+        182
+      ],
+      [
+        646,
+        177
+      ],
+      [
+        648,
+        171
+      ],
+      [
+        650,
+        165
+      ],
+      [
+        652,
+        159
+      ],
+      [
+        653,
+        152
+      ],
+      [
+        655,
+        145
+      ]
+    ],
+    "quadratic": [
+      [
+        480,
+        140
+      ],
+      [
+        482,
+        145
+      ],
+      [
+        484,
+        149
+      ],
+      [
+        487,
+        154
+      ],
+      [
+        489,
+        158
+      ],
+      [
+        491,
+        161
+      ],
+      [
+        493,
+        164
+      ],
+      [
+        495,
+        167
+      ],
+      [
+        498,
+        170
+      ],
+      [
+        500,
+        172
+      ],
+      [
+        502,
+        174
+      ],
+      [
+        504,
+        176
+      ],
+      [
+        506,
+        178
+      ],
+      [
+        508,
+        179
+      ],
+      [
+        511,
+        179
+      ],
+      [
+        513,
+        180
+      ],
+      [
+        515,
+        180
+      ],
+      [
+        517,
+        180
+      ],
+      [
+        519,
+        179
+      ],
+      [
+        522,
+        179
+      ],
+      [
+        524,
+        178
+      ],
+      [
+        526,
+        176
+      ],
+      [
+        528,
+        174
+      ],
+      [
+        530,
+        172
+      ],
+      [
+        532,
+        170
+      ],
+      [
+        535,
+        167
+      ],
+      [
+        537,
+        164
+      ],
+      [
+        539,
+        161
+      ],
+      [
+        541,
+        158
+      ],
+      [
+        543,
+        154
+      ],
+      [
+        546,
+        149
+      ],
+      [
+        548,
+        145
+      ],
+      [
+        550,
+        140
+      ]
+    ]
+  },
+  "input": "private Weston artificial pointer -> real egui",
+  "original_gpu_rgba_sha256": "eeb8bc44898b42feb9484c72d921b3e1a789c636698e7953a487c15ef879d67c",
+  "physical_hid": false,
+  "quadratic_count": 1,
+  "real_renderer": "blobin_renderd CPU",
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "total_gpu_commands": 64,
+  "verdict": "SCOPED_PASS_NATIVE_QUADRATIC_CUBIC_BEZIER_GPU_CLIENT_PIXELS",
+  "work": "first-party deterministic De Casteljau adaptive flatness tessellation"
+}

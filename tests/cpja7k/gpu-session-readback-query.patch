@@ -1,0 +1,122 @@
+--- gpu_session.rs.base
++++ gpu_session.rs
+@@ -59,6 +59,7 @@
+     frames_rendered: u64,
+     last_identity: Option<(u64, u64)>,
+     cpja7jc_timestamps_enabled: bool,
++    cpja7k_copy_query_enabled: bool,
+ }
+ #[derive(Clone, Copy, Debug, Eq, PartialEq)]
+ pub struct SessionStats {
+@@ -113,12 +114,25 @@
+             info.name, info.driver, info.backend, info.device_type
+         );
+         let timestamps_enabled=env::var("CPJA7JC_F4_TIMESTAMPS").as_deref()==Ok("1");
++        let copy_query_enabled=env::var("CPJA7K_COPY_TIMESTAMPS").as_deref()==Ok("1");
++        if copy_query_enabled && !timestamps_enabled {
++            return Err("CPJA7K_COPY_REQUIRES_SIX_PASS_PROOF".into());
++        }
++        if copy_query_enabled && !adapter.features().contains(
++            wgpu::Features::TIMESTAMP_QUERY |
++            wgpu::Features::TIMESTAMP_QUERY_INSIDE_ENCODERS
++        ) {
++            return Err("CPJA7K_COPY_ENCODER_FEATURE_NOT_SUPPORTED".into());
++        }
+         if timestamps_enabled && !adapter.features().contains(wgpu::Features::TIMESTAMP_QUERY) {
+             return Err("CPJA7JC_TIMESTAMP_QUERY_NOT_SUPPORTED".into());
+         }
+         let mut device_desc=wgpu::DeviceDescriptor::default();
+         if timestamps_enabled {
+             device_desc.required_features=wgpu::Features::TIMESTAMP_QUERY;
++            if copy_query_enabled {
++                device_desc.required_features |= wgpu::Features::TIMESTAMP_QUERY_INSIDE_ENCODERS;
++            }
+         }
+         let (device, queue) =
+             pollster::block_on(adapter.request_device(&device_desc))
+@@ -178,6 +192,7 @@
+             frames_rendered: 0,
+             last_identity: None,
+             cpja7jc_timestamps_enabled: timestamps_enabled,
++            cpja7k_copy_query_enabled: copy_query_enabled,
+         })
+     }
+     pub fn render_next(
+@@ -360,24 +375,26 @@
+         let frame_readback = readback(device, "cpe-final-rgba", rgba_len);
+         let mask_readback = readback(device, "cpe-final-f2-oracle", rgba_len);
+         let fields_readback = readback(device, "cpe-final-f3-oracle", analytic_len);
++        let query_count=if self.cpja7k_copy_query_enabled {18_u32} else {12_u32};
++        let query_bytes=u64::from(query_count)*8;
+         let query_set=if self.cpja7jc_timestamps_enabled {
+             Some(device.create_query_set(&wgpu::QuerySetDescriptor{
+                 label:Some("CPJA7JC six F2-F3-F4 compute passes"),
+                 ty:wgpu::QueryType::Timestamp,
+-                count:12,
++                count:query_count,
+             }))
+         } else {None};
+         let query_resolve=query_set.as_ref().map(|_|device.create_buffer(
+             &wgpu::BufferDescriptor{
+                 label:Some("CPJA7JC query resolve"),
+-                size:96,
++                size:query_bytes,
+                 usage:wgpu::BufferUsages::QUERY_RESOLVE|wgpu::BufferUsages::COPY_SRC,
+                 mapped_at_creation:false,
+             }));
+         let query_staging=query_set.as_ref().map(|_|device.create_buffer(
+             &wgpu::BufferDescriptor{
+                 label:Some("CPJA7JC query staging"),
+-                size:96,
++                size:query_bytes,
+                 usage:wgpu::BufferUsages::COPY_DST|wgpu::BufferUsages::MAP_READ,
+                 mapped_at_creation:false,
+             }));
+@@ -417,14 +434,32 @@
+             pass.set_bind_group(0, bind, &[]);
+             pass.dispatch_workgroups(scene.width().div_ceil(8), scene.height().div_ceil(8), 1);
+         }
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 12);
++        }
+         encoder.copy_buffer_to_buffer(pong, 0, &frame_readback, 0, rgba_len);
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 13);
++        }
+         // These TWO diagnostics are read back only at the end, never between dispatches.
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 14);
++        }
+         encoder.copy_buffer_to_buffer(f2_mask, 0, &mask_readback, 0, rgba_len);
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 15);
++        }
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 16);
++        }
+         encoder.copy_buffer_to_buffer(f3_fields, 0, &fields_readback, 0, analytic_len);
++        if self.cpja7k_copy_query_enabled {
++            encoder.write_timestamp(query_set.as_ref().unwrap(), 17);
++        }
+         if let (Some(queries),Some(resolve),Some(staging))=
+             (query_set.as_ref(),query_resolve.as_ref(),query_staging.as_ref()) {
+-            encoder.resolve_query_set(queries,0..12,resolve,0);
+-            encoder.copy_buffer_to_buffer(resolve,0,staging,0,96);
++            encoder.resolve_query_set(queries,0..query_count,resolve,0);
++            encoder.copy_buffer_to_buffer(resolve,0,staging,0,query_bytes);
+         }
+         queue.submit(Some(encoder.finish()));
+         let mappings = [&frame_readback, &mask_readback, &fields_readback];
+@@ -465,10 +500,10 @@
+             let raw=mapped.to_vec();
+             drop(mapped);
+             query_buffer.unmap();
+-            if raw.len()!=96 {return Err("CPJA7JC_GPU_QUERY_WRONG_BYTES".into());}
++            if raw.len()!=query_bytes as usize {return Err("CPJA7K_GPU_QUERY_WRONG_BYTES".into());}
+             let ticks=raw.chunks_exact(8).map(|s|u64::from_le_bytes(
+                 s.try_into().unwrap())).collect::<Vec<_>>();
+-            if ticks.len()!=12 || ticks.chunks_exact(2).any(|t|t[1]<=t[0]) {
++            if ticks.len()!=query_count as usize || ticks.chunks_exact(2).any(|t|t[1]<=t[0]) {
+                 return Err("CPJA7JC_GPU_TIMESTAMP_PAIR_INVALID".into());
+             }
+             Some(raw)

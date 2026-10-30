@@ -1,0 +1,30 @@
+
+running 26 tests
+test ac02_scene::tests::subthreshold_drag_does_not_mutate_tree ... ok
+test ac02_scene::tests::simple_click_still_activates_once_without_drag_commit ... ok
+test ac02_scene::tests::escape_clears_preview_without_reorder ... ok
+test scene::tests::camera_transform_and_bounds ... ok
+test ac02_scene::tests::second_card_can_be_reordered_left_with_exactly_one_revision ... ok
+test ac02_scene::tests::cancelled_drag_and_resize_preserve_revision ... ok
+test scene::tests::hit_prefers_topmost ... ok
+test ac02_scene::tests::preview_does_not_commit_reorder_updates_real_layout_and_hit ... ok
+test scene::tests::labs_are_valid_scenes ... ok
+test scheduler::tests::coalesces_bursts_into_one_request ... ok
+test scheduler::tests::failure_frees_the_slot_without_retry_loop ... ok
+test scene::tests::editing_keeps_the_first_circle_a_union ... ok
+test scheduler::tests::session_reset_rerenders ... ok
+test scheduler::tests::fit_respects_limits_and_aspect ... ok
+test scheduler::tests::stale_and_unknown_frames_are_not_presented ... ok
+test ui_motion::tests::frame_hitch_bounded ... ok
+test ui_motion::tests::pause_and_reduced_motion_do_not_accumulate_time ... ok
+test ui_motion::tests::reduced_motion_is_immediate ... ok
+test ui_motion::tests::responsive_layout_never_overflows ... ok
+test ui_motion::tests::selected_surface_identity_and_revision ... ok
+test ui_motion::tests::spring_converges_at_60hz ... ok
+test view::tests::current_frame_fills_the_viewport_exactly ... ok
+test view::tests::round_trip ... ok
+test ui_widgets::tests::contour_is_finite_and_animated ... ok
+test view::tests::stale_frame_keeps_world_geometry_after_resize ... ok
+test view::tests::zoom_about_keeps_anchor ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

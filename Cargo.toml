@@ -1,0 +1,32 @@
+[workspace]
+resolver = "2"
+members = ["crates/blob-frame", "crates/blob-frame-testserver", "crates/showcase", "crates/blobin-ui-core", "crates/blobin-ui-scene"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+publish = false
+license = "MIT"
+
+[workspace.dependencies]
+blob-frame = { path = "crates/blob-frame" }
+blob-frame-testserver = { path = "crates/blob-frame-testserver" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+rustix = { version = "1.1.5", features = ["std", "net", "fs", "mm", "process"] }
+thiserror = "2.0.17"
+log = "0.4.29"
+env_logger = { version = "0.11.8", default-features = false, features = ["auto-color", "humantime"] }
+winit = { version = "0.30.13", default-features = false, features = ["rwh_06", "wayland", "wayland-dlopen"] }
+wgpu = { version = "30.0.1", default-features = false, features = ["std", "vulkan", "wgsl", "parking_lot"] }
+egui = { version = "0.36.2", default-features = false, features = ["default_fonts"] }
+egui-wgpu = { version = "0.36.2", default-features = false }
+egui-winit = { version = "0.36.2", default-features = false, features = ["wayland"] }
+pollster = "0.4.0"
+
+[patch.crates-io]
+wgpu-hal = { path = "vendor/wgpu-hal-30.0.1" }
+
+[profile.release]
+debug = "line-tables-only"

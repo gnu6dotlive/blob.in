@@ -1,0 +1,12 @@
+
+running 7 tests
+test app::ac04_production_input_tests::ui01a_egui_entire_label_and_thumb_both_activate_once ... ok
+test app::ac04_production_input_tests::ui01b_egui_real_distance_action_then_toggle_separate_authorities ... ok
+test app::ac04_production_input_tests::real_egui_pan_is_preview_only_until_release ... ok
+test app::ac04_production_input_tests::real_egui_canvas_escape_during_drag_keeps_scene_and_scheduler ... ok
+test app::ac04_production_input_tests::egui_geometry_epoch_change_cancels_active_drag ... ok
+test app::ac04_production_input_tests::real_egui_canvas_drag_previews_then_one_commit_then_undo ... ok
+test app::ac04_production_input_tests::ui01c_reset_real_camera_one_commit_then_idempotent_and_others_survive ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 40 filtered out; finished in 0.09s
+

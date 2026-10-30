@@ -1,0 +1,10 @@
+
+running 6 tests
+test ac02_scene::tests::escape_clears_preview_without_reorder ... ok
+test ac02_scene::tests::cancelled_drag_and_resize_preserve_revision ... ok
+test ac02_scene::tests::preview_does_not_commit_reorder_updates_real_layout_and_hit ... ok
+test ac02_scene::tests::simple_click_still_activates_once_without_drag_commit ... ok
+test ac02_scene::tests::subthreshold_drag_does_not_mutate_tree ... ok
+test ac02_scene::tests::second_card_can_be_reordered_left_with_exactly_one_revision ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 20 filtered out; finished in 0.00s

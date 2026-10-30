@@ -1,0 +1,29 @@
+   Compiling blobin-f2-topology v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F2)
+   Compiling blobin-f3-material-height v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F3)
+   Compiling blobin-f4-effects v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4)
+   Compiling blobin-f4b-resilience v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4B)
+   Compiling blobin-f4c-incremental v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4C)
+    Finished `test` profile [unoptimized] target(s) in 0.56s
+     Running unittests src/lib.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/blobin_f4c_incremental-72d942c431aa126f)
+
+running 5 tests
+test tests::halo_and_zero_idle ... ok
+test tests::reduced_motion_has_no_history_halo ... ok
+test tests::invalid_damage_rejected ... ok
+test tests::shader_parses_and_validates ... ok
+test tests::independent_reference_matches_f4_two_frames ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.11s
+
+     Running unittests src/main.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/blobin_f4c_incremental-c1f5e4f441421518)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests blobin_f4c_incremental
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

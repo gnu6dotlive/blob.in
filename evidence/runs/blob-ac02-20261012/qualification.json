@@ -1,0 +1,175 @@
+{
+  "mandate": "BLOB-AC-02",
+  "date_utc": "2026-10-12T14:20:46.877925+00:00",
+  "repo": "tension-atoi/blob.in-showcase",
+  "branch": "main",
+  "baseline": "3dbf7378440f23cf9afda198b5fb5f408f56e687",
+  "origin": "https://github.com/tension-atoi/blob.in-showcase.git",
+  "claim": "Native consumer semantic tests and native Wayland/Vulkan submission only; not real gesture E2E",
+  "g05_visible_pixel_oracle": "HOLD",
+  "g06_native_physical_gesture_oracle": "NOT_RUN",
+  "cp03_hybrid_60": "NOT_PASS",
+  "ui_g04_full": "NOT_PROMOTED",
+  "sources": {
+    "contracts/BLOB-AC-02-NATIVE-GESTURE-CONSUMER-20261012.md": "323c0e2e2651ca20280cd556efe1f34ae24082d69f595093c36d091b7f2a2e09",
+    "crates/showcase/src/lib.rs": "3329ba74aca755dd130f0e35b1226a528735342dca2557effc78f85fdf929188",
+    "crates/showcase/src/ac02_scene.rs": "f305f740d29a0168e961fa6e6365ffc49a4ba0f432c25f7f40c8c3fb562e9f36",
+    "crates/showcase/src/bin/blobin_ui_ac02_wayland.rs": "03c4e6be76e57e520ace89183152c3c8a8e42f5fc28c9813482d8c4adc773014",
+    "docs/BLOB-AC-02-NATIVE-CONSUMER-QUALIFICATION-20261012.md": "166ff38c5bc93534f1f6156793ce294f70ff513728b16c4bd05a9b9d7e432b52",
+    "docs/PROGRAM-INTEGRATION-SPINE-20261012.md": "4d225d106a03612aabb58ce42d00cef8c7c73d28ee0f088b352d156b5a2a145c",
+    "scripts/blob_ac02_verify.py": "d05e5ef73c0c0e158bfd23df9df6063d1e7319f36fc6324c5282045a795c0051",
+    "scripts/blob_ac02_native_smoke.py": "b5349bad6f553f5ab3592f875b75ae5f16fed7e51040e24c9992109a91dda621"
+  },
+  "commands": [
+    {
+      "argv": [
+        "rustfmt",
+        "--edition",
+        "2021",
+        "--check",
+        "crates/showcase/src/ac02_scene.rs",
+        "crates/showcase/src/bin/blobin_ui_ac02_wayland.rs"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-01.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac02_scene"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-02.stdout.txt",
+      "stdout_sha256": "aaba326934ae680693b4ad1d57bd0f49f138dca5a41b74669bac773331b283e5",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-02.stderr.txt",
+      "stderr_sha256": "92782b366348fa898055e62cc261622019f7da6ddc8d12ae0874d3a1b986185f"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-03.stdout.txt",
+      "stdout_sha256": "d52a052400b2b7ba986478f3f8bcbceeba2a1930e0c2dc541bd10cda49cfc3fe",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-03.stderr.txt",
+      "stderr_sha256": "2b4a93012ba6947982ed0c04d0a2575554a5dd443c39341a1d4081fa04b56174"
+    },
+    {
+      "argv": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "--bin",
+        "blobin_ui_ac02_wayland",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-04.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-04.stderr.txt",
+      "stderr_sha256": "a5f4c585ee974ca44916ac30a98bbc189e067a7e0a6bc6d2e8d6bc525be724af"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-ui-core",
+        "--all-targets"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-05.stdout.txt",
+      "stdout_sha256": "dba4a67c364f4500b26645b0a2958810a514860ca608ddda9536174dde09d25f",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-05.stderr.txt",
+      "stderr_sha256": "00f1033d349bda0dfcc1ccf30c192f92d43d74697fd45b500fbf7b9ac87bf98d"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "--workspace",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-06.stdout.txt",
+      "stdout_sha256": "cee5d4914b41ae364b8c0548632ba73accc6a3100f803f966115b75accaba422",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-06.stderr.txt",
+      "stderr_sha256": "4cab9f084a967964dec3656b488cd81b52ae9774351be9b6dc30550a41301fde"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--bin",
+        "blobin_ui_ac02_wayland"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-07.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-07.stderr.txt",
+      "stderr_sha256": "59639588a6f1826f129cbcd121edc07279dab94786f5fa5bde6b3439b2e845cc"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/blob_ac02_native_smoke.py",
+        "--binary",
+        "/mnt/sandbox/builds/cargo/debug/blobin_ui_ac02_wayland",
+        "--output",
+        "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ac02-20261012/native"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac02-20261012/gate-08.stdout.txt",
+      "stdout_sha256": "2cf6cfbdee133f404d258e33b62850d98d50923ad004cee514e3c42fe3372154",
+      "stderr": "evidence/runs/blob-ac02-20261012/gate-08.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "native": {
+    "gate": "BLOB-AC-02",
+    "compositor": "private Weston headless GL",
+    "physical_pointer_oracle": false,
+    "compositor_present_feedback": false,
+    "renderer_owner": "ac02_standalone_fixture",
+    "screenshot_attempt": {
+      "exit_code": 0,
+      "count": 1,
+      "sha256": {
+        "wayland-screenshot-2026-10-12_10-20-52.png": "4f78a5695a054a36831f5e5f09a45cf9ff10d961fa1eb70f7848017034975981"
+      }
+    },
+    "screenshooter_visual_qualified": false,
+    "screenshooter_note": "Captured pixels are unqualified, even if capture succeeded; prior Weston capture was black.",
+    "verdict": "NATIVE_SURFACE_SUBMITTED_SCOPED_PASS_INPUT_E2E_NOT_RUN",
+    "binary_sha256": "e6b4d253c63d46b779e8eebfd629017ec76ac6f6752f842ea96064aada8d81f5",
+    "backend": "Vulkan",
+    "frame_submissions": 1,
+    "native_ingress_count": 0,
+    "gesture_commits": 0,
+    "source": "winit_wayland"
+  },
+  "result": "SCOPED_PASS_NATIVE_SUBMISSION_G05_G06_HOLD"
+}

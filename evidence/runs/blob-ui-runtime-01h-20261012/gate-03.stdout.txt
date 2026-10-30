@@ -1,0 +1,37 @@
+
+running 32 tests
+test bezier::tests::collinear_control_points_produce_exact_one_segment ... ok
+test composition::tests::budget_stress_64_commands_passes_and_65_fails_closed ... ok
+test bezier::tests::deterministic_quadratic_and_cubic_provenance ... ok
+test bezier::tests::invalid_inputs_and_limits_fail_closed ... ok
+test composition::tests::invisible_layer_culls_without_hiding_siblings ... ok
+test composition::tests::fills_count_and_transform_against_same_bounded_gpu_budget ... ok
+test composition::tests::order_and_distinct_surface_identity_are_preserved ... ok
+test composition::tests::rectangular_primitive_has_no_corner_radius_and_fails_closed ... ok
+test composition::tests::nested_transforms_and_clips_compose_inner_to_outer ... ok
+test composition::tests::rejects_duplicate_identity_bad_clip_and_overflow ... ok
+test composition::tests::stroke_commands_count_against_gpu_budget_and_preserve_layer_order ... ok
+test composition::tests::twelve_levels_compose_in_deterministic_inner_to_outer_order ... ok
+test concave::tests::bowtie_nan_and_duplicate_edges_fail_closed ... ok
+test concave::tests::frame_has_eight_triangles_and_strictly_empty_hole ... ok
+test fills::tests::reject_translucent_outline_nan_degenerate_and_out_of_view ... ok
+test concave::tests::l_shape_and_reverse_winding_triangulate_n_minus_two ... ok
+test fills::tests::star_with_same_local_winding_is_still_rejected ... ok
+test fills::tests::transforms_and_nested_clip_preserve_identity_and_bounds ... ok
+test fills::tests::two_triangle_fan_and_round_closed_outline_are_deterministic ... ok
+test fills::tests::winding_reversal_keeps_coverage_and_concavity_fails_closed ... ok
+test strokes::tests::invalid_zero_nan_clipping_and_capacity_are_rejected ... ok
+test strokes::tests::parent_transforms_and_clips_change_actual_segments ... ok
+test strokes::tests::path_preserves_order_color_and_bounds ... ok
+test tests::clipping_and_semantic_target ... ok
+test tests::no_brand_dependency_or_external_renderer ... ok
+test tests::action_rejects_stale_layout_and_empty_clip ... ok
+test tests::action_visual_state_is_semantic_and_deterministic ... ok
+test tests::rejects_stale_geometry_epoch ... ok
+test tests::state_changes_only_thumb_and_track ... ok
+test bezier::tests::flatness_is_bounded_by_segment_tolerance ... ok
+test tests::transforms_reject_nonfinite_and_inverted_scales ... ok
+test tests::transform_and_nested_clips_preserve_semantics ... ok
+
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,129 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 16 tests
+test creates_ordered_tree_with_unique_handles ... ok
+test changing_one_leaf_marks_only_leaf_and_ancestors ... ok
+test closed_surface_ids_are_not_aliases_for_old_nodes ... ok
+test invalid_child_index_rolls_back_insert_and_revision ... ok
+test custom_aborted_transaction_does_not_escape ... ok
+test invalid_reorder_is_atomic ... ok
+test descendant_removal_invalidates_all_and_reuses_only_new_generation ... ok
+test insert_child_at_middle_preserves_existing_ids ... ok
+test invalid_stale_handle_cannot_modify_current_component ... ok
+test reorder_changes_sibling_order_without_changing_node_identity ... ok
+test root_order_can_be_changed_without_a_parent ... ok
+test snapshots_are_send_and_sync ... ok
+test surface_cannot_be_duplicated_or_targeted_before_opening ... ok
+test separate_surfaces_have_independent_revision_and_lifetimes ... ok
+test snapshot_is_immutable_after_successive_transactions ... ok
+test unmodified_properties_and_no_op_reorder_do_not_bump_revision ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 10 tests
+test absolute_preview_and_one_cow_document_commit ... ok
+test click_never_commits_and_cancel_keeps_tree_unchanged ... ok
+test duplicate_or_mismatched_receipts_rejected_without_duplicating_commit ... ok
+test pointer_capture_allows_preview_and_commit_outside_canvas ... ok
+test physical_pixels_normalize_through_ui_g03_dpr ... ok
+test escape_and_window_blur_cancel_all_pointers_but_only_on_target_surface ... ok
+test invalid_layout_or_event_never_commits_and_returns_error ... ok
+test explicit_close_resets_only_that_surface_ledger ... ok
+test second_down_does_not_begin_duplicate_gesture ... ok
+test resize_cancels_preexisting_gesture_instead_of_rebasing ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 11 tests
+test aborted_surface_epoch_is_never_reused ... ok
+test close_and_reopen_surface_uses_new_epoch_not_old_revision ... ok
+test duplicate_empty_key_and_stale_parent_rejected_atomically ... ok
+test keyed_reorder_retains_handles_and_descendants ... ok
+test property_domains_distinguish_reflow_from_paint ... ok
+test removing_keyed_subtree_produces_tombstones_not_repaint_claims ... ok
+test one_surface_updates_never_invalidate_another_surface_or_epoch ... ok
+test many_semantic_updates_in_one_transaction_coalesce_to_one_revision ... ok
+test equivalent_reconcile_is_no_op_even_with_many_children ... ok
+test independent_cow_pages_are_shared_between_snapshots ... ok
+test keyed_reconciliation_matches_independent_full_rebuild_oracle_400_steps ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 19 tests
+test capture_and_bubble_route_include_correct_ancestors ... ok
+test checked_hit_test_rejects_stale_resize_without_routing ... ok
+test clipped_reverse_paint_hit_and_half_open_edges ... ok
+test capture_and_focus_are_per_surface ... ok
+test escape_cancels_capture_but_preserves_focus ... ok
+test drag_capture_outside_bounds_and_release_outside_does_not_click ... ok
+test deleted_node_and_reused_slot_cannot_steal_focus ... ok
+test duplicate_serial_and_timestamp_regression_rejected_without_state_change ... ok
+test disabled_buttons_are_skipped_for_pointer_and_keyboard ... ok
+test exactly_one_activation_per_completed_physical_click ... ok
+test overlapping_nodes_route_to_last_painted_target ... ok
+test invalid_pointer_nan_rejected_without_advancing_event_serial ... ok
+test physical_pixels_normalize_using_dpr ... ok
+test nested_clip_prevents_hit_outside_clipped_ancestor ... ok
+test pointer_cancel_and_blur_never_activate ... ok
+test stale_resize_and_scale_event_rejected_without_capture_mutation ... ok
+test surface_epochs_reject_old_events_and_old_captures ... ok
+test wrong_button_does_not_release_capture_or_activate ... ok
+test tab_navigation_reverse_and_enter_repeat_dedup ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 14 tests
+test closing_and_reopening_a_surface_invalidates_previous_layout_epoch ... ok
+test invalid_style_viewports_and_unknown_nodes_reject_without_committing_styles ... ok
+test column_fractional_height_and_flex_growth_use_parent_content_box ... ok
+test excessive_offscreen_coordinate_fails_closed_not_integer_overflow ... ok
+test pixel_coverage_uses_rounded_edges_not_rounded_dimensions ... ok
+test nested_clip_applies_to_overflow_but_does_not_clip_unrelated_sibling ... ok
+test row_layout_flex_grow_exact_and_padding_oracle ... ok
+test scale_resize_style_revision_and_tree_revision_reject_stale_geometry ... ok
+test shrink_respects_minima_and_clips_excess ... ok
+test zero_sized_viewport_yields_empty_coverage ... ok
+test separate_surface_style_and_tree_updates_do_not_invalidate_other_window ... ok
+test layout_is_deterministic_across_resolution_and_dpr_matrix ... ok
+test independent_analytic_oracle_for_fixed_plus_one_growing_child_512_cases ... ok
+test overdeep_tree_rejected_before_painting ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 5 tests
+test empty_transaction_is_a_pure_no_op ... ok
+test created_and_removed_in_the_same_transaction_is_not_dirty ... ok
+test aborted_handle_can_never_become_a_valid_handle ... ok
+test failed_transaction_cannot_invalidate_a_different_surface ... ok
+test deterministic_seeded_mutation_replay_with_600_steps ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

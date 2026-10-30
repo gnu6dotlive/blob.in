@@ -1,0 +1,36 @@
+{
+  "archive_sha256": {
+    "composition-stress.png": "db408faa62e16dea4e90291bd4d2c9fa2717c38519748f2629c8703264416c78",
+    "composition-stress.rgba.gz": "00256baae2305616669f9c2284d45d3f8e5dc849732dab4107d3506a4dea694f",
+    "production-events.jsonl": "abb99772db82b8388b9a7c412356deeb3e26c1912254780f272cf978a32d5b69",
+    "renderd.stderr": "79924ba15b48edd850c8d877f63f81b91880715ee0a4a265ef80565bafde7499",
+    "renderd.stdout": "2a93b22bbf769f3a403aa733c85375e045bbb3427e2a9de77c74aadbc8ee5553",
+    "showcase.stderr": "7611ef62854dee469c5703edd62eb8219e05a536802d2a024cb9ae8765a490fb",
+    "weston.log": "7011ba426cc5a33554405b9a6a984058fa19d166cc5d465a012e739d913b6ec5",
+    "weston.stderr": "fa103e674c8d59a719c5c0a84bd54d693b56ef7003646e132333832c494eacd9"
+  },
+  "composed_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_draw_commands": 64,
+  "gpu_sdf_qualified": false,
+  "gpu_source_extent": [
+    1280,
+    800
+  ],
+  "gpu_uniform_buffer_and_bind_group_resident": 2,
+  "input_layers": 4,
+  "original_gpu_rgba_sha256": "33c5ad295e6615913377e1b3e391dc335affcaf236ca7cada6dd3a848cd7a5f9",
+  "physical_hid": false,
+  "real_renderer": "blobin_renderd CPU",
+  "scene": "3 live production UI controls + 55 opt-in PRIVATE-WESTON-only stress rectangles",
+  "sdf_frame_count": 2,
+  "sdf_revisions": [
+    3,
+    4
+  ],
+  "stress_fixture_confined_to_private_wayland": true,
+  "stress_not_an_fps_benchmark": true,
+  "verdict": "SCOPED_PASS_REAL_WGPU_64_COMMAND_COMPOSED_SCENE",
+  "verified_stress_shape_pixels": 55
+}

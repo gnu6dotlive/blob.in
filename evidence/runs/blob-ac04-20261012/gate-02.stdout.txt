@@ -1,0 +1,10 @@
+
+running 6 tests
+test ac04_scene_gestures::tests::focus_loss_and_escape_cancel_without_mutation ... ok
+test ac04_scene_gestures::tests::external_edit_prevents_clobbering_undo ... ok
+test ac04_scene_gestures::tests::pan_absolute_preview_does_not_change_canonical_camera ... ok
+test ac04_scene_gestures::tests::previews_are_absolute_and_only_one_canonical_commit ... ok
+test ac04_scene_gestures::tests::invalid_deltas_cancel_not_commit ... ok
+test ac04_scene_gestures::tests::stale_target_and_external_mutation_fail_closed ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 30 filtered out; finished in 0.00s

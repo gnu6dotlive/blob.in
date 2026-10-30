@@ -1,0 +1,329 @@
+{
+  "schema": "gnu6.qchain.gpu_execution_dispatch.v1",
+  "contract": "docs/QCHAIN-GPU-EXECUTION-01.md",
+  "edition": "1.0",
+  "created_date": "2026-10-10",
+  "document_status": "draft",
+  "operator_ratification": "PENDING",
+  "execution_authority": "CONTRACT_AUTHORING_ONLY",
+  "baseline": {
+    "source_worktree": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/in-gnu6-qchain-cpu-20261010",
+    "source_commit": "493374355172df79b52b8292598ebbdf79a18960",
+    "source_branch": "feat/blobin-qchain-cpu-witness-20261010",
+    "integration_worktree": "/home/tension_atoi/Projects/.worktrees/blobin-showcase-qchain-20261010",
+    "integration_head_before_contract": "4e9678f34ec17e62312420ebf8d517381ce146f1",
+    "integration_branch": "feat/qchain-scene-frame-protocol-20261010",
+    "fixture_root": "/mnt/workbench/evidence/runs/qchain-cpu-20261010/raw",
+    "cpu_receipt": "/mnt/workbench/evidence/runs/qchain-cpu-20261010/qchain-reconciliation.json",
+    "private_wayland_evidence": "/mnt/workbench/evidence/runs/qchain-wayland-20261010-b",
+    "frame_count": 5,
+    "unique_source_scene_identities": 5,
+    "distinct_f4_pixel_buffers": 3,
+    "width": 512,
+    "height": 384,
+    "rgba_stride_bytes": 2048,
+    "rgba_frame_bytes": 786432
+  },
+  "provenance": {
+    "gpu_model": "NVIDIA GeForce RTX 3070",
+    "driver_observed": "615.78.08",
+    "backend_target": "Vulkan / WGSL (reuse existing)",
+    "cuda_preflight": "PASS_CONTROL_REDUCTION_ONLY",
+    "qchain_gpu_renderer": "NOT_RUN",
+    "cpu_compositor_mask": "FOUR_18x18_CORNER_SQUARES",
+    "full_unmasked_compositor_pixels": "NOT_PASS"
+  },
+  "invariants": [
+    "CPU oracle is immutable and read-only",
+    "scene identity != pixel hash",
+    "no GPU-full-chain claim with CPU rendering input",
+    "no CPU fallback hidden behind GPU label",
+    "exact parity != bounded tolerance",
+    "do not modify BLOB-FRAME-v1 ABI",
+    "do not write to production/resident services",
+    "keep screenshot captures and raw buffers private",
+    "no push, merge, publish or deployment without explicit authorization",
+    "missing evidence -> NOT_RUN/HOLD, never PASS"
+  ],
+  "evidence_root_template": "/mnt/workbench/evidence/runs/qchain-gpu-execution-01/<RUN_ID>/",
+  "states": [
+    "NOT_RUN",
+    "PASS",
+    "FAIL",
+    "HOLD",
+    "INCONCLUSIVE"
+  ],
+  "negative_laws": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12",
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17"
+  ],
+  "gates": [
+    {
+      "id": "G00",
+      "depends_on": [],
+      "owner": "W00",
+      "status": "NOT_RUN",
+      "artifact": "inventory.json"
+    },
+    {
+      "id": "G01",
+      "depends_on": [
+        "G00"
+      ],
+      "owner": "W01",
+      "status": "NOT_RUN",
+      "artifact": "cpu-replay.json"
+    },
+    {
+      "id": "G02",
+      "depends_on": [
+        "G01"
+      ],
+      "owner": "W02",
+      "status": "NOT_RUN",
+      "artifact": "f2-gpu.json"
+    },
+    {
+      "id": "G03",
+      "depends_on": [
+        "G01"
+      ],
+      "owner": "W03",
+      "status": "NOT_RUN",
+      "artifact": "f3-gpu.json"
+    },
+    {
+      "id": "G04",
+      "depends_on": [
+        "G02",
+        "G03"
+      ],
+      "owner": "W04",
+      "status": "NOT_RUN",
+      "artifact": "f4-gpu.json"
+    },
+    {
+      "id": "G05",
+      "depends_on": [
+        "G04"
+      ],
+      "owner": "W04",
+      "status": "NOT_RUN",
+      "artifact": "compute-lineage.json"
+    },
+    {
+      "id": "G06",
+      "depends_on": [
+        "G05"
+      ],
+      "owner": "W07",
+      "status": "NOT_RUN",
+      "artifact": "negative-tests.json"
+    },
+    {
+      "id": "G07",
+      "depends_on": [
+        "G06"
+      ],
+      "owner": "W05",
+      "status": "NOT_RUN",
+      "artifact": "ipc-gpu.json"
+    },
+    {
+      "id": "G08",
+      "depends_on": [
+        "G07"
+      ],
+      "owner": "W06",
+      "status": "NOT_RUN",
+      "artifact": "compositor-gpu.json"
+    },
+    {
+      "id": "G09",
+      "depends_on": [
+        "G08"
+      ],
+      "owner": "W08",
+      "status": "NOT_RUN",
+      "artifact": "replay.json"
+    },
+    {
+      "id": "G10",
+      "depends_on": [
+        "G09"
+      ],
+      "owner": "W08",
+      "status": "NOT_RUN",
+      "artifact": "qualification.json"
+    }
+  ],
+  "workers": [
+    {
+      "id": "W00",
+      "title": "Archiviste / provenance",
+      "depends_on": [],
+      "assigned_gates": [
+        "G00"
+      ],
+      "scope": "read-only original source and evidence",
+      "deliverables": [
+        "inventory.json",
+        "hashes.sha256"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W01",
+      "title": "CPU oracle",
+      "depends_on": [
+        "W00"
+      ],
+      "assigned_gates": [
+        "G01"
+      ],
+      "scope": "new isolated private evidence run only",
+      "deliverables": [
+        "cpu-replay.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W02",
+      "title": "F2 projection",
+      "depends_on": [
+        "W01"
+      ],
+      "assigned_gates": [
+        "G02"
+      ],
+      "scope": "isolated integration worktree only; canonical producer read-only",
+      "deliverables": [
+        "f2-gpu.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W03",
+      "title": "F3 material fields",
+      "depends_on": [
+        "W01"
+      ],
+      "assigned_gates": [
+        "G03"
+      ],
+      "scope": "isolated integration worktree only; canonical producer read-only",
+      "deliverables": [
+        "f3-gpu.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W04",
+      "title": "F4 effects and lineage",
+      "depends_on": [
+        "W02",
+        "W03"
+      ],
+      "assigned_gates": [
+        "G04",
+        "G05"
+      ],
+      "scope": "isolated integration worktree only; GPU vs CPU dependencies explicit",
+      "deliverables": [
+        "f4-gpu.json",
+        "compute-lineage.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W05",
+      "title": "Versioned GPU transport",
+      "depends_on": [
+        "W04"
+      ],
+      "assigned_gates": [
+        "G07"
+      ],
+      "scope": "opt-in experimental protocol only",
+      "deliverables": [
+        "ipc-gpu.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W06",
+      "title": "Native Wayland capture",
+      "depends_on": [
+        "W05"
+      ],
+      "assigned_gates": [
+        "G08"
+      ],
+      "scope": "single private viewer; compositor global settings unchanged",
+      "deliverables": [
+        "compositor-gpu.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W07",
+      "title": "Independent negative oracle",
+      "depends_on": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "assigned_gates": [
+        "G06"
+      ],
+      "scope": "read-only positive evidence; mutate copies only",
+      "deliverables": [
+        "negative-tests.json"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "W08",
+      "title": "Independent integrator",
+      "depends_on": [
+        "W00",
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07"
+      ],
+      "assigned_gates": [
+        "G09",
+        "G10"
+      ],
+      "scope": "review and qualification only; no silent fixes",
+      "deliverables": [
+        "replay.json",
+        "qualification.json"
+      ],
+      "status": "NOT_RUN"
+    }
+  ],
+  "requested_output": "Bounded truthful GPU-compute and Wayland result, independently replayable",
+  "cp03_hybrid60": "OUT_OF_SCOPE_AND_OPEN",
+  "publication": "FORBIDDEN_WITHOUT_SEPARATE_AUTHORIZATION"
+}

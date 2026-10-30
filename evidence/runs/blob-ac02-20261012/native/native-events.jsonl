@@ -1,0 +1,3 @@
+{"backend":"Vulkan","kind":"window_ready","native_window":true,"physical":[940,640],"scale":1.0,"source":"winit_wayland"}
+{"geometry_epoch":3,"kind":"resize","physical":[940,640],"scale":1.0}
+{"activation_count":0,"compositor_presented_feedback":false,"frame_submissions":1,"gesture_cancels":0,"gesture_commits":0,"ingress_count":0,"kind":"summary","physical_input_oracle":false,"receipt_count":0,"renderer_owner":"ac02_standalone_fixture","source":"winit_window_event","ui_revision":1}

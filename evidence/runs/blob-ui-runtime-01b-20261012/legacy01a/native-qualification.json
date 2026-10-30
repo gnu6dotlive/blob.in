@@ -1,0 +1,116 @@
+{
+  "archives_sha256": {
+    "production-events.jsonl": "b5d7890cdc186732b43e75d27e8eaccf8de74aa57526d4edebe62dd44f130eed",
+    "renderd.stderr": "7f4371950e7094787c6454ac464cb99bfd5dcefbc9e864157b21b4c1ab9b9eb7",
+    "renderd.stdout": "92b66fc3be3909e85464044d2dbb680cad4c36e623d6317e03b7edb3de917484",
+    "showcase.stderr": "c5ad150417537e6dae1293fa4977a3be8da4b0e8cb1bf0653263ea6321637c29",
+    "toggle-off.png": "24998177ceab810369d0fe9b0bf205ae3b2d732e739dfc54301289dfd428fd5a",
+    "toggle-off.rgba.gz": "0f5b80610ff052f9625985a6ad4646ea77fb06f49b0eb2846b039ae031b1349d",
+    "toggle-on.png": "032c20678f9639e26ad0dca4dc9ef9d1cdef2f6a33eca72d3fa03c4fde884063",
+    "toggle-on.rgba.gz": "ea51d12f87986c8e24765d88b86c80abe575661acb347cfff41a70949fbf1fc5",
+    "weston.log": "c5db24613940bc6b14a5a79da32d1218ad4d5eec5e187155350c7167fde08c28",
+    "weston.stderr": "d77a08d969bacc2d060be82d7eb5502a62c269d263d0a2b28e2249e5a6f7f1b0"
+  },
+  "blobin_native_toggle_drawing_owner": true,
+  "capture_method": "actual first-party native wgpu compositor-target swapchain COPY_SRC before queue.present",
+  "compositor_button_releases": 1,
+  "compositor_presentation_feedback": false,
+  "control_bounds": [
+    946,
+    623,
+    52,
+    26
+  ],
+  "control_changed_channel_bytes": 2964,
+  "egui_input_owner": true,
+  "egui_text_owner": true,
+  "g02_ui_revisions": [
+    1,
+    2
+  ],
+  "g03_layout_epoch": 2,
+  "gtk_qt_electron_qml_imported": false,
+  "on_off_original_rgba_sha256": {
+    "off": "f0af8164699130bfb48ababe008972bf1f3dd15c2a99f4289427f99476f7670f",
+    "on": "c3bcb1910becc41b93993d4794fec8f5275b850c755596eb4c37d224be22a176"
+  },
+  "physical_hid": false,
+  "pixel_samples": {
+    "(205, 400)": [
+      [
+        255,
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255,
+        255
+      ]
+    ],
+    "(500, 60)": [
+      [
+        0,
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0,
+        255
+      ]
+    ],
+    "(946, 623)": [
+      [
+        23,
+        32,
+        41,
+        255
+      ],
+      [
+        23,
+        32,
+        41,
+        255
+      ]
+    ],
+    "(958, 636)": [
+      [
+        49,
+        95,
+        121,
+        255
+      ],
+      [
+        255,
+        255,
+        255,
+        255
+      ]
+    ],
+    "(986, 636)": [
+      [
+        255,
+        255,
+        255,
+        255
+      ],
+      [
+        22,
+        39,
+        51,
+        255
+      ]
+    ]
+  },
+  "scope": "production blobin-showcase + private Weston input + G02/G03 display list + same-swapchain wgpu",
+  "sdf_backend": "real blobin_renderd CPU",
+  "sdf_frame_count": 1,
+  "sdf_request_count": 1,
+  "sdf_scene_revision": 3,
+  "verdict": "SCOPED_PASS_REAL_EDITOR_NATIVE_TOGGLE_CLIENT_GPU_PIXELS"
+}

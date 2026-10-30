@@ -1,0 +1,34 @@
+Weston None socket True
+Renderd None socket True
+weston code None
+renderd code None
+showcase code None
+production-events.jsonl 47808 _batch":54,"event":"ui01c_native_submit","layout_epoch":2,"nodes":4,"present_feedback":false,"surface":268,"t_ms":4071.7933220000004,"ui_revision":3,"uniform_uploads_total":6}
+{"button":"Left","event":"ac05_winit_pointer","kind":"button","state":"Released","t_ms":4363.328074}
+{"adapter_draw_commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01h_scene_submit","input_layers":4,"persistent_allocations":2,"rectangles":14,"strokes":28,"t_ms":4367.566637000001,"total_commands":54,"triangles":12}
+{"adapter_draw_commands":54,"clipped_layers":0,"commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01d_scene_submit","input_layers":4,"persistent_allocations":2,"stress_fixture":false,"t_ms":4367.5922900000005}
+{"bounds":[946.0,665.0,52.0,26.0],"clip":[946.0,665.0,52.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01a_native_submit","layout_epoch":2,"node":1,"overlay_state":true,"renderer":"blobin-ui-scene/wgpu native overlay","sdf_frame_unchanged":true,"surface":266,"t_ms":4367.606505999999,"ui_revision":1}
+{"batched_commands":54,"batched_nodes":4,"bounds":[946.0,331.0,76.0,26.0],"clip":[946.0,331.0,76.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01b_native_submit","layout_epoch":2,"node":1,"resident_resource_allocations":2,"selected":false,"surface":267,"t_ms":4367.627375,"ui_revision":1,"uniform_uploads_total":7,"uniform_write":true}
+{"bounds":[1139.71875,631.0,94.0,26.0],"camera_default":true,"commands":3,"commands_batch":54,"event":"ui01c_native_submit","layout_epoch":2,"nodes":4,"present_feedback":false,"surface":268,"t_ms":4367.646336,"ui_revision":3,"uniform_uploads_total":7}
+{"adapter_draw_commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01h_scene_submit","input_layers":4,"persistent_allocations":2,"rectangles":14,"strokes":28,"t_ms":4380.996293,"total_commands":54,"triangles":12}
+{"adapter_draw_commands":54,"clipped_layers":0,"commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01d_scene_submit","input_layers":4,"persistent_allocations":2,"stress_fixture":false,"t_ms":4381.02356}
+{"bounds":[946.0,665.0,52.0,26.0],"clip":[946.0,665.0,52.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01a_native_submit","layout_epoch":2,"node":1,"overlay_state":true,"renderer":"blobin-ui-scene/wgpu native overlay","sdf_frame_unchanged":true,"surface":266,"t_ms":4381.037232,"ui_revision":1}
+{"batched_commands":54,"batched_nodes":4,"bounds":[946.0,331.0,76.0,26.0],"clip":[946.0,331.0,76.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01b_native_submit","layout_epoch":2,"node":1,"resident_resource_allocations":2,"selected":false,"surface":267,"t_ms":4381.057226,"ui_revision":1,"uniform_uploads_total":7,"uniform_write":false}
+{"bounds":[1139.71875,631.0,94.0,26.0],"camera_default":true,"commands":3,"commands_batch":54,"event":"ui01c_native_submit","layout_epoch":2,"nodes":4,"present_feedback":false,"surface":268,"t_ms":4381.076205,"ui_revision":3,"uniform_uploads_total":7}
+{"adapter_draw_commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01h_scene_submit","input_layers":4,"persistent_allocations":2,"rectangles":14,"strokes":28,"t_ms":4397.964085,"total_commands":54,"triangles":12}
+{"adapter_draw_commands":54,"clipped_layers":0,"commands":54,"composed_layers":4,"compositor_present_feedback":false,"event":"ui01d_scene_submit","input_layers":4,"persistent_allocations":2,"stress_fixture":false,"t_ms":4397.987586}
+{"bounds":[946.0,665.0,52.0,26.0],"clip":[946.0,665.0,52.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01a_native_submit","layout_epoch":2,"node":1,"overlay_state":true,"renderer":"blobin-ui-scene/wgpu native overlay","sdf_frame_unchanged":true,"surface":266,"t_ms":4398.001267,"ui_revision":1}
+{"batched_commands":54,"batched_nodes":4,"bounds":[946.0,331.0,76.0,26.0],"clip":[946.0,331.0,76.0,26.0],"commands":3,"compositor_present_feedback":false,"event":"ui01b_native_submit","layout_epoch":2,"node":1,"resident_resource_allocations":2,"selected":false,"surface":267,"t_ms":4398.021597,"ui_revision":1,"uniform_uploads_total":7,"uniform_write":false}
+{"bounds":[1139.71875,631.0,94.0,26.0],"camera_default":true,"commands":3,"commands_batch":54,"event":"ui01c_native_submit","layout_epoch":2,"nodes":4,"present_feedback":false,"surface":268,"t_ms":4398.040675,"ui_revision":3,"uniform_uploads_total":7}
+
+weston.stdout 0 
+renderd.stdout 127 BLOB_FRAME_LISTENING protocol=BLOB-FRAME-v1 socket=/tmp/ui01h-fresh-weston-iaz8_8cx/01h/render.sock qualification=PREVIEW_ONLY
+
+renderd.stderr 316 BLOB_FRAME_TIMING backend=cpu mode=coverage width=932 height=800 gate_ms=0.000 worker_ms=30.536 total_ms=30.538 sequence=1 descriptor=sealed_worker_per_frame
+BLOB_FRAME_TIMING backend=cpu mode=coverage width=932 height=800 gate_ms=0.000 worker_ms=30.546 total_ms=30.548 sequence=2 descriptor=sealed_worker_per_frame
+
+showcase.stdout 0 
+showcase.stderr 225 [2026-10-12T19:06:29Z INFO  blobin_showcase::app] fenêtre Wayland prête · NVIDIA GeForce RTX 3070 (Vulkan, NVIDIA)
+[2026-10-12T19:06:29Z INFO  blobin_showcase::app] connecté à « blobin-cuda05f-render-bridge » (BLOB-FRAME-v1)
+
+

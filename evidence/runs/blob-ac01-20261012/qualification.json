@@ -1,0 +1,114 @@
+{
+  "contract": "BLOB-AC-01",
+  "date_utc": "2026-10-12T13:52:18.980190+00:00",
+  "repo": "tension-atoi/blob.in-showcase",
+  "branch": "main",
+  "baseline_sha": "a33af2b6b43b0922a1e4bf0af25640509c0c46f7",
+  "origin": "https://github.com/tension-atoi/blob.in-showcase.git",
+  "scope": "headless gesture control only; UI-G04B still HOLD; CP03 HYBRID-60 still OPEN",
+  "source": {
+    "contracts/BLOB-AC-01-TRANSACTIONAL-GESTURES-20261012.md": "a42569ccffb74d42122707061164a6907d0b296e189f2a007acb1aef7a55a991",
+    "crates/blobin-ui-core/src/lib.rs": "0c758405d2ea81bcf7bf85f6ad999cfa416c82918612eebe970138b86fefa2b1",
+    "crates/blobin-ui-core/src/gestures.rs": "d39324d5ed7ee184eb5b3a90c8e2fda92ee41af27b17abc21dbff323f78a8eb3",
+    "crates/blobin-ui-core/tests/gestures.rs": "4bc2e1ef4ffd5d1238ca5a807296c798cb7bb8e1bc1994e24e14ac918222fad1",
+    "crates/blobin-ui-core/examples/gesture_workbench.rs": "6082522cdd2d4148652e73d6065c2db949631a2c0fdc7d96ea415561c895f961",
+    "scripts/blob_ac01_verify.py": "aaf570adc705b689c7b9f4da51d274547e2dbce7dd554efc41a9b4e9f66246de"
+  },
+  "commands": [
+    {
+      "argv": [
+        "cargo",
+        "fmt",
+        "-p",
+        "blobin-ui-core",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-01.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-ui-core",
+        "--all-targets"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-02.stdout.txt",
+      "stdout_sha256": "f0e7131ccc3119281d1c40acf8786584f237756e907218a89b906d17671778fe",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-02.stderr.txt",
+      "stderr_sha256": "00f1033d349bda0dfcc1ccf30c192f92d43d74697fd45b500fbf7b9ac87bf98d"
+    },
+    {
+      "argv": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-ui-core",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-03.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-03.stderr.txt",
+      "stderr_sha256": "ee1d3fffa2022e962e63e0dbe4d35c9c198450a20c29fc09030f635dbb38bfcd"
+    },
+    {
+      "argv": [
+        "cargo",
+        "tree",
+        "--offline",
+        "-p",
+        "blobin-ui-core"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-04.stdout.txt",
+      "stdout_sha256": "6126d140759c5336a3ca4e54f54913a4eeb7f0f748fdb5a88b8d9155cb07df5e",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-04.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "cargo",
+        "run",
+        "--offline",
+        "-p",
+        "blobin-ui-core",
+        "--example",
+        "gesture_workbench"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-05.stdout.txt",
+      "stdout_sha256": "028811c1b73d6a30c89cc6237c94ccb59bd3a3858006883afbdcbcb2ccf0afe0",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-05.stderr.txt",
+      "stderr_sha256": "9275d2d103711c45cc4641ef908a5a96cd18a33a93adffa2a36f62a97ade367a"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "--workspace",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac01-20261012/gate-06.stdout.txt",
+      "stdout_sha256": "97f3e0bcb768ccadc44c81c46f1aa0837bc19003c6f4b8422dbbb7d769b7715c",
+      "stderr": "evidence/runs/blob-ac01-20261012/gate-06.stderr.txt",
+      "stderr_sha256": "023fb5906d444fac83d7b985c2b4850522ba54b38328638ddcc29c0b050b18b6"
+    }
+  ],
+  "dependency_check": "PASS (std only)",
+  "demo_check": "PASS",
+  "result": "SCOPED_PASS"
+}

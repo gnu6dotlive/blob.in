@@ -1,0 +1,23 @@
+{
+  "gate": "BLOB-AC-02",
+  "compositor": "private Weston headless GL",
+  "physical_pointer_oracle": false,
+  "compositor_present_feedback": false,
+  "renderer_owner": "ac02_standalone_fixture",
+  "screenshot_attempt": {
+    "exit_code": 0,
+    "count": 1,
+    "sha256": {
+      "wayland-screenshot-2026-10-12_10-20-52.png": "4f78a5695a054a36831f5e5f09a45cf9ff10d961fa1eb70f7848017034975981"
+    }
+  },
+  "screenshooter_visual_qualified": false,
+  "screenshooter_note": "Captured pixels are unqualified, even if capture succeeded; prior Weston capture was black.",
+  "verdict": "NATIVE_SURFACE_SUBMITTED_SCOPED_PASS_INPUT_E2E_NOT_RUN",
+  "binary_sha256": "e6b4d253c63d46b779e8eebfd629017ec76ac6f6752f842ea96064aada8d81f5",
+  "backend": "Vulkan",
+  "frame_submissions": 1,
+  "native_ingress_count": 0,
+  "gesture_commits": 0,
+  "source": "winit_wayland"
+}

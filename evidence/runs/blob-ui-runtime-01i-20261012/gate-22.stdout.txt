@@ -1,0 +1,26 @@
+{
+  "antialias_triangle_edges_qualified": false,
+  "arbitrary_holes_qualified": false,
+  "arbitrary_winding_qualified": false,
+  "composition_layers": 4,
+  "compositor_present_feedback": false,
+  "cp03_hybrid60": "NOT_PASS",
+  "gpu_client_readback_before_present": true,
+  "gpu_sdf_qualified": false,
+  "independent_geometry_pixel_witnesses": 18,
+  "original_gpu_rgba_sha256": "7670074136b75e02cf56052593ef16b9284b21bae0b381fc651e2d24dce220dd",
+  "prior_01f_curve_sample_pixels": 66,
+  "prior_rectangle_centers": 5,
+  "qualified_shapes": "simple L-shape concavity + rectangular frame with one inset rectangular hole",
+  "rectangles": 14,
+  "renderer": "real blobin_renderd CPU + showcase wgpu",
+  "sdf_cpu_revisions": [
+    3,
+    4
+  ],
+  "sdf_frames": 2,
+  "strokes": 28,
+  "total_native_gpu_commands": 54,
+  "triangles": 12,
+  "verdict": "SCOPED_PASS_NATIVE_CONCAVE_AND_RECTANGULAR_HOLE"
+}

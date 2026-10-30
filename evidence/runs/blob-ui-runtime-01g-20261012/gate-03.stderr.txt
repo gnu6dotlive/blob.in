@@ -1,0 +1,2 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_scene-1dcc53c57ce8cc60)

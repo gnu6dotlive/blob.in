@@ -1,0 +1,60 @@
+{
+  "schema": "blob.in.ui_g03_headless_layout.v1",
+  "date": "2026-10-12",
+  "gate": "UI-G03",
+  "verdict": "SCOPED_PASS",
+  "baseline_main": "de4ff5e1d500551ad9b6783d0199801eea2c8aa3",
+  "integration_branch": "main",
+  "check_results": {
+    "rustfmt": {
+      "exit": 0,
+      "passing_tests": 0,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "core-all-targets": {
+      "exit": 0,
+      "passing_tests": 46,
+      "sha256": "d3b1e66b6355c03ba145c2b8c62c3571d986b72ef82c28ac5928baab655f43ac"
+    },
+    "clippy-strict": {
+      "exit": 0,
+      "passing_tests": 0,
+      "sha256": "4ab30710c11da1c5c2a5cfbe0fb75234e859f23e6a17a0e0a148d102681247e7"
+    },
+    "std-only-deps": {
+      "exit": 0,
+      "passing_tests": 0,
+      "sha256": "6126d140759c5336a3ca4e54f54913a4eeb7f0f748fdb5a88b8d9155cb07df5e"
+    },
+    "headless-layout-example": {
+      "exit": 0,
+      "passing_tests": 0,
+      "sha256": "b900feaec7e1d38e19326fe6da7c9979a9d22a2651257fa721e42848013c3ee5"
+    },
+    "workspace-lib-regression": {
+      "exit": 0,
+      "passing_tests": 51,
+      "sha256": "934e1f26d6c45b6046c47fbcc4dcd81a96fd455d4683383a2dc0c1e4b05ed7f8"
+    }
+  },
+  "source_sha256": {
+    "crates/blobin-ui-core/src/layout.rs": "5267a5014dc8c140492db979143bb74053aa3414f97c21c1310e66a32782bd36",
+    "crates/blobin-ui-core/src/lib.rs": "fce225473666da0338564a578570bb34c061dbc7d9115eb701eb43f6cd90736a",
+    "crates/blobin-ui-core/tests/layout_matrix.rs": "b95f66a2e4f0fa1e59d9db3abb709c6977a1137d0182d0a30b9be76f62561b3a",
+    "crates/blobin-ui-core/examples/layout_workbench.rs": "4ba362316b40fa822077fbcf5f020c197349f75af36dae4b7a26dfd6759a77a3",
+    "crates/blobin-ui-core/README.md": "15522d7216e035156681af417e100bf2daff5ff65dfeadffdccb4c471a371305",
+    "docs/BLOB-UI-G03-DETERMINISTIC-LAYOUT-20261012.md": "4105efa9341484da34e179c644292cc453acc490985763021bb86fafbc5d9843",
+    "docs/PROGRAM-INTEGRATION-SPINE-20261012.md": "576afd6b0a72e9ebc11d799250ef179a2dc7276f4d3e19b0d307a780153074e5",
+    "scripts/blobin_ui_g03_verify.py": "571187c3bf3ebf275de13394b52871c8ce1d6d40d146e7b6f1e343011e3f0c7f"
+  },
+  "g03_new_tests": 14,
+  "resolution_dpr_matrix_cases": 120,
+  "independent_analytic_oracle_cases": 512,
+  "prior_reconcile_oracle_steps": 400,
+  "prior_transaction_replay_steps": 600,
+  "geometry_only": true,
+  "actual_wayland_input_verified": false,
+  "independent_wgpu_renderer_verified": false,
+  "compositor_presentation_verified": false,
+  "cp03_hybrid60_pass": false
+}

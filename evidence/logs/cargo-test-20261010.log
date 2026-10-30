@@ -1,0 +1,115 @@
+   Compiling blob-frame v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/blob-frame)
+   Compiling blob-frame-testserver v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/blob-frame-testserver)
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/showcase)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.07s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blob_frame-57beb4ed8740281b)
+
+running 15 tests
+test memfd::tests::sealed_buffer_cannot_be_modified ... ok
+test memfd::tests::rejects_unsealed_truncated_and_foreign ... ok
+test memfd::tests::sealed_roundtrip ... ok
+test proto::tests::backend_offer_requires_cuda_configured ... ok
+test proto::tests::accepts_renderd_frame_sequence_and_handshake_shapes ... ok
+test proto::tests::frame_checks ... ok
+test proto::tests::request_validation ... ok
+test transport::tests::datagram_boundaries_and_fds ... ok
+test proto::tests::rejects_wrong_version_unknown_fields_and_types ... ok
+test transport::tests::oversize_and_too_many_fds_are_rejected ... ok
+test proto::tests::matches_the_contract_example_byte_for_byte_semantics ... ok
+test proto::tests::maximal_request_fits_control_limit ... ok
+test transport::tests::private_dir_checks ... ok
+test transport::tests::close_and_shutdown_end_recv ... ok
+test transport::tests::read_timeout ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blob_frame_testserver-d30318a11f7dda75)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/mnt/sandbox/builds/cargo/debug/deps/blob_frame_testserver-806e65280c9e2631)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/leaks.rs (/mnt/sandbox/builds/cargo/debug/deps/leaks-05a795db71986449)
+
+running 1 test
+test descriptors_and_mappings_are_released ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.00s
+
+     Running tests/transport_e2e.rs (/mnt/sandbox/builds/cargo/debug/deps/transport_e2e-cfa3113f836d8239)
+
+running 15 tests
+test insecure_socket_directory_is_refused ... ok
+test unconfigured_cuda_is_not_offered ... ok
+test failing_backend_is_reported_never_substituted ... ok
+test server_side_rejection_matches_renderd ... ok
+test invalid_requests_are_refused_without_a_round_trip ... ok
+test render_errors_are_attributed_and_the_session_survives ... ok
+test wrong_server_version_is_refused_and_retried ... ok
+test bad_frames_are_rejected_and_the_session_survives ... ok
+test valid_frames_all_modes_and_backends ... ok
+test ping_is_answered_in_sequence ... ok
+test sizes_at_the_limits_and_revision_barcode ... ok
+test missing_server_is_retried_with_backoff ... ok
+test one_request_at_a_time ... ok
+test unanswered_request_times_out_and_resets_the_session ... ok
+test session_ending_faults_fail_the_request_disconnect_then_reconnect ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_showcase-ded893beb45db4f3)
+
+running 13 tests
+test scene::tests::editing_keeps_the_first_circle_a_union ... ok
+test scene::tests::hit_prefers_topmost ... ok
+test scheduler::tests::coalesces_bursts_into_one_request ... ok
+test scene::tests::labs_are_valid_scenes ... ok
+test scheduler::tests::fit_respects_limits_and_aspect ... ok
+test scheduler::tests::stale_and_unknown_frames_are_not_presented ... ok
+test view::tests::round_trip ... ok
+test view::tests::stale_frame_keeps_world_geometry_after_resize ... ok
+test view::tests::current_frame_fills_the_viewport_exactly ... ok
+test view::tests::zoom_about_keeps_anchor ... ok
+test scheduler::tests::failure_frees_the_slot_without_retry_loop ... ok
+test scheduler::tests::session_reset_rerenders ... ok
+test scene::tests::camera_transform_and_bounds ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_showcase-e9cff7a75089454c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/resize_pipeline.rs (/mnt/sandbox/builds/cargo/debug/deps/resize_pipeline-a83095b266e0aeff)
+
+running 1 test
+test resize_storm_is_coalesced_and_ends_on_the_final_size ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.41s
+
+   Doc-tests blob_frame
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests blob_frame_testserver
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests blobin_showcase
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

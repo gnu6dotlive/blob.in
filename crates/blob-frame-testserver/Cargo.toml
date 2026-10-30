@@ -1,0 +1,17 @@
+[package]
+name = "blob-frame-testserver"
+description = "Isolated BLOB-FRAME-v1 test server: emits known reference frames and controlled faults. Not a renderer."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "blob-frame-testserver"
+path = "src/main.rs"
+
+[dependencies]
+blob-frame.workspace = true
+log.workspace = true
+env_logger.workspace = true

@@ -1,0 +1,1088 @@
+   Compiling wgpu-hal v30.0.1 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/vendor/wgpu-hal-30.0.1)
+   Compiling blob-frame v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/blob-frame)
+   Compiling blob-frame-testserver v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/blob-frame-testserver)
+   Compiling wgpu-core-deps-windows-linux-android v30.0.1
+   Compiling wgpu-core v30.0.1
+   Compiling wgpu v30.0.1
+   Compiling egui-wgpu v0.36.2
+   Compiling blobin-showcase v0.1.0 (/home/tension_atoi/Projects/.worktrees/blobin-showcase-ui01-20261012/crates/showcase)
+error[E0425]: cannot find type `Ui` in this scope
+ --> crates/showcase/src/ui_widgets.rs:2:22
+  |
+2 | pub fn draw(ui: &mut Ui, state: &mut UiRuntime, dt_seconds: f32, frames: u64) {
+  |                      ^^ not found in this scope
+
+error[E0425]: cannot find type `UiRuntime` in this scope
+ --> crates/showcase/src/ui_widgets.rs:2:38
+  |
+2 | pub fn draw(ui: &mut Ui, state: &mut UiRuntime, dt_seconds: f32, frames: u64) {
+  |                                      ^^^^^^^^^ not found in this scope
+  |
+help: consider importing this struct
+  |
+1 + use crate::ui_motion::UiRuntime;
+  |
+
+error[E0425]: cannot find value `BG` in this scope
+  --> crates/showcase/src/ui_widgets.rs:14:21
+   |
+14 |     rect(ui, outer, BG, 0);
+   |                     ^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:15:14
+   |
+15 |     rect(ui, Rect::from_min_max(origin, Pos2::new(rail, origin.y+h)), PANEL, 0);
+   |              ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0425]: cannot find value `PANEL` in this scope
+  --> crates/showcase/src/ui_widgets.rs:15:71
+   |
+15 |     rect(ui, Rect::from_min_max(origin, Pos2::new(rail, origin.y+h)), PANEL, 0);
+   |                                                                       ^^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::PANEL;
+   |
+
+error[E0425]: cannot find value `OUTLINE` in this scope
+  --> crates/showcase/src/ui_widgets.rs:16:35
+   |
+16 |     line(ui, rail, origin.y, 0.0, OUTLINE);
+   |                                   ^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:18:20
+   |
+18 |         "b", 34.0, CYAN, Align2::CENTER_CENTER);
+   |                    ^^^^ not found in this scope
+
+error[E0425]: cannot find value `TEXT` in this scope
+  --> crates/showcase/src/ui_widgets.rs:20:32
+   |
+20 |         "BLOB / STUDIO", 14.0, TEXT, Align2::LEFT_CENTER);
+   |                                ^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::TEXT;
+   |
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:22:42
+   |
+22 |         "NATIVE 2D RENDER ENGINE", 10.0, MUTED, Align2::LEFT_CENTER);
+   |                                          ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:24:39
+   |
+24 |         "VULKAN   ·   WAYLAND", 11.0, CYAN, Align2::RIGHT_CENTER);
+   |                                       ^^^^ not found in this scope
+
+error[E0425]: cannot find value `OUTLINE` in this scope
+  --> crates/showcase/src/ui_widgets.rs:25:50
+   |
+25 |     line(ui, rail, origin.y+78.0, w-layout.rail, OUTLINE);
+   |                                                  ^^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:28:17
+   |
+28 |         let r = Rect::from_min_size(Pos2::new(origin.x+12.0,top),
+   |                 ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0433]: cannot find type `UiAction` in this scope
+  --> crates/showcase/src/ui_widgets.rs:32:28
+   |
+32 |             state.dispatch(UiAction::SelectSurface(i));
+   |                            ^^^^^^^^ use of undeclared type `UiAction`
+   |
+help: consider importing this enum
+   |
+ 1 + use crate::ui_motion::UiAction;
+   |
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:36:23
+   |
+36 |         "v0.1", 11.0, MUTED, Align2::CENTER_CENTER);
+   |                       ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:40:18
+   |
+40 |     let canvas = Rect::from_min_max(Pos2::new(rail,canvas_top),
+   |                  ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0425]: cannot find value `OUTLINE` in this scope
+  --> crates/showcase/src/ui_widgets.rs:43:25
+   |
+43 |         Stroke::new(1.0,OUTLINE),egui::StrokeKind::Inside);
+   |                         ^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:53:36
+   |
+53 |         "SCENE 01  /  LIVE", 11.0, CYAN, Align2::LEFT_CENTER);
+   |                                    ^^^^ not found in this scope
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:55:48
+   |
+55 |         "Organic surface • interactive", 12.0, MUTED, Align2::LEFT_CENTER);
+   |                                                ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:57:67
+   |
+57 |         "MOVE POINTER   /   CLICK RAIL   /   SPACE PAUSES", 10.0, MUTED, Align2::LEFT_CENTER);
+   |                                                                   ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:60:19
+   |
+60 |         let panel=Rect::from_min_max(Pos2::new(inspector_x,canvas_top),Pos2::new(origin.x+w,origin.y+h));
+   |                   ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0425]: cannot find value `PANEL` in this scope
+  --> crates/showcase/src/ui_widgets.rs:61:23
+   |
+61 |         rect(ui,panel,PANEL,0);
+   |                       ^^^^^
+   |
+help: a local variable with a similar name exists
+   |
+61 -         rect(ui,panel,PANEL,0);
+61 +         rect(ui,panel,panel,0);
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::PANEL;
+   |
+
+error[E0425]: cannot find value `TEXT` in this scope
+  --> crates/showcase/src/ui_widgets.rs:63:66
+   |
+63 |         text(ui,Pos2::new(left,canvas_top+33.0),"INSPECTOR",13.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                  ^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::TEXT;
+   |
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:64:77
+   |
+64 |         text(ui,Pos2::new(left,canvas_top+61.0),"SURFACE / PROPERTIES",10.0,MUTED,Align2::LEFT_CENTER);
+   |                                                                             ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `OUTLINE` in this scope
+  --> crates/showcase/src/ui_widgets.rs:65:70
+   |
+65 |         line(ui,inspector_x+1.0,canvas_top+82.0,layout.inspector-2.0,OUTLINE);
+   |                                                                      ^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `TEXT` in this scope
+  --> crates/showcase/src/ui_widgets.rs:66:71
+   |
+66 |         text(ui,Pos2::new(left,canvas_top+114.0),"Motion system",14.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                       ^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::TEXT;
+   |
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:67:15
+   |
+67 |         let a=Rect::from_min_size(Pos2::new(left,canvas_top+137.0),Vec2::new(layout.inspector-50.0,39.0));
+   |               ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0433]: cannot find type `UiAction` in this scope
+  --> crates/showcase/src/ui_widgets.rs:70:28
+   |
+70 |             state.dispatch(UiAction::ToggleMotion);
+   |                            ^^^^^^^^ use of undeclared type `UiAction`
+   |
+help: consider importing this enum
+   |
+ 1 + use crate::ui_motion::UiAction;
+   |
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:72:15
+   |
+72 |         let b=Rect::from_min_size(Pos2::new(left,canvas_top+198.0),Vec2::new(layout.inspector-50.0,39.0));
+   |               ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0433]: cannot find type `UiAction` in this scope
+  --> crates/showcase/src/ui_widgets.rs:76:28
+   |
+76 |             state.dispatch(UiAction::ToggleReducedMotion);
+   |                            ^^^^^^^^ use of undeclared type `UiAction`
+   |
+help: consider importing this enum
+   |
+ 1 + use crate::ui_motion::UiAction;
+   |
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:78:66
+   |
+78 |         text(ui,Pos2::new(left,canvas_top+279.0),"TIMELINE",11.0,MUTED,Align2::LEFT_CENTER);
+   |                                                                  ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:79:17
+   |
+79 |         let bar=Rect::from_min_size(Pos2::new(left,canvas_top+297.0),Vec2::new(layout.inspector-50.0,5.0));
+   |                 ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0425]: cannot find value `OUTLINE` in this scope
+  --> crates/showcase/src/ui_widgets.rs:80:21
+   |
+80 |         rect(ui,bar,OUTLINE,3);
+   |                     ^^^^^^^ not found in this scope
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:82:47
+   |
+82 |         ui.painter().circle_filled(marker,7.0,CYAN);
+   |                                               ^^^^ not found in this scope
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:84:65
+   |
+84 |             &format!("SCENE REV  {:03}",state.ui_revision),11.0,CYAN,Align2::LEFT_CENTER);
+   |                                                                 ^^^^ not found in this scope
+
+error[E0425]: cannot find value `MUTED` in this scope
+  --> crates/showcase/src/ui_widgets.rs:86:54
+   |
+86 |             &format!("SUBMITTED  {:05}",frames),11.0,MUTED,Align2::LEFT_CENTER);
+   |                                                      ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:88:16
+   |
+88 |     let bottom=Rect::from_min_max(Pos2::new(rail,canvas_bottom),Pos2::new(inspector_x,origin.y+h));
+   |                ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0425]: cannot find value `PANEL` in this scope
+  --> crates/showcase/src/ui_widgets.rs:89:20
+   |
+89 |     rect(ui,bottom,PANEL,0);
+   |                    ^^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::PANEL;
+   |
+
+error[E0425]: cannot find value `CYAN` in this scope
+  --> crates/showcase/src/ui_widgets.rs:91:28
+   |
+91 |         "COMPOSITION",11.0,CYAN,Align2::LEFT_CENTER);
+   |                            ^^^^ not found in this scope
+
+error[E0425]: cannot find value `TEXT` in this scope
+  --> crates/showcase/src/ui_widgets.rs:93:67
+   |
+93 |         "Responsive  /  GPU geometry  /  spring transitions",13.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                   ^^^^ not found in this scope
+   |
+help: consider importing this constant
+   |
+ 1 + use crate::theme::TEXT;
+   |
+
+error[E0433]: cannot find type `Rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:96:15
+   |
+96 |         let r=Rect::from_min_size(Pos2::new(rail+26.0+i as f32*127.0,controls_top),
+   |               ^^^^ use of undeclared type `Rect`
+   |
+help: consider importing this struct
+   |
+ 1 + use crate::view::Rect;
+   |
+
+error[E0433]: cannot find type `UiAction` in this scope
+   --> crates/showcase/src/ui_widgets.rs:100:28
+    |
+100 |             state.dispatch(UiAction::SelectSurface(i));
+    |                            ^^^^^^^^ use of undeclared type `UiAction`
+    |
+help: consider importing this enum
+    |
+  1 + use crate::ui_motion::UiAction;
+    |
+
+error[E0425]: cannot find value `MUTED` in this scope
+   --> crates/showcase/src/ui_widgets.rs:105:37
+    |
+105 |             "INSPECTOR HIDDEN",10.0,MUTED,Align2::RIGHT_CENTER);
+    |                                     ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Rect` in this scope
+   --> crates/showcase/src/ui_widgets.rs:108:25
+    |
+108 |         let toggle_rect=Rect::from_min_size(Pos2::new(inspector_x-95.0,origin.y+19.0),
+    |                         ^^^^ use of undeclared type `Rect`
+    |
+help: consider importing this struct
+    |
+  1 + use crate::view::Rect;
+    |
+
+error[E0433]: cannot find type `UiAction` in this scope
+   --> crates/showcase/src/ui_widgets.rs:112:28
+    |
+112 |             state.dispatch(UiAction::ToggleInspector);
+    |                            ^^^^^^^^ use of undeclared type `UiAction`
+    |
+help: consider importing this enum
+    |
+  1 + use crate::ui_motion::UiAction;
+    |
+
+error[E0433]: cannot find type `Rect` in this scope
+   --> crates/showcase/src/ui_widgets.rs:115:20
+    |
+115 |     let focus_rect=Rect::from_center_size(Pos2::new(center.x,center.y+radius*1.4),
+    |                    ^^^^ use of undeclared type `Rect`
+    |
+help: consider importing this struct
+    |
+  1 + use crate::view::Rect;
+    |
+
+error[E0433]: cannot find type `UiAction` in this scope
+   --> crates/showcase/src/ui_widgets.rs:119:24
+    |
+119 |         state.dispatch(UiAction::ToggleFocus);
+    |                        ^^^^^^^^ use of undeclared type `UiAction`
+    |
+help: consider importing this enum
+    |
+  1 + use crate::ui_motion::UiAction;
+    |
+
+error[E0425]: cannot find value `ORANGE` in this scope
+   --> crates/showcase/src/ui_widgets.rs:123:29
+    |
+123 |             Stroke::new(2.0,ORANGE));
+    |                             ^^^^^^ not found in this scope
+
+warning: unused import: `super::*`
+   --> crates/showcase/src/ui_widgets.rs:132:9
+    |
+132 |     use super::*;
+    |         ^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0425]: cannot find function `rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:14:5
+   |
+14 |     rect(ui, outer, BG, 0);
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:15:41
+   |
+15 |     rect(ui, Rect::from_min_max(origin, Pos2::new(rail, origin.y+h)), PANEL, 0);
+   |                                         ^^^^ use of undeclared type `Pos2`
+
+error[E0425]: cannot find function `rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:15:5
+   |
+15 |     rect(ui, Rect::from_min_max(origin, Pos2::new(rail, origin.y+h)), PANEL, 0);
+   |     ^^^^ not found in this scope
+
+error[E0423]: expected function, found macro `line`
+  --> crates/showcase/src/ui_widgets.rs:16:5
+   |
+16 |     line(ui, rail, origin.y, 0.0, OUTLINE);
+   |     ^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+16 |     line!(ui, rail, origin.y, 0.0, OUTLINE);
+   |         +
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:17:14
+   |
+17 |     text(ui, Pos2::new(origin.x + layout.rail*0.5, origin.y+37.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:18:26
+   |
+18 |         "b", 34.0, CYAN, Align2::CENTER_CENTER);
+   |                          ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:17:5
+   |
+17 |     text(ui, Pos2::new(origin.x + layout.rail*0.5, origin.y+37.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:19:14
+   |
+19 |     text(ui, Pos2::new(rail+28.0, origin.y+32.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:20:38
+   |
+20 |         "BLOB / STUDIO", 14.0, TEXT, Align2::LEFT_CENTER);
+   |                                      ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:19:5
+   |
+19 |     text(ui, Pos2::new(rail+28.0, origin.y+32.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:21:14
+   |
+21 |     text(ui, Pos2::new(rail+28.0, origin.y+55.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:22:49
+   |
+22 |         "NATIVE 2D RENDER ENGINE", 10.0, MUTED, Align2::LEFT_CENTER);
+   |                                                 ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:21:5
+   |
+21 |     text(ui, Pos2::new(rail+28.0, origin.y+55.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:23:14
+   |
+23 |     text(ui, Pos2::new(inspector_x-22.0, origin.y+32.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:24:45
+   |
+24 |         "VULKAN   ·   WAYLAND", 11.0, CYAN, Align2::RIGHT_CENTER);
+   |                                             ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:23:5
+   |
+23 |     text(ui, Pos2::new(inspector_x-22.0, origin.y+32.0),
+   |     ^^^^ not found in this scope
+
+error[E0423]: expected function, found macro `line`
+  --> crates/showcase/src/ui_widgets.rs:25:5
+   |
+25 |     line(ui, rail, origin.y+78.0, w-layout.rail, OUTLINE);
+   |     ^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+25 |     line!(ui, rail, origin.y+78.0, w-layout.rail, OUTLINE);
+   |         +
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:28:37
+   |
+28 |         let r = Rect::from_min_size(Pos2::new(origin.x+12.0,top),
+   |                                     ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:29:13
+   |
+29 |             Vec2::new(layout.rail-24.0,48.0));
+   |             ^^^^ use of undeclared type `Vec2`
+   |
+help: a struct with a similar name exists
+   |
+29 -             Vec2::new(layout.rail-24.0,48.0));
+29 +             Vec::new(layout.rail-24.0,48.0));
+   |
+
+error[E0425]: cannot find function `button` in this scope
+  --> crates/showcase/src/ui_widgets.rs:31:12
+   |
+31 |         if button(ui,id,r,glyph,state.selected == i) {
+   |            ^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:35:14
+   |
+35 |     text(ui, Pos2::new(origin.x + layout.rail/2.0,origin.y+h-35.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:36:30
+   |
+36 |         "v0.1", 11.0, MUTED, Align2::CENTER_CENTER);
+   |                              ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:35:5
+   |
+35 |     text(ui, Pos2::new(origin.x + layout.rail/2.0,origin.y+h-35.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:40:37
+   |
+40 |     let canvas = Rect::from_min_max(Pos2::new(rail,canvas_top),
+   |                                     ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:41:9
+   |
+41 |         Pos2::new(inspector_x,canvas_bottom));
+   |         ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Stroke` in this scope
+  --> crates/showcase/src/ui_widgets.rs:43:9
+   |
+43 |         Stroke::new(1.0,OUTLINE),egui::StrokeKind::Inside);
+   |         ^^^^^^ use of undeclared type `Stroke`
+
+error[E0433]: cannot find type `Color32` in this scope
+  --> crates/showcase/src/ui_widgets.rs:47:13
+   |
+47 |             Color32::from_rgba_unmultiplied(86,120,132,12));
+   |             ^^^^^^^ use of undeclared type `Color32`
+
+error[E0423]: expected function, found macro `line`
+  --> crates/showcase/src/ui_widgets.rs:46:9
+   |
+46 |         line(ui,canvas.left()+20.0,y,canvas.width()-40.0,
+   |         ^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+46 |         line!(ui,canvas.left()+20.0,y,canvas.width()-40.0,
+   |             +
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:49:16
+   |
+49 |     let center=Pos2::new(canvas.center().x,canvas.center().y-12.0);
+   |                ^^^^ use of undeclared type `Pos2`
+
+error[E0425]: cannot find function `blob` in this scope
+  --> crates/showcase/src/ui_widgets.rs:51:5
+   |
+51 |     blob(ui,center,radius,state.phase,state.hover.value,state.selected);
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:52:14
+   |
+52 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.top()+28.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:53:42
+   |
+53 |         "SCENE 01  /  LIVE", 11.0, CYAN, Align2::LEFT_CENTER);
+   |                                          ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:52:5
+   |
+52 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.top()+28.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:54:14
+   |
+54 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.top()+49.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:55:55
+   |
+55 |         "Organic surface • interactive", 12.0, MUTED, Align2::LEFT_CENTER);
+   |                                                       ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:54:5
+   |
+54 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.top()+49.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:56:14
+   |
+56 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.bottom()-27.0),
+   |              ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:57:74
+   |
+57 |         "MOVE POINTER   /   CLICK RAIL   /   SPACE PAUSES", 10.0, MUTED, Align2::LEFT_CENTER);
+   |                                                                          ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:56:5
+   |
+56 |     text(ui, Pos2::new(canvas.left()+26.0,canvas.bottom()-27.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:60:38
+   |
+60 |         let panel=Rect::from_min_max(Pos2::new(inspector_x,canvas_top),Pos2::new(origin.x+w,origin.y+h));
+   |                                      ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:60:72
+   |
+60 |         let panel=Rect::from_min_max(Pos2::new(inspector_x,canvas_top),Pos2::new(origin.x+w,origin.y+h));
+   |                                                                        ^^^^ use of undeclared type `Pos2`
+
+error[E0425]: cannot find function `rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:61:9
+   |
+61 |         rect(ui,panel,PANEL,0);
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:63:17
+   |
+63 |         text(ui,Pos2::new(left,canvas_top+33.0),"INSPECTOR",13.0,TEXT,Align2::LEFT_CENTER);
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:63:71
+   |
+63 |         text(ui,Pos2::new(left,canvas_top+33.0),"INSPECTOR",13.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                       ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:63:9
+   |
+63 |         text(ui,Pos2::new(left,canvas_top+33.0),"INSPECTOR",13.0,TEXT,Align2::LEFT_CENTER);
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:64:17
+   |
+64 |         text(ui,Pos2::new(left,canvas_top+61.0),"SURFACE / PROPERTIES",10.0,MUTED,Align2::LEFT_CENTER);
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:64:83
+   |
+64 |         text(ui,Pos2::new(left,canvas_top+61.0),"SURFACE / PROPERTIES",10.0,MUTED,Align2::LEFT_CENTER);
+   |                                                                                   ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:64:9
+   |
+64 |         text(ui,Pos2::new(left,canvas_top+61.0),"SURFACE / PROPERTIES",10.0,MUTED,Align2::LEFT_CENTER);
+   |         ^^^^ not found in this scope
+
+error[E0423]: expected function, found macro `line`
+  --> crates/showcase/src/ui_widgets.rs:65:9
+   |
+65 |         line(ui,inspector_x+1.0,canvas_top+82.0,layout.inspector-2.0,OUTLINE);
+   |         ^^^^ not a function
+   |
+help: use `!` to invoke the macro
+   |
+65 |         line!(ui,inspector_x+1.0,canvas_top+82.0,layout.inspector-2.0,OUTLINE);
+   |             +
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:66:17
+   |
+66 |         text(ui,Pos2::new(left,canvas_top+114.0),"Motion system",14.0,TEXT,Align2::LEFT_CENTER);
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:66:76
+   |
+66 |         text(ui,Pos2::new(left,canvas_top+114.0),"Motion system",14.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                            ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:66:9
+   |
+66 |         text(ui,Pos2::new(left,canvas_top+114.0),"Motion system",14.0,TEXT,Align2::LEFT_CENTER);
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:67:35
+   |
+67 |         let a=Rect::from_min_size(Pos2::new(left,canvas_top+137.0),Vec2::new(layout.inspector-50.0,39.0));
+   |                                   ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:67:68
+   |
+67 |         let a=Rect::from_min_size(Pos2::new(left,canvas_top+137.0),Vec2::new(layout.inspector-50.0,39.0));
+   |                                                                    ^^^^ use of undeclared type `Vec2`
+   |
+help: a struct with a similar name exists
+   |
+67 -         let a=Rect::from_min_size(Pos2::new(left,canvas_top+137.0),Vec2::new(layout.inspector-50.0,39.0));
+67 +         let a=Rect::from_min_size(Pos2::new(left,canvas_top+137.0),Vec::new(layout.inspector-50.0,39.0));
+   |
+
+error[E0425]: cannot find function `button` in this scope
+  --> crates/showcase/src/ui_widgets.rs:68:12
+   |
+68 |         if button(ui,"motion-toggle",a,
+   |            ^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:72:35
+   |
+72 |         let b=Rect::from_min_size(Pos2::new(left,canvas_top+198.0),Vec2::new(layout.inspector-50.0,39.0));
+   |                                   ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:72:68
+   |
+72 |         let b=Rect::from_min_size(Pos2::new(left,canvas_top+198.0),Vec2::new(layout.inspector-50.0,39.0));
+   |                                                                    ^^^^ use of undeclared type `Vec2`
+   |
+help: a struct with a similar name exists
+   |
+72 -         let b=Rect::from_min_size(Pos2::new(left,canvas_top+198.0),Vec2::new(layout.inspector-50.0,39.0));
+72 +         let b=Rect::from_min_size(Pos2::new(left,canvas_top+198.0),Vec::new(layout.inspector-50.0,39.0));
+   |
+
+error[E0425]: cannot find function `button` in this scope
+  --> crates/showcase/src/ui_widgets.rs:73:12
+   |
+73 |         if button(ui,"reduced-motion-toggle",b,
+   |            ^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:78:17
+   |
+78 |         text(ui,Pos2::new(left,canvas_top+279.0),"TIMELINE",11.0,MUTED,Align2::LEFT_CENTER);
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:78:72
+   |
+78 |         text(ui,Pos2::new(left,canvas_top+279.0),"TIMELINE",11.0,MUTED,Align2::LEFT_CENTER);
+   |                                                                        ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:78:9
+   |
+78 |         text(ui,Pos2::new(left,canvas_top+279.0),"TIMELINE",11.0,MUTED,Align2::LEFT_CENTER);
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:79:37
+   |
+79 |         let bar=Rect::from_min_size(Pos2::new(left,canvas_top+297.0),Vec2::new(layout.inspector-50.0,5.0));
+   |                                     ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:79:70
+   |
+79 |         let bar=Rect::from_min_size(Pos2::new(left,canvas_top+297.0),Vec2::new(layout.inspector-50.0,5.0));
+   |                                                                      ^^^^ use of undeclared type `Vec2`
+   |
+help: a struct with a similar name exists
+   |
+79 -         let bar=Rect::from_min_size(Pos2::new(left,canvas_top+297.0),Vec2::new(layout.inspector-50.0,5.0));
+79 +         let bar=Rect::from_min_size(Pos2::new(left,canvas_top+297.0),Vec::new(layout.inspector-50.0,5.0));
+   |
+
+error[E0425]: cannot find function `rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:80:9
+   |
+80 |         rect(ui,bar,OUTLINE,3);
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:81:20
+   |
+81 |         let marker=Pos2::new(bar.left()+bar.width()*state.phase,bar.center().y);
+   |                    ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:83:17
+   |
+83 |         text(ui,Pos2::new(left,canvas_top+342.0),
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:84:70
+   |
+84 |             &format!("SCENE REV  {:03}",state.ui_revision),11.0,CYAN,Align2::LEFT_CENTER);
+   |                                                                      ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:83:9
+   |
+83 |         text(ui,Pos2::new(left,canvas_top+342.0),
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:85:17
+   |
+85 |         text(ui,Pos2::new(left,canvas_top+366.0),
+   |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:86:60
+   |
+86 |             &format!("SUBMITTED  {:05}",frames),11.0,MUTED,Align2::LEFT_CENTER);
+   |                                                            ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:85:9
+   |
+85 |         text(ui,Pos2::new(left,canvas_top+366.0),
+   |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:88:35
+   |
+88 |     let bottom=Rect::from_min_max(Pos2::new(rail,canvas_bottom),Pos2::new(inspector_x,origin.y+h));
+   |                                   ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:88:65
+   |
+88 |     let bottom=Rect::from_min_max(Pos2::new(rail,canvas_bottom),Pos2::new(inspector_x,origin.y+h));
+   |                                                                 ^^^^ use of undeclared type `Pos2`
+
+error[E0425]: cannot find function `rect` in this scope
+  --> crates/showcase/src/ui_widgets.rs:89:5
+   |
+89 |     rect(ui,bottom,PANEL,0);
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:90:13
+   |
+90 |     text(ui,Pos2::new(rail+27.0,canvas_bottom+30.0),
+   |             ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:91:33
+   |
+91 |         "COMPOSITION",11.0,CYAN,Align2::LEFT_CENTER);
+   |                                 ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:90:5
+   |
+90 |     text(ui,Pos2::new(rail+27.0,canvas_bottom+30.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:92:13
+   |
+92 |     text(ui,Pos2::new(rail+27.0,canvas_bottom+56.0),
+   |             ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:93:72
+   |
+93 |         "Responsive  /  GPU geometry  /  spring transitions",13.0,TEXT,Align2::LEFT_CENTER);
+   |                                                                        ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+  --> crates/showcase/src/ui_widgets.rs:92:5
+   |
+92 |     text(ui,Pos2::new(rail+27.0,canvas_bottom+56.0),
+   |     ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:96:35
+   |
+96 |         let r=Rect::from_min_size(Pos2::new(rail+26.0+i as f32*127.0,controls_top),
+   |                                   ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+  --> crates/showcase/src/ui_widgets.rs:97:13
+   |
+97 |             Vec2::new(116.0,30.0));
+   |             ^^^^ use of undeclared type `Vec2`
+   |
+help: a struct with a similar name exists
+   |
+97 -             Vec2::new(116.0,30.0));
+97 +             Vec::new(116.0,30.0));
+   |
+
+error[E0425]: cannot find function `button` in this scope
+  --> crates/showcase/src/ui_widgets.rs:99:12
+   |
+99 |         if button(ui,id,r,label,state.selected==i) {
+   |            ^^^^^^
+   |
+help: a local variable with a similar name exists
+   |
+99 -         if button(ui,id,r,label,state.selected==i) {
+99 +         if bottom(ui,id,r,label,state.selected==i) {
+   |
+
+error[E0433]: cannot find type `Pos2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:104:17
+    |
+104 |         text(ui,Pos2::new(origin.x+w-15.0,origin.y+98.0),
+    |                 ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Align2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:105:43
+    |
+105 |             "INSPECTOR HIDDEN",10.0,MUTED,Align2::RIGHT_CENTER);
+    |                                           ^^^^^^ use of undeclared type `Align2`
+
+error[E0425]: cannot find function `text` in this scope
+   --> crates/showcase/src/ui_widgets.rs:104:9
+    |
+104 |         text(ui,Pos2::new(origin.x+w-15.0,origin.y+98.0),
+    |         ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Pos2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:108:45
+    |
+108 |         let toggle_rect=Rect::from_min_size(Pos2::new(inspector_x-95.0,origin.y+19.0),
+    |                                             ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:109:13
+    |
+109 |             Vec2::new(82.0,36.0));
+    |             ^^^^ use of undeclared type `Vec2`
+    |
+help: a struct with a similar name exists
+    |
+109 -             Vec2::new(82.0,36.0));
+109 +             Vec::new(82.0,36.0));
+    |
+
+error[E0425]: cannot find function `button` in this scope
+   --> crates/showcase/src/ui_widgets.rs:110:12
+    |
+110 |         if button(ui,"inspector-toggle",toggle_rect,
+    |            ^^^^^^
+    |
+help: a local variable with a similar name exists
+    |
+110 -         if button(ui,"inspector-toggle",toggle_rect,
+110 +         if bottom(ui,"inspector-toggle",toggle_rect,
+    |
+
+error[E0433]: cannot find type `Pos2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:115:43
+    |
+115 |     let focus_rect=Rect::from_center_size(Pos2::new(center.x,center.y+radius*1.4),
+    |                                           ^^^^ use of undeclared type `Pos2`
+
+error[E0433]: cannot find type `Vec2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:116:9
+    |
+116 |         Vec2::new(155.0,35.0));
+    |         ^^^^ use of undeclared type `Vec2`
+    |
+help: a struct with a similar name exists
+    |
+116 -         Vec2::new(155.0,35.0));
+116 +         Vec::new(155.0,35.0));
+    |
+
+error[E0425]: cannot find function `button` in this scope
+   --> crates/showcase/src/ui_widgets.rs:117:8
+    |
+117 |     if button(ui,"canvas-focus",focus_rect,
+    |        ^^^^^^
+    |
+help: a local variable with a similar name exists
+    |
+117 -     if button(ui,"canvas-focus",focus_rect,
+117 +     if bottom(ui,"canvas-focus",focus_rect,
+    |
+
+error[E0433]: cannot find type `Stroke` in this scope
+   --> crates/showcase/src/ui_widgets.rs:123:13
+    |
+123 |             Stroke::new(2.0,ORANGE));
+    |             ^^^^^^ use of undeclared type `Stroke`
+
+error[E0433]: cannot find type `Pos2` in this scope
+   --> crates/showcase/src/ui_widgets.rs:135:20
+    |
+135 |         let center=Pos2::new(400.0,300.0);
+    |                    ^^^^ use of undeclared type `Pos2`
+
+error[E0425]: cannot find function `organic_vertices` in this scope
+   --> crates/showcase/src/ui_widgets.rs:136:15
+    |
+136 |         let a=organic_vertices(center,100.0,0.0,64);
+    |               ^^^^^^^^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `organic_vertices` in this scope
+   --> crates/showcase/src/ui_widgets.rs:137:15
+    |
+137 |         let b=organic_vertices(center,100.0,0.25,64);
+    |               ^^^^^^^^^^^^^^^^ not found in this scope
+
+Some errors have detailed explanations: E0423, E0425, E0433.
+For more information about an error, try `rustc --explain E0423`.
+warning: `blobin-showcase` (lib test) generated 1 warning
+error: could not compile `blobin-showcase` (lib test) due to 143 previous errors; 1 warning emitted

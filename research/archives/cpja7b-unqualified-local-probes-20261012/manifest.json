@@ -1,0 +1,44 @@
+{
+  "schema": "blob.in.unqualified_probe_archive.v1",
+  "status": "UNQUALIFIED_NO_EXECUTION_CLAIM",
+  "source_worktree": "/home/tension_atoi/Projects/.worktrees/blobin-showcase-qcja7b-20261010",
+  "source_branch": "feat/qchain-visible-multi-surface-20261010",
+  "files": {
+    "scripts/qchain_cpja7b_desktop_probe.py": {
+      "sha256": "6b348a5ffb98886e16762835c313bfe8f5d8e9e82f7df15427709ac8ca35f7dd",
+      "bytes": 7301
+    },
+    "scripts/qchain_cpja7b_tiled_probe.py": {
+      "sha256": "16d13b4d85a864f0e16b7f4bc600a0f92e863fb5d1569017cd71387a3eb358fa",
+      "bytes": 7393
+    },
+    "tests/cpja7b/analyze_desktop.py": {
+      "sha256": "7586eb663b03a9577bbc0c108059278f17cce44e289ff615397b5d618b36fc21",
+      "bytes": 1631
+    },
+    "tests/cpja7b/locate.py": {
+      "sha256": "452638f3f86fa468c400e996019fce3f8e679a00acca8a048ddfc4053a3e071a",
+      "bytes": 1529
+    },
+    "tests/cpja7b/minimal.ini": {
+      "sha256": "061d224d12cd4578595131c2dd8958ccc8c8f415f84f73f4439b4717aeb12195",
+      "bytes": 115
+    },
+    "tests/cpja7b/minimal.lua": {
+      "sha256": "fab54505e93625feb23c1ab103fc090949b5df427a7b344474f1a13ff04523e2",
+      "bytes": 77
+    },
+    "tests/cpja7b/pixel_stats.py": {
+      "sha256": "857e01b24758ad63e4a3cac2f7c9d3e02a6f9a562ce6d9c6a9423272071e7104",
+      "bytes": 951
+    },
+    "tests/cpja7b/tiled-shell.lua": {
+      "sha256": "89c31c47cb462124cc0c3707ccae5c24232c2dee665acdd40a3ac18c887e5566",
+      "bytes": 8739
+    },
+    "tests/cpja7b/weston.ini": {
+      "sha256": "404203e6f435bfcf53d17c66003aa8546eafa465e9618d9f3c1f97a6c4f9c714",
+      "bytes": 119
+    }
+  }
+}

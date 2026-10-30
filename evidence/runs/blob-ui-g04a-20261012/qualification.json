@@ -1,0 +1,54 @@
+{
+  "gate": "UI-G04/A",
+  "verdict": "SCOPED_PASS",
+  "baseline": "5cf1ece9e140a7cfb91d105868041ba6c59bf5ff",
+  "checks": {
+    "format": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 0,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "core": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 65,
+      "sha256": "d8d07ed7ab2d962137a5a0c16bea5e6bbff9b161f73073170b8619fd8615dabc"
+    },
+    "clippy": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 0,
+      "sha256": "23ece6e8b6143673048de356927a80cf86648bd5a0db875102cecda04bdb23bc"
+    },
+    "dependencies": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 0,
+      "sha256": "6126d140759c5336a3ca4e54f54913a4eeb7f0f748fdb5a88b8d9155cb07df5e"
+    },
+    "consumer": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 0,
+      "sha256": "aa02383f42b5e3996bf5a3dd37d0dfb07afe527990888d67d83bfca59f2fb704"
+    },
+    "workspace": {
+      "pass": true,
+      "exit": 0,
+      "test_count": 51,
+      "sha256": "cc4490d9b4cbf195ef127d9d9ed1020f682f4a9d73874c8f2ef5dde6f4ec5873"
+    }
+  },
+  "sha256": {
+    "crates/blobin-ui-core/src/input.rs": "92e31f7bf1e38759ad8f0f4cb86d661408c035022aa6ba443bb04f7e76060210",
+    "crates/blobin-ui-core/src/lib.rs": "21733e4658ede8104f0e9afabbaeb65d162118521fefb024c0555e171c0b270d",
+    "crates/blobin-ui-core/tests/input_routing.rs": "da43ccbad8756266c59fa73c7c1b6f4631ebd2ab5198aa708bd0e074639c031b",
+    "crates/blobin-ui-core/examples/input_workbench.rs": "73ff50e8bc9d1544716bc5078df095b6787e68c55085d126073e255f79d963fb",
+    "docs/BLOB-UI-G04A-HEADLESS-INPUT-20261012.md": "adab2174cb20d86024d756448978e98458b5c80828dc335d6c802a41954c7f1d",
+    "scripts/blobin_ui_g04a_verify.py": "2b341d6757214fd8882d36d9577ac6b676017af340adbf062fb8bc51b84ebe08"
+  },
+  "input_e2e_native_verified": false,
+  "g04b_full_pass": false,
+  "cp03_hybrid60_pass": false
+}

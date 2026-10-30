@@ -1,0 +1,10 @@
+[package]
+name = "blobin-ui-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+license.workspace = true
+description = "Platform-agnostic, headless component tree and atomic UI state transactions"
+
+[dependencies]

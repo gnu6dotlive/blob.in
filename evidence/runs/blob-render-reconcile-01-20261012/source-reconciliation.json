@@ -1,0 +1,246 @@
+{
+  "schema": "blob-render-reconciliation-01.v1",
+  "created_utc": "2026-10-13T03:18:34.975839+00:00",
+  "program": "BLOB-RENDER-RECONCILE-01",
+  "verdict": "SCOPED_PASS_READ_ONLY_SOURCE_RECONCILIATION",
+  "gates": {
+    "canonical_heads_match": true,
+    "canonical_origin_private": true,
+    "donor_git_clean": true,
+    "all_six_f_labs_byte_identical": true,
+    "all_six_old_git_links_broken": true,
+    "fresh_cargo_unit_tests": true,
+    "cp02_old_gpu_commit_reachable": true,
+    "cp03_explicitly_hold": true,
+    "license_barrier_detected": true,
+    "main_does_not_silently_link_F_crates": true,
+    "ui_backend_neutral_scene_present": true
+  },
+  "source_commits": {
+    "showcase": "d2903f0a53d648a739f4cabdf03d3842577108e9",
+    "cp01": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+    "cp02": "5d2b5bdc65cbd60109060401a6f655714bd165fa",
+    "cp02_original_gpu_receipt": "6bc46ccfa587d6fe71e98010a417097e3c518133",
+    "actual_showcase": "d2903f0a53d648a739f4cabdf03d3842577108e9",
+    "actual_cp01": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+    "actual_cp02": "5d2b5bdc65cbd60109060401a6f655714bd165fa"
+  },
+  "worktree_source_recovery": {
+    "F1": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f1-render/experiments/blobin-next-01/F1",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F1",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "309f0c3f66b785db2d926dfe9f471b3369aa4cd1b4ea5a6561f4b1afe27415b9",
+        "shaders/f1.wgsl": "c6ac2bd184ad449a58d5675b1c46e2e485368682992f72502c33e23097e3933b",
+        "src/gpu.rs": "7aad9300d19b6a72eafb6009982ce323a1a1d42ce40f07e5fc709f9a52beecd8",
+        "src/lib.rs": "38daf61207d481ff78af22dcaf89a425e0fe998fb62d3069c4d57d67ac95d4d9",
+        "src/main.rs": "012d99a81710399e69d4d483b27ecef92b9c9a55d52cf9f2a2ffa9d8b50caf3d"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    },
+    "F2": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f2-topology/experiments/blobin-next-01/F2",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F2",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "4e4eab8b05b03d2aa64e95fca510c587fd2463548f1cb71e7f940c1e62b94897",
+        "shaders/f2.wgsl": "5ec945d04180e09ebc0735746c60688228a0525b0bb7110784e0394284899643",
+        "src/gpu.rs": "17426250b5d477e408d9e654f2ce2b715c3b851da4eff632a2fb083a47199485",
+        "src/lib.rs": "9f2100b1de6c05afbb11ff4afd59b3fbb77b74c257367aad2e7cec77fce1bf8a",
+        "src/main.rs": "06a84b1ed21cce23a04d0f56566b8a3373fbae9d73de225f54c77e10fe48db14"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    },
+    "F3": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f3-material-height/experiments/blobin-next-01/F3",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F3",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "37594eda264c74a311c029305bbc5881875cfad45c81ede19203693bf5b32b87",
+        "shaders/f3.wgsl": "2bff48d7dcb5befece200bba043d2f45a4c240fc80188bcb3be4deb58b0d11b8",
+        "src/gpu.rs": "62d2a2b153fee88101c07435b7e15bacf01e716f1d568363e552d658f577a6d8",
+        "src/lib.rs": "cee7d8d9114f664a99f70e49b21f22bcf9149858cd84596b927935c514c0a607",
+        "src/main.rs": "7798f61c6e439b609a41e6036aa0d4d71e26b3426c5b832ab0e23045b6779d74"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    },
+    "F4": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f4-effects/experiments/blobin-next-01/F4",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "6f0e6dbacaf717744a8adaa88af9496aeed42dda078b53ef4f2b5cb1427b4a2c",
+        "shaders/f4.wgsl": "6a05f0894ebaa9ed52fc2bdf9239cae0d3d51f7c33892f5bcf6ff2e40e77cde0",
+        "src/gpu.rs": "01c5ca0d862786117823d807fc44ae905e7fc1ab5179ee18b3757c35706182a5",
+        "src/lib.rs": "c6b025051ce6f9c4a29fc4b48770eb90dfbb5ed44579c595fb31c2c08bfa23d0",
+        "src/main.rs": "92088e52df031ca4e1ade8570e2228974b9225f7b18a9070219ced16dddfd34f"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    },
+    "F4B": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f4b-resilience/experiments/blobin-next-01/F4B",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4B",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "725d159ac08297ff6ca9ca61131fbb1fd00185baf5cf64b43b424683b377491d",
+        "shaders/roi.wgsl": "a9fff4ed16fc4018226e08c62db0a4e93e116eee96ced4df9354926352fa92b9",
+        "src/gpu.rs": "df1a541c2cc863665b908a64e6c899832042b778db75b4cc04889ec06d22faff",
+        "src/lib.rs": "3d218e50c689f40c30dd1b44e1a397cc604a4d4d5941eab9f3e280b5d5abeb0f",
+        "src/main.rs": "2de7ce7bfb63d795517fe1ed66c526c2b5642c8b510915529bd031f7d102bab2"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    },
+    "F4C": {
+      "orphan_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-f4c-incremental/experiments/blobin-next-01/F4C",
+      "git_worktree_link_broken": true,
+      "recoverable_git_path": "/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/F4C",
+      "recoverable_commit": "ddd723329b1d0b07d7a827dc8776d8a2535c21b5",
+      "source_manifest": {
+        "Cargo.toml": "e903e9070c1655517e782e7932df6282d033c147491d72f26fdb95de91589acc",
+        "shaders/f4c.wgsl": "8aeb9461e03eb4ce84ddb3fad86f026617a5e9ad5f591f51a3d94e0819bbbc70",
+        "src/gpu.rs": "0b55560b9459a88f0f268ca600be239eb2c1bb16136fe06c538a052794586150",
+        "src/lib.rs": "aa084ab96579353ca088f6d9394cf6866d363243029b1bda8b0f13008ae9e4d8",
+        "src/main.rs": "f9353c04c5f7f5125a01973195f1e083687780bc7fd9b672071c82234cb18acb"
+      },
+      "file_count": 5,
+      "byte_identical_source_to_orphan": true,
+      "diff_paths": [],
+      "license_declaration_in_manifest": false
+    }
+  },
+  "read_only_fresh_offline_test_logs": {
+    "cp01": {
+      "path": "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-render-reconcile-01-20261012/logs/cp01-test.log",
+      "sha256": "5a186615ddefbaa38c169b9d78aaefb51dbb6b28671edb01f7f6739ab21b1c68",
+      "qualifying_exit_attested_externally": false,
+      "cargo_test_results": 10,
+      "tests_passed": 56,
+      "tests_failed": 0,
+      "any_failed_suite": false,
+      "compilation_finished": true,
+      "source_is_pinned": true
+    },
+    "f2": {
+      "path": "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-render-reconcile-01-20261012/logs/f2-test.log",
+      "sha256": "69fdf5579b65a3756e75dd9af9336e6ba36f17e8e20bf5111b08744e9a8dbc25",
+      "qualifying_exit_attested_externally": false,
+      "cargo_test_results": 3,
+      "tests_passed": 7,
+      "tests_failed": 0,
+      "any_failed_suite": false,
+      "compilation_finished": true,
+      "source_is_pinned": true
+    },
+    "f4c": {
+      "path": "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-render-reconcile-01-20261012/logs/f4c-test.log",
+      "sha256": "17b7253bd9e98a501a74231ecdd0590ac9ce3116e337dfc4bf42132c88fc56f4",
+      "qualifying_exit_attested_externally": false,
+      "cargo_test_results": 3,
+      "tests_passed": 5,
+      "tests_failed": 0,
+      "any_failed_suite": false,
+      "compilation_finished": true,
+      "source_is_pinned": true
+    },
+    "cp02_compile": {
+      "path": "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-render-reconcile-01-20261012/logs/cp02-test.log",
+      "sha256": "6f8314407da83d31f467fac9fdd36485a9f7a681f36fceec7dbb1ba001c140a8",
+      "qualifying_exit_attested_externally": false,
+      "cargo_test_results": 2,
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "any_failed_suite": false,
+      "compilation_finished": true,
+      "source_is_pinned": true
+    }
+  },
+  "donor_archived_receipt": {
+    "path": "/mnt/workbench/evidence/runs/blobin-next-01/program-20261010/review-06/ledger.json",
+    "sha256": "07dd839c12e69b9c90748bbca1194dcae5065cf0de0cb97e78e3c113f2a495b9",
+    "cp03_verdict": "NOT_QUALIFIED",
+    "cp02_historical_gpu_commit": "6bc46ccfa587d6fe71e98010a417097e3c518133",
+    "cp02_historical_gpu_runs": 2,
+    "cp02_historical_max_error": 2.384185791e-07
+  },
+  "main_workspace_license": "LicenseRef-Proprietary",
+  "main_source_labs_integration_status": "NOT_LINKED_NOT_MERGED",
+  "cp03_hybrid_hero60": "NOT_QUALIFIED",
+  "plugin_or_worktree_repair": "NONE",
+  "gpu_executed_during_this_audit": false,
+  "distribution_licensed": false,
+  "domain_matrix": {
+    "F1": {
+      "ownership": "offscreen 2D frame and analytic signed field",
+      "integration_action": "adapter interface reference; no wholesale merge",
+      "maturity": "ARCHIVED_LAB_SOURCE_RECOVERED"
+    },
+    "F2": {
+      "ownership": "typed topology, hit targets, epochs, independent mask oracle",
+      "integration_action": "typed semantic scene adapter; avoid duplicate G02 identity owners",
+      "maturity": "FRESH_CPU_UNIT_TESTS_PASS_PRIVATE_LAB"
+    },
+    "F3": {
+      "ownership": "height, heat, normals and 4 material presets",
+      "integration_action": "material evaluation as optional content pass; not UI color authority",
+      "maturity": "HISTORICAL_CPU_GPU_PARITY_PRIVATE_LAB"
+    },
+    "F4": {
+      "ownership": "four explicit multi-pass effects shadow blur bloom echo",
+      "integration_action": "separate optional effect graph after signed scene content",
+      "maturity": "HISTORICAL_EFFECT_PASS_PRIVATE_LAB"
+    },
+    "F4B": {
+      "ownership": "region-oriented transfer and failure policy; not all stage-local",
+      "integration_action": "resilience donor subject to true resident device validation",
+      "maturity": "ARCHIVED_RESEARCH_ONLY"
+    },
+    "F4C": {
+      "ownership": "spatial incremental effect dispatch; source upload/readback full frame",
+      "integration_action": "damage scope contract; no generalized zero-idle claim",
+      "maturity": "FRESH_CPU_UNIT_TESTS_PASS_PRIVATE_LAB"
+    },
+    "CP01": {
+      "ownership": "3D signed solids, imported bounded mesh and mixed CSG CPU reference",
+      "integration_action": "geometry-only typed capability boundary and independent oracle",
+      "maturity": "FRESH_56_TESTS_PASS_PRIVATE_LAB"
+    },
+    "CP02": {
+      "ownership": "GPU Vulkan support-plane compute and later triangle-surface experiments",
+      "integration_action": "GPU compute candidate, must not be relabelled full signed mesh distance",
+      "maturity": "FRESH_BUILD_PASS_HISTORICAL_GPU_RECEIPT_SEPARATE"
+    },
+    "01A-01I": {
+      "ownership": "G02/G03 retained UI controls and native 2D display commands",
+      "integration_action": "UI layer overlay / input authority preserved; not full F4 source owner",
+      "maturity": "PRIVATE_MAIN_QUALIFIED_SCOPED_UI"
+    },
+    "GPU05_QCHAIN": {
+      "ownership": "Vulkan/Wayland scheduling, feedback and readback instrumentation",
+      "integration_action": "timing witness tools only, cannot stand in for mixed 3D scene",
+      "maturity": "HISTORICAL_PRESENTATION_PROOFS_DIFFERENT_FIXTURE"
+    }
+  },
+  "recommended_next_gate": "R02 typed F2 scene/content adapter in private cleanroom, source-license decision first",
+  "proof_scope": "source hashing + offline CPU/unit tests; historical GPU receipts independently labelled"
+}

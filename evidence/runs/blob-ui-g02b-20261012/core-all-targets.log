@@ -1,0 +1,62 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 16 tests
+test creates_ordered_tree_with_unique_handles ... ok
+test closed_surface_ids_are_not_aliases_for_old_nodes ... ok
+test reorder_changes_sibling_order_without_changing_node_identity ... ok
+test invalid_stale_handle_cannot_modify_current_component ... ok
+test invalid_child_index_rolls_back_insert_and_revision ... ok
+test changing_one_leaf_marks_only_leaf_and_ancestors ... ok
+test invalid_reorder_is_atomic ... ok
+test custom_aborted_transaction_does_not_escape ... ok
+test separate_surfaces_have_independent_revision_and_lifetimes ... ok
+test insert_child_at_middle_preserves_existing_ids ... ok
+test root_order_can_be_changed_without_a_parent ... ok
+test descendant_removal_invalidates_all_and_reuses_only_new_generation ... ok
+test snapshot_is_immutable_after_successive_transactions ... ok
+test snapshots_are_send_and_sync ... ok
+test surface_cannot_be_duplicated_or_targeted_before_opening ... ok
+test unmodified_properties_and_no_op_reorder_do_not_bump_revision ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 11 tests
+test aborted_surface_epoch_is_never_reused ... ok
+test close_and_reopen_surface_uses_new_epoch_not_old_revision ... ok
+test duplicate_empty_key_and_stale_parent_rejected_atomically ... ok
+test keyed_reorder_retains_handles_and_descendants ... ok
+test property_domains_distinguish_reflow_from_paint ... ok
+test removing_keyed_subtree_produces_tombstones_not_repaint_claims ... ok
+test one_surface_updates_never_invalidate_another_surface_or_epoch ... ok
+test many_semantic_updates_in_one_transaction_coalesce_to_one_revision ... ok
+test equivalent_reconcile_is_no_op_even_with_many_children ... ok
+test independent_cow_pages_are_shared_between_snapshots ... ok
+test keyed_reconciliation_matches_independent_full_rebuild_oracle_400_steps ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 5 tests
+test aborted_handle_can_never_become_a_valid_handle ... ok
+test created_and_removed_in_the_same_transaction_is_not_dirty ... ok
+test empty_transaction_is_a_pure_no_op ... ok
+test failed_transaction_cannot_invalidate_a_different_surface ... ok
+test deterministic_seeded_mutation_replay_with_600_steps ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.11s
+     Running unittests src/lib.rs (/mnt/sandbox/builds/cargo/debug/deps/blobin_ui_core-d0f84a219c0aebd6)
+     Running tests/component_tree.rs (/mnt/sandbox/builds/cargo/debug/deps/component_tree-fe73327344c72a5a)
+     Running tests/incremental_reconciliation.rs (/mnt/sandbox/builds/cargo/debug/deps/incremental_reconciliation-29f0fce43ad5f5e8)
+     Running tests/transaction_adversarial.rs (/mnt/sandbox/builds/cargo/debug/deps/transaction_adversarial-9a5b7a03898bc9bc)
+     Running unittests examples/tree_transaction.rs (/mnt/sandbox/builds/cargo/debug/examples/tree_transaction-e4effa3dbf1a3228)

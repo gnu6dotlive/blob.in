@@ -1,0 +1,10 @@
+
+running 6 tests
+test tests::action_visual_state_is_semantic_and_deterministic ... ok
+test tests::action_rejects_stale_layout_and_empty_clip ... ok
+test tests::no_brand_dependency_or_external_renderer ... ok
+test tests::clipping_and_semantic_target ... ok
+test tests::state_changes_only_thumb_and_track ... ok
+test tests::rejects_stale_geometry_epoch ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

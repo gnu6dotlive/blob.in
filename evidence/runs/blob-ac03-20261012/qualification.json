@@ -1,0 +1,254 @@
+{
+  "gate": "BLOB-AC-03",
+  "utc": "2026-10-12T14:48:53.659476+00:00",
+  "git_baseline": "a54edee37938990a4e9601707f18b7d16204ec68",
+  "branch": "main",
+  "origin": "https://github.com/tension-atoi/blob.in-showcase.git",
+  "sources": {
+    "contracts/BLOB-AC-03-COMPOSITOR-GESTURE-E2E-20261012.md": "368a03213819beae86a3699432c01f1b9370da21f81b3a84c3046c275f693f6f",
+    "docs/BLOB-AC-03-QUALIFICATION-20261012.md": "84d3061c83486ff60feab7a586c6a570f43180c483244428a0c5cfb65f76e448",
+    "docs/PROGRAM-INTEGRATION-SPINE-20261012.md": "b02215d436b625b74821338919af6d142485d99d31d7ef100d5b91af538d9fb7",
+    "crates/showcase/src/bin/blobin_ui_ac02_wayland.rs": "f4f96ed8ed788c52805fe4d3387ce5c2c5a7da8d8e228e5e5600d1597c7c2857",
+    "crates/showcase/src/ac02_scene.rs": "f305f740d29a0168e961fa6e6365ffc49a4ba0f432c25f7f40c8c3fb562e9f36",
+    "scripts/blob_ac03_weston_test_input.c": "471013d7b638b5f77da4a27a4ca53ce0229adbcbe41a8a8fc2af936f70b10955",
+    "scripts/blob_ac03_isolated_e2e.py": "22244a659646d009bb5954a9c724d1bcebaeb09e11b61084a3ab39b569b982f9",
+    "scripts/blob_ac03_verify.py": "375f0ab9af571a0c781f90d1e6c0afb52eeaf051db3dcc62430aae15779b2d60"
+  },
+  "commands": [
+    {
+      "argv": [
+        "rustfmt",
+        "--edition",
+        "2021",
+        "--check",
+        "crates/showcase/src/bin/blobin_ui_ac02_wayland.rs"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-01.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "cargo",
+        "clippy",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "--bin",
+        "blobin_ui_ac02_wayland",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-02.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-02.stderr.txt",
+      "stderr_sha256": "59639588a6f1826f129cbcd121edc07279dab94786f5fa5bde6b3439b2e845cc"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--lib",
+        "ac02_scene"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-03.stdout.txt",
+      "stdout_sha256": "3857246c8b87db8c16ca67b18a449f5e5025dd6d38ce6223f2908f8532a0d793",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-03.stderr.txt",
+      "stderr_sha256": "92782b366348fa898055e62cc261622019f7da6ddc8d12ae0874d3a1b986185f"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "-p",
+        "blobin-ui-core",
+        "--all-targets"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-04.stdout.txt",
+      "stdout_sha256": "e4d167cf5442034665e341075a7bfb3ec9fafc1821c82f0e2fe34e7139ddf31a",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-04.stderr.txt",
+      "stderr_sha256": "535a3c9063c7eca308762b9ff8374866462aba9105a2c04c5500e295feec800d"
+    },
+    {
+      "argv": [
+        "cargo",
+        "test",
+        "--offline",
+        "--workspace",
+        "--lib"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-05.stdout.txt",
+      "stdout_sha256": "703e48914d300e83b77f6c236a5cc88bd557094dc19de5e928f74b9de689c3eb",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-05.stderr.txt",
+      "stderr_sha256": "023fb5906d444fac83d7b985c2b4850522ba54b38328638ddcc29c0b050b18b6"
+    },
+    {
+      "argv": [
+        "cargo",
+        "build",
+        "--offline",
+        "-p",
+        "blobin-showcase",
+        "--bin",
+        "blobin_ui_ac02_wayland"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-06.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-06.stderr.txt",
+      "stderr_sha256": "59639588a6f1826f129cbcd121edc07279dab94786f5fa5bde6b3439b2e845cc"
+    },
+    {
+      "argv": [
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-I/usr/include/libweston-15",
+        "-I/usr/include/pixman-1",
+        "scripts/blob_ac03_weston_test_input.c",
+        "-o",
+        "/tmp/blob-ac03-compiled-e_n1igiq/blob_ac03_input_module.so",
+        "-lweston-15"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-07.stdout.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-07.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "scripts/blob_ac03_isolated_e2e.py",
+        "--out",
+        "/home/tension_atoi/Projects/blob.in-showcase/evidence/runs/blob-ac03-20261012/isolated",
+        "--binary",
+        "/mnt/sandbox/builds/cargo/debug/blobin_ui_ac02_wayland",
+        "--module",
+        "/tmp/blob-ac03-compiled-e_n1igiq/blob_ac03_input_module.so"
+      ],
+      "exit_code": 0,
+      "stdout": "evidence/runs/blob-ac03-20261012/gate-08.stdout.txt",
+      "stdout_sha256": "8caca84878d9b41050cd8675eece013bd996e79bafd26631847468c58ef9251a",
+      "stderr": "evidence/runs/blob-ac03-20261012/gate-08.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "safe_scope": "Weston 15 private seat and private user+network namespace. No active-desktop input, no host network server.",
+  "pixel_scope": "actual GPU window swapchain COPY_SRC before present; no compositor presentation feedback",
+  "physical_HID": false,
+  "compositor_presentation_feedback": false,
+  "cp03_hybrid_60": "UNQUALIFIED",
+  "test_module_sha256": "81653e339fbc73a434e248808bcd334d1de269d80020a2c4a141eafba98e9199",
+  "native_binary_sha256": "f393ab381d66beccc8f5aa0099adc16d45979e9aa3d162cff0711a0e261cca30",
+  "witness": {
+    "begins": 1,
+    "client_binary_sha256": "f393ab381d66beccc8f5aa0099adc16d45979e9aa3d162cff0711a0e261cca30",
+    "commits": 1,
+    "compositor_presentation_feedback": false,
+    "final_ui_revision": 2,
+    "frame_submissions": 7,
+    "images": {
+      "after": "c00fc5f55855b0569e44fd0a303d72e1c1cd58246920579262fe7c5db20fb75f",
+      "before": "6a8facb7c16c4c4741c4e7b1b60e51e011d5b3dcd6bccd76624e26adf475515d",
+      "preview": "4543496a9f29e54f5bd9eb130dc3db2f625ad353fb51c73e520f12f171a1b44a"
+    },
+    "ingress_count": 6,
+    "initial_ui_revision": 1,
+    "namespace": "unshare -Urn; private loopback and unique Wayland socket",
+    "physical_HID": false,
+    "pixel_provenance": "wgpu swapchain texture COPY_SRC before queue.present; client rendered GPU pixels only",
+    "pixels": {
+      "after": {
+        "image_sha256_raw": "a887b744add258b8845a8a82119bb4d8c9b70327fc2e2739d87ab08ae9f31de4",
+        "left": [
+          241,
+          166,
+          105,
+          255
+        ],
+        "right": [
+          115,
+          203,
+          243,
+          255
+        ],
+        "top_background": [
+          66,
+          77,
+          91,
+          255
+        ]
+      },
+      "before": {
+        "image_sha256_raw": "9193d6faded0904d98d7eb6ed1d17691bec42a6c86db158c3f9f1b366f5004ce",
+        "left": [
+          89,
+          192,
+          235,
+          255
+        ],
+        "right": [
+          241,
+          166,
+          105,
+          255
+        ],
+        "top_background": [
+          66,
+          77,
+          91,
+          255
+        ]
+      },
+      "preview": {
+        "image_sha256_raw": "5adae5024ed3d748fd08c15795b56c6a3aaa2b3007c08ed2fffa7be79369f6da",
+        "left": [
+          139,
+          216,
+          254,
+          255
+        ],
+        "right": [
+          241,
+          166,
+          105,
+          255
+        ],
+        "top_background": [
+          66,
+          77,
+          91,
+          255
+        ]
+      }
+    },
+    "previews": 2,
+    "program": "BLOB-AC-03",
+    "router_receipts": 6,
+    "scope": "isolated Weston compositor + real winit delivery + GPU swapchain COPY_SRC, not compositor-presented frame",
+    "verdict": "COMPOSITOR_DELIVERED_GESTURE_PLUS_GPU_CLIENT_PIXEL_PASS",
+    "weston_module_sha256": "81653e339fbc73a434e248808bcd334d1de269d80020a2c4a141eafba98e9199",
+    "weston_stdout_sha256": "1a1b3dfcec5f4e2019f773ab3b4f3b54315b63f357dad068cb7915f920f683f6",
+    "winit_trace_sha256": "7fe4c0146cd36a7a2d84baf9d8bac6b75d59b84ae749190f884aae07e3915948"
+  },
+  "witness_sha256": "83b450ba5849929d492d1a47ab6f692080702ce13dc62fbc7ca72546f028de7f",
+  "result": "SCOPED_PASS_COMPOSITOR_INPUT_CLIENT_GPU_PIXELS"
+}

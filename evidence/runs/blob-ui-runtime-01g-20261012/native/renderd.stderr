@@ -1,0 +1,2 @@
+BLOB_FRAME_TIMING backend=cpu mode=coverage width=932 height=800 gate_ms=0.000 worker_ms=30.400 total_ms=30.402 sequence=1 descriptor=sealed_worker_per_frame
+BLOB_FRAME_TIMING backend=cpu mode=coverage width=932 height=800 gate_ms=0.000 worker_ms=30.415 total_ms=30.416 sequence=2 descriptor=sealed_worker_per_frame

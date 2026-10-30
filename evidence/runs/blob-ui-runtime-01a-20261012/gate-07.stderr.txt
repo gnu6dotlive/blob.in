@@ -1,0 +1,2 @@
+    Checking blobin-ui-scene v0.1.0 (/home/tension_atoi/Projects/blob.in-showcase/crates/blobin-ui-scene)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s

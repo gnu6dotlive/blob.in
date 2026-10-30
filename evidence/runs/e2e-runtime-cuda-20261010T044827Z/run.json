@@ -1,0 +1,190 @@
+{
+  "schema": "blobin-showcase-e2e/1",
+  "date_utc": "2026-10-10T04:48:37Z",
+  "git_head": "48641eadd6c3e55565e33f2f3510bd1965d379d5",
+  "viewer": "/mnt/sandbox/builds/cargo/release/blobin-showcase",
+  "socket": "/run/user/1000/blobin-showcase/render.sock",
+  "backend": "cuda",
+  "lab": "6",
+  "mode": "resize",
+  "hyprland": "v0.56.2",
+  "checks": [
+    {
+      "check": "native Wayland window mapped by Hyprland",
+      "pass": true,
+      "detail": "{\"class\": \"live.gnu6.blobin-showcase\", \"xwayland\": false, \"pid\": 1936160}"
+    },
+    {
+      "check": "BLOB-FRAME-v1 session established",
+      "pass": true,
+      "detail": "blobin-cuda05f-render-bridge"
+    },
+    {
+      "check": "window 1000x800: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 800] -> frame [652, 800] backend=cuda qualification=CUDA05F_GATE_PASS rtt=490ms"
+    },
+    {
+      "check": "capture 01-cuda-1000x800 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 950] [1000, 800]"
+    },
+    {
+      "check": "window 960x720: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [612, 720] -> frame [612, 720] backend=cuda qualification=CUDA05F_GATE_PASS rtt=510ms"
+    },
+    {
+      "check": "capture 02-cuda-960x720 lies within one monitor",
+      "pass": true,
+      "detail": "[1990, 990] [960, 720]"
+    },
+    {
+      "check": "window 1000x900: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [652, 900] -> frame [652, 900] backend=cuda qualification=CUDA05F_GATE_PASS rtt=470ms"
+    },
+    {
+      "check": "capture 03-cuda-1000x900 lies within one monitor",
+      "pass": true,
+      "detail": "[1970, 900] [1000, 900]"
+    },
+    {
+      "check": "window 760x520: frame presented at fitted viewport size",
+      "pass": true,
+      "detail": "viewport [412, 520] -> frame [412, 520] backend=cuda qualification=CUDA05F_GATE_PASS rtt=670ms"
+    },
+    {
+      "check": "capture 04-cuda-760x520 lies within one monitor",
+      "pass": true,
+      "detail": "[2090, 1090] [760, 520]"
+    },
+    {
+      "check": "resize storm settles on a frame matching the final viewport",
+      "pass": true,
+      "detail": "final viewport [652, 660] frame [652, 660]"
+    },
+    {
+      "check": "resize storm coalesced",
+      "pass": true,
+      "detail": "39 viewport changes -> 3 requests"
+    },
+    {
+      "check": "close via compositor: process exits 0",
+      "pass": true,
+      "detail": "exit 0"
+    },
+    {
+      "check": "clean shutdown recorded",
+      "pass": true,
+      "detail": "{\"clean\": true, \"client_threads_joined\": true, \"errors\": 0, \"event\": \"shutdown\", \"failed\": 0, \"frame_texture_released\": true, \"issued\": 8, \"presented\": 8, \"rejected\": 0, \"stale\": 0, \"t_ms\": 10032.53271}"
+    },
+    {
+      "check": "never more than one request in flight",
+      "pass": true,
+      "detail": "max 1"
+    },
+    {
+      "check": "presented revisions strictly increase",
+      "pass": true,
+      "detail": "8 frames"
+    },
+    {
+      "check": "every presented frame reports the requested backend",
+      "pass": true,
+      "detail": "['cuda']"
+    },
+    {
+      "check": "no rejected/failed frames",
+      "pass": true,
+      "detail": "[]"
+    }
+  ],
+  "captures": [
+    {
+      "file": "01-cuda-1000x800.png",
+      "window": [
+        1000,
+        800
+      ],
+      "sha256": "66ab98db40aba34306f09d2da311c5b8840455344eb4d5abacace2e2c7c21af0",
+      "frame": {
+        "request_id": 2,
+        "revision": 5,
+        "size": [
+          652,
+          800
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "f2f081086f2bb7b3c37315c8c0eed169836cfbbd03a7c7c40d9f72cabd13b947"
+      }
+    },
+    {
+      "file": "02-cuda-960x720.png",
+      "window": [
+        960,
+        720
+      ],
+      "sha256": "f86c41e614d0835ae62627e93ecc119e35e6c61069ef6b33eb408d435a178582",
+      "frame": {
+        "request_id": 3,
+        "revision": 6,
+        "size": [
+          612,
+          720
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "ed5bb907ba1a5ef328016d7ac305d0dca60bbac1b5c399ce6e8028b48309ef8b"
+      }
+    },
+    {
+      "file": "03-cuda-1000x900.png",
+      "window": [
+        1000,
+        900
+      ],
+      "sha256": "87a1fc93fc4d016da7a9046e86ef2e8b3a8f99179bcd690c923a6aae2aba00d0",
+      "frame": {
+        "request_id": 4,
+        "revision": 7,
+        "size": [
+          652,
+          900
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "f6c551c941cd8d617803dc338442815a4708d93911ea9517f5d4d21fc0420a77"
+      }
+    },
+    {
+      "file": "04-cuda-760x520.png",
+      "window": [
+        760,
+        520
+      ],
+      "sha256": "1ed7c0d59611b08b5391b55cc6b4ab08bd755a7369574527755023a2b160d200",
+      "frame": {
+        "request_id": 5,
+        "revision": 8,
+        "size": [
+          412,
+          520
+        ],
+        "backend_actual": "cuda",
+        "view_mode": "lit",
+        "qualification": "CUDA05F_GATE_PASS",
+        "geometry_sha256": "d65fbbcfc0bb892fe752fb4980d47765ec70e6459ba63601edba1a4ba1686f94"
+      }
+    }
+  ],
+  "artifacts": {
+    "trace.jsonl": "65edf1f0b4932b56dc1bc3cdf3b9056caebfd7b0a10f00a28b585df577aa125a",
+    "viewer.log": "0e87061a204a41794a744606a309317340cf0f02e650b02efdd45efe2fe3b3f1"
+  },
+  "pass": true
+}

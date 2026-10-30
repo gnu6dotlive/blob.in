@@ -1,0 +1,123 @@
+   Compiling serde_core v1.0.229
+   Compiling zmij v1.0.23
+   Compiling serde_json v1.0.151
+   Compiling memchr v2.8.3
+   Compiling itoa v1.0.18
+   Compiling blobin-cp01-hybrid v0.0.0 (/mnt/workbench/workspaces/gnu.in.labs/.worktrees/blobin-cp01-hybrid-20261010/experiments/blobin-next-01/CP01-HYBRID)
+    Finished `test` profile [unoptimized] target(s) in 1.89s
+     Running unittests src/lib.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/blobin_cp01_hybrid-81b2aab8a3c7d4e9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/bvh_oracle.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/bvh_oracle-713362ab700fa1ce)
+
+running 2 tests
+test bvh_preserves_ambiguous_edges_and_early_ray_exits ... ok
+test bvh_independently_matches_brute_force_10k_points_and_10k_rays ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.96s
+
+     Running tests/camera_oracle.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/camera_oracle-751db1d146e13b89)
+
+running 3 tests
+test camera_rejects_invalid_or_parallel_reference_vectors ... ok
+test three_camera_poses_center_depth_and_unit_direction ... ok
+test analytic_plane_oracle_three_poses_nearly_three_thousand_rays ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/geometry_seed.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/geometry_seed-c708325a3a543f4a)
+
+running 16 tests
+test capsule_segment_ends ... ok
+test graph_depth_is_bounded_even_with_shared_nodes ... ok
+test box_outside_inside_face_and_corner ... ok
+test sphere_signed_distance_analytic_fixture ... ok
+test union_and_intersection_distinct ... ok
+test graph_cycles_and_unknown_references_rejected ... ok
+test insertion_rejects_reused_ids_and_zero_ids ... ok
+test invalid_mesh_and_nonfinite_inputs_rejected ... ok
+test preflight_never_certifies_solidity_from_edge_counts_alone ... ok
+test csg_difference_creates_a_cavity ... ok
+test invalid_scale_quat_and_smooth_radius_rejected ... ok
+test surface_mesh_refused_as_signed_csg_operand ... ok
+test rotation_applies_to_box ... ok
+test smooth_union_reports_field_not_exact_distance ... ok
+test transformed_sdf_still_has_true_world_distance ... ok
+test shared_subgraphs_do_not_expand_exponentially ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/gltf_import.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/gltf_import-46abff80e4f1072b)
+
+running 18 tests
+test canonical_static_fixtures_are_reimportable_without_filesystem_access ... ok
+test glb_invalid_header_length_chunks_and_alignment ... ok
+test glb_does_not_accept_buffer_uri_even_if_safe ... ok
+test glb_nonindexed_tetra_surface ... ok
+test glb_indexed_tetra_imported_as_surface_not_certified ... ok
+test canonical_nonconvex_glb_requires_exact_reconstruction_then_true_mixed_csg ... ok
+test imported_tetra_requires_explicit_convex_certification_for_mixed_csg ... ok
+test changed_imported_extrusion_topology_never_gains_signed_authority ... ok
+test indices_must_be_tightly_packed_and_vertex_stride_bounded ... ok
+test external_resource_path_traversal_and_network_rejected ... ok
+test indices_and_topology_are_validated_before_return ... ok
+test static_gltf_json_external_buffer_is_explicitly_supplied ... ok
+test invalid_f32_nan_and_infinity_are_not_geometry ... ok
+test oversized_counts_short_buffers_and_offset_overflow ... ok
+test sparse_stride_and_misalignment_rejected ... ok
+test unsupported_morph_animation_skin_and_node_transform_fail_closed ... ok
+test imported_nonconvex_l_prism_is_only_topology_candidate_not_meshsolid ... ok
+test importer_fuzzes_500_mutated_containers_without_panicking ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/hybrid_prism.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/hybrid_prism-f91d3c158c48b6e9)
+
+running 4 tests
+test adversarial_polygon_is_rejected ... ok
+test convex_mesh_can_also_become_a_signed_csg_operand ... ok
+test concave_l_shape_has_closed_triangles_and_signed_distance ... ok
+test sealed_nonconvex_mesh_participates_in_real_mixed_csg ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mesh_queries.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/mesh_queries-15b98abf1b2bad8a)
+
+running 5 tests
+test nonconvex_closed_is_not_certified ... ok
+test ray_triangle_hit_miss_and_edge_ambiguity ... ok
+test offset_duplicated_facets_not_solid ... ok
+test invalid_topology_refused ... ok
+test convex_tetra_certifies_signed_distance ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/nonconvex_oracle.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/nonconvex_oracle-a113a46f6df18e35)
+
+running 2 tests
+test oracle_one_thousand_vertical_ray_queries ... ok
+test oracle_ten_thousand_volume_queries ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+     Running tests/topology_diagnostics.rs (/mnt/workbench/build/blobin-reconciliation-01/debug/deps/topology_diagnostics-ca90f8c01a6bd868)
+
+running 6 tests
+test imported_tetra_has_only_candidate_topology ... ok
+test disconnected_closed_shells_do_not_gain_solid_authority ... ok
+test bounded_topology_audit_rejects_excessive_triangle_budget ... ok
+test reject_open_reversed_and_duplicate_vertices ... ok
+test generated_nonconvex_prism_remains_topology_candidate_not_general_certificate ... ok
+test twisted_cube_variants_are_never_silently_treated_as_certified_solids ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests blobin_cp01_hybrid
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
